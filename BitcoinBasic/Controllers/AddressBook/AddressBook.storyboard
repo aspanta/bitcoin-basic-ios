@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Address Book View Controller-->
+        <scene sceneID="SST-JR-2Pa">
+            <objects>
+                <viewController storyboardIdentifier="AddressBookViewController" id="G3T-U3-Usv" customClass="AddressBookViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V10-Av-wFy"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdh-FQ-a6k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9j-wP-B4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBC-sM-Zuf">
+                                <rect key="frame" x="0.0" y="206" width="375" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List of recipients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZg-MM-Dtu">
+                                        <rect key="frame" x="111" y="17" width="153" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="YgY-lj-2zR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="iEz-P1-wSI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mne-7J-0Jl">
+                                        <rect key="frame" x="325" y="3" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="JPL-6J-BAa"/>
+                                            <constraint firstAttribute="height" constant="50" id="O1U-Zf-XXV"/>
+                                        </constraints>
+                                        <state key="normal" image="book_add_emc_icon"/>
+                                        <connections>
+                                            <action selector="addButtonPressedWithSender:" destination="G3T-U3-Usv" eventType="touchUpInside" id="rlZ-nc-o6x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Mne-7J-0Jl" secondAttribute="bottom" constant="4" id="LJw-TO-rnx"/>
+                                    <constraint firstAttribute="height" constant="57" id="Rf5-n5-hAY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mne-7J-0Jl" secondAttribute="bottom" constant="4" id="UXl-kO-N5f"/>
+                                    <constraint firstItem="AZg-MM-Dtu" firstAttribute="centerX" secondItem="sBC-sM-Zuf" secondAttribute="centerX" id="aNu-sT-CJ1"/>
+                                    <constraint firstItem="Mne-7J-0Jl" firstAttribute="top" secondItem="sBC-sM-Zuf" secondAttribute="top" constant="3" id="glP-9i-4jp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mne-7J-0Jl" secondAttribute="trailing" id="n79-0S-50G"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mne-7J-0Jl" secondAttribute="trailing" id="pBd-rT-9Oo"/>
+                                    <constraint firstItem="AZg-MM-Dtu" firstAttribute="centerY" secondItem="sBC-sM-Zuf" secondAttribute="centerY" id="sbG-o3-4Wb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-rD-8bM" customClass="AdressBookHeaderView" customModule="EmercoinBasic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="186"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="send_emer_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-eK-jgw">
+                                        <rect key="frame" x="76" y="81" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="0qY-6e-RWu"/>
+                                            <constraint firstAttribute="width" constant="24" id="vqr-su-Nnv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-Qq-d2c">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="IiK-jo-LRl"/>
+                                            <constraint firstAttribute="width" constant="58" id="ZBZ-iM-kGd"/>
+                                        </constraints>
+                                        <state key="normal" image="menu_icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibT-lA-QG1">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="Yy5-kx-bWu"/>
+                                            <constraint firstAttribute="width" constant="58" id="rWt-ar-9yN"/>
+                                        </constraints>
+                                        <state key="normal" image="back_icon"/>
+                                        <connections>
+                                            <action selector="back" destination="G3T-U3-Usv" eventType="touchUpInside" id="Y5Z-wi-qgc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS BOOK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZn-GF-oI6">
+                                        <rect key="frame" x="120" y="75" width="247" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="n9K-I1-GUK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-4R-VMF" customClass="LockButton" customModule="EmercoinBasic" customModuleProvider="target">
+                                        <rect key="frame" x="317" y="0.0" width="58" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="BJs-mh-y0h"/>
+                                            <constraint firstAttribute="height" constant="61" id="rhL-s5-jDj"/>
+                                        </constraints>
+                                        <state key="normal" image="lock_icon"/>
+                                        <connections>
+                                            <action selector="lockButtonPressed" destination="G3T-U3-Usv" eventType="touchUpInside" id="r7X-rP-BfS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.36470588240000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cb8-eK-jgw" firstAttribute="leading" secondItem="9oL-rD-8bM" secondAttribute="leading" constant="76" id="25S-Cd-2gt"/>
+                                    <constraint firstItem="NpS-Qq-d2c" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="top" id="4Ok-6C-Ryb"/>
+                                    <constraint firstItem="ibT-lA-QG1" firstAttribute="leading" secondItem="9oL-rD-8bM" secondAttribute="leading" id="BtX-z0-iqp"/>
+                                    <constraint firstItem="ZZn-GF-oI6" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="top" constant="75" id="S3c-DX-QIf"/>
+                                    <constraint firstItem="Cb8-eK-jgw" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="top" constant="81" id="YUZ-jA-7T0"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZZn-GF-oI6" secondAttribute="trailing" constant="8" id="a8I-Jo-KhC"/>
+                                    <constraint firstItem="NpS-Qq-d2c" firstAttribute="leading" secondItem="9oL-rD-8bM" secondAttribute="leading" id="eyd-Bx-Emo"/>
+                                    <constraint firstAttribute="height" constant="186" id="g57-E3-RiS"/>
+                                    <constraint firstAttribute="trailing" secondItem="3EG-4R-VMF" secondAttribute="trailing" id="m9E-xk-OA4"/>
+                                    <constraint firstItem="3EG-4R-VMF" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="top" id="qqo-Ef-2iM"/>
+                                    <constraint firstItem="ibT-lA-QG1" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="top" id="zdH-x4-OtZ"/>
+                                    <constraint firstItem="ZZn-GF-oI6" firstAttribute="leading" secondItem="Cb8-eK-jgw" secondAttribute="trailing" constant="20" id="zqS-lP-r3h"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-WQ-DAM">
+                                <rect key="frame" x="0.0" y="263" width="375" height="404"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactCell" rowHeight="66" id="2L1-EX-iiS" customClass="ContactCell" customModule="EmercoinBasic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2L1-EX-iiS" id="KeX-AP-AQg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-vG-cnP">
+                                                    <rect key="frame" x="20" y="11" width="347" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="zyl-gq-QOZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wc-BU-XNn">
+                                                    <rect key="frame" x="20" y="32" width="335" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="n1i-le-EZV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0wc-BU-XNn" secondAttribute="trailing" constant="20" id="4Sg-HA-Yn0"/>
+                                                <constraint firstItem="0wc-BU-XNn" firstAttribute="leading" secondItem="KeX-AP-AQg" secondAttribute="leading" constant="20" id="9em-gH-Bg6"/>
+                                                <constraint firstItem="KD7-vG-cnP" firstAttribute="leading" secondItem="KeX-AP-AQg" secondAttribute="leading" constant="20" id="AbF-3X-F4u"/>
+                                                <constraint firstItem="KD7-vG-cnP" firstAttribute="top" secondItem="KeX-AP-AQg" secondAttribute="top" constant="11" id="TsT-nv-NDz"/>
+                                                <constraint firstAttribute="bottom" secondItem="0wc-BU-XNn" secondAttribute="bottom" constant="12" id="Utw-3Y-gog"/>
+                                                <constraint firstItem="0wc-BU-XNn" firstAttribute="top" secondItem="KD7-vG-cnP" secondAttribute="bottom" id="WA5-RJ-gAZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="KD7-vG-cnP" secondAttribute="trailing" constant="8" id="uKH-RB-X6M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabeL" destination="0wc-BU-XNn" id="ssX-7A-BN7"/>
+                                            <outlet property="nameLabeL" destination="KD7-vG-cnP" id="o6X-jm-rQn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G3T-U3-Usv" id="fDH-jG-o1f"/>
+                                    <outlet property="delegate" destination="G3T-U3-Usv" id="HyN-wQ-lxp"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oer-3R-WvS">
+                                <rect key="frame" x="0.0" y="263" width="375" height="404"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no addresses" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-ST-wo7">
+                                        <rect key="frame" x="93.5" y="191.5" width="187.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fy8-ST-wo7" firstAttribute="centerX" secondItem="oer-3R-WvS" secondAttribute="centerX" id="bqC-th-1Zu"/>
+                                    <constraint firstItem="fy8-ST-wo7" firstAttribute="centerY" secondItem="oer-3R-WvS" secondAttribute="centerY" id="d7M-MM-KDP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qdh-FQ-a6k" firstAttribute="top" secondItem="Nxa-WQ-DAM" secondAttribute="bottom" id="5qS-E7-F6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="sBC-sM-Zuf" secondAttribute="trailing" id="9So-0X-7kI"/>
+                            <constraint firstItem="sBC-sM-Zuf" firstAttribute="leading" secondItem="F9j-wP-B4q" secondAttribute="leading" id="E0V-Ad-vNd"/>
+                            <constraint firstAttribute="trailing" secondItem="oer-3R-WvS" secondAttribute="trailing" id="EeH-uR-pg2"/>
+                            <constraint firstItem="Nxa-WQ-DAM" firstAttribute="top" secondItem="sBC-sM-Zuf" secondAttribute="bottom" id="QqF-uW-faq"/>
+                            <constraint firstItem="oer-3R-WvS" firstAttribute="top" secondItem="sBC-sM-Zuf" secondAttribute="bottom" id="aeR-9C-bcc"/>
+                            <constraint firstItem="sBC-sM-Zuf" firstAttribute="top" secondItem="9oL-rD-8bM" secondAttribute="bottom" id="dM5-o6-DUU"/>
+                            <constraint firstItem="9oL-rD-8bM" firstAttribute="leading" secondItem="F9j-wP-B4q" secondAttribute="leading" id="e3t-nW-JLC"/>
+                            <constraint firstItem="qdh-FQ-a6k" firstAttribute="top" secondItem="oer-3R-WvS" secondAttribute="bottom" id="f7M-QZ-Crz"/>
+                            <constraint firstItem="Nxa-WQ-DAM" firstAttribute="leading" secondItem="F9j-wP-B4q" secondAttribute="leading" id="fgN-IA-tzW"/>
+                            <constraint firstItem="oer-3R-WvS" firstAttribute="leading" secondItem="F9j-wP-B4q" secondAttribute="leading" id="iRu-d0-Hhh"/>
+                            <constraint firstItem="9oL-rD-8bM" firstAttribute="top" secondItem="V10-Av-wFy" secondAttribute="bottom" id="kdp-dd-h93"/>
+                            <constraint firstAttribute="trailing" secondItem="Nxa-WQ-DAM" secondAttribute="trailing" id="na2-bY-20B"/>
+                            <constraint firstAttribute="trailing" secondItem="9oL-rD-8bM" secondAttribute="trailing" id="umQ-qZ-k9d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Mne-7J-0Jl" id="dpj-BX-YeU"/>
+                        <outlet property="backButton" destination="ibT-lA-QG1" id="Xy2-Zf-ryO"/>
+                        <outlet property="lockButton" destination="3EG-4R-VMF" id="5BL-QT-bEy"/>
+                        <outlet property="menuButton" destination="NpS-Qq-d2c" id="8aF-k0-WMU"/>
+                        <outlet property="noAddressesView" destination="oer-3R-WvS" id="a0v-N1-6dd"/>
+                        <outlet property="tableView" destination="Nxa-WQ-DAM" id="WsD-EB-9RY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AkM-jP-JcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="-397.15142428785612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_icon" width="18" height="15"/>
+        <image name="book_add_emc_icon" width="24" height="24"/>
+        <image name="lock_icon" width="16" height="19"/>
+        <image name="menu_icon" width="18" height="13"/>
+        <image name="send_emer_icon" width="35" height="31"/>
+    </resources>
+</document>

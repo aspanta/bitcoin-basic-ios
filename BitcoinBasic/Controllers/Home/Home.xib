@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jWw-zK-oc3" customClass="MyMoneyView" customModule="EmercoinBasic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emer_icon_1" translatesAutoresizingMaskIntoConstraints="NO" id="p4D-pW-5bN">
+                    <rect key="frame" x="20" y="20" width="34" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Luu-Na-c0e"/>
+                        <constraint firstAttribute="height" constant="29" id="pV5-Ik-ahK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERCOIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-0w-6Zn">
+                    <rect key="frame" x="74" y="17" width="79.5" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="cuz-V8-LZz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 000,00000 EMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="UwC-la-Q0a">
+                    <rect key="frame" x="74" y="37" width="285" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="E7d-Fa-73G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppE-Bf-d4v">
+                    <rect key="frame" x="74" y="67" width="285" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <font key="NSFont" size="14" name=".SFNSText"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UwC-la-Q0a" firstAttribute="leading" secondItem="p4D-pW-5bN" secondAttribute="trailing" constant="20" id="1zN-2b-lXr"/>
+                <constraint firstAttribute="trailing" secondItem="UwC-la-Q0a" secondAttribute="trailing" constant="16" id="BAK-o7-JwJ"/>
+                <constraint firstItem="p4D-pW-5bN" firstAttribute="top" secondItem="jWw-zK-oc3" secondAttribute="top" constant="20" id="E2H-pL-0w5"/>
+                <constraint firstAttribute="trailing" secondItem="ppE-Bf-d4v" secondAttribute="trailing" constant="16" id="Ejs-q0-a1e"/>
+                <constraint firstItem="UwC-la-Q0a" firstAttribute="top" secondItem="nJg-0w-6Zn" secondAttribute="bottom" constant="1" id="HIQ-O3-DQL"/>
+                <constraint firstItem="p4D-pW-5bN" firstAttribute="leading" secondItem="jWw-zK-oc3" secondAttribute="leading" constant="20" id="JoG-8h-MZe"/>
+                <constraint firstItem="ppE-Bf-d4v" firstAttribute="leading" secondItem="jWw-zK-oc3" secondAttribute="leading" constant="74" id="RF5-bU-bCH"/>
+                <constraint firstItem="ppE-Bf-d4v" firstAttribute="top" secondItem="UwC-la-Q0a" secondAttribute="bottom" id="W9B-MP-SWN"/>
+                <constraint firstItem="nJg-0w-6Zn" firstAttribute="leading" secondItem="p4D-pW-5bN" secondAttribute="trailing" constant="20" id="Xi4-dw-r2D"/>
+                <constraint firstItem="nJg-0w-6Zn" firstAttribute="top" secondItem="jWw-zK-oc3" secondAttribute="top" constant="17" id="gG3-4F-Raw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabel" destination="UwC-la-Q0a" id="yhb-ie-tQG"/>
+                <outlet property="exchangeLabel" destination="ppE-Bf-d4v" id="j7M-re-8ob"/>
+                <outlet property="iconImageView" destination="p4D-pW-5bN" id="0Ws-8z-UAj"/>
+                <outlet property="nameLabel" destination="nJg-0w-6Zn" id="RXi-fJ-cJU"/>
+            </connections>
+            <point key="canvasLocation" x="-295.5" y="-445.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emer_icon_1" width="34" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+github "ReactiveX/RxSwift" ~> 3.0
+github "Friend-LGA/LGSideMenuController"
+github "hackiftekhar/IQKeyboardManager"
+github "yannickl/QRCodeReader.swift" >= 7.3.0
+github "aschuch/QRCode"
+github "Hearst-DD/ObjectMapper" ~> 2.2
+github "radex/SwiftyUserDefaults"
+github "realm/realm-cocoa"
+github "RxSwiftCommunity/RxRealm"
