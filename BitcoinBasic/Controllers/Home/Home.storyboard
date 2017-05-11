@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +23,7 @@
         <!--Home View Controller-->
         <scene sceneID="a7X-om-OQe">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="4eb-RU-WSg" customClass="HomeViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="4eb-RU-WSg" customClass="HomeViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rbN-Hm-9Os"/>
                         <viewControllerLayoutGuide type="bottom" id="MLY-PK-1zq"/>
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="206" width="414" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeBalanceCell" rowHeight="70" id="wMl-h4-oS1" customClass="HomeBalanceCell" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeBalanceCell" rowHeight="70" id="wMl-h4-oS1" customClass="HomeBalanceCell" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wMl-h4-oS1" id="DIE-WL-E8K">
@@ -128,7 +128,7 @@
                                     <outlet property="delegate" destination="4eb-RU-WSg" id="Sq0-Uk-qPo"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mv-ez-OKT" customClass="HomeLogoView" customModule="EmercoinBasic" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mv-ez-OKT" customClass="HomeLogoView" customModule="BitcoinBasic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="414" height="186"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-2X-bGd">
@@ -143,14 +143,14 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_main" translatesAutoresizingMaskIntoConstraints="NO" id="trA-sJ-oQg">
-                                        <rect key="frame" x="178" y="31" width="58" height="49"/>
+                                        <rect key="frame" x="178" y="31" width="58" height="58"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="7bJ-Qb-dCI"/>
+                                            <constraint firstAttribute="height" constant="58" id="7bJ-Qb-dCI"/>
                                             <constraint firstAttribute="width" constant="58" id="Uy1-bc-xFq"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOBILE WALLET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-4T-YeX">
-                                        <rect key="frame" x="117.66666666666669" y="126" width="180" height="29"/>
+                                        <rect key="frame" x="117.33333333333331" y="135" width="180" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="hab-M9-PWy"/>
                                         </constraints>
@@ -158,8 +158,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-ua-5zU">
-                                        <rect key="frame" x="78.333333333333343" y="88" width="257.66666666666663" height="38"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BITCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-ua-5zU">
+                                        <rect key="frame" x="96.666666666666657" y="97" width="221.33333333333334" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="NOI-8F-EB4"/>
                                         </constraints>
@@ -168,7 +168,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.36470588235294116" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="d5J-ua-5zU" firstAttribute="centerX" secondItem="6mv-ez-OKT" secondAttribute="centerX" id="16S-5s-lhZ"/>
                                     <constraint firstItem="qL9-4T-YeX" firstAttribute="centerX" secondItem="6mv-ez-OKT" secondAttribute="centerX" id="7mC-hF-Ggf"/>
@@ -181,7 +181,7 @@
                                     <constraint firstItem="ZCT-2X-bGd" firstAttribute="top" secondItem="6mv-ez-OKT" secondAttribute="top" id="vFz-lw-79h"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0C-U5-P32" customClass="LockButton" customModule="EmercoinBasic" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0C-U5-P32" customClass="LockButton" customModule="BitcoinBasic" customModuleProvider="target">
                                 <rect key="frame" x="356" y="20" width="58" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="TXJ-3v-EEv"/>
@@ -218,8 +218,8 @@
     </scenes>
     <resources>
         <image name="arrow_exp_icon" width="20" height="20"/>
-        <image name="lock_icon" width="13" height="15"/>
-        <image name="logo_main" width="58" height="49"/>
+        <image name="lock_icon" width="16" height="19"/>
+        <image name="logo_main" width="60" height="60"/>
         <image name="menu_icon" width="18" height="12"/>
         <image name="wallet_icon" width="19" height="20"/>
         <image name="wallet_image" width="375" height="69"/>

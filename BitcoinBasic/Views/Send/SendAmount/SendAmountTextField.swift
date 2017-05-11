@@ -27,6 +27,6 @@ extension SendAmountTextField: UITextFieldDelegate {
 //        }
         
         let fullText = textField.text!+string
-        return  fullText.length <= Constants.Controllers.Send.MaxCountNumbers
+        return  fullText.length <= Constants.MaxAmountCountNumbers
     }
 }

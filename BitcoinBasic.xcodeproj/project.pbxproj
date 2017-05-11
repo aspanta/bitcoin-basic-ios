@@ -502,7 +502,6 @@
 				2D8572C11EC47D9600E2BF88 /* Livecoin */,
 				2D8572D01EC47D9600E2BF88 /* Login */,
 				2D8572D31EC47D9600E2BF88 /* Menu */,
-				2D8572F41EC47D9600E2BF88 /* PrivacyPolicy */,
 				2D8572F91EC47D9600E2BF88 /* Settings */,
 				2D8572FC1EC47D9600E2BF88 /* TermOfUse */,
 			);
@@ -862,13 +861,6 @@
 				2D8572D71EC47D9600E2BF88 /* MenuDefaultCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572F41EC47D9600E2BF88 /* PrivacyPolicy */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PrivacyPolicy;
 			sourceTree = "<group>";
 		};
 		2D8572F91EC47D9600E2BF88 /* Settings */ = {

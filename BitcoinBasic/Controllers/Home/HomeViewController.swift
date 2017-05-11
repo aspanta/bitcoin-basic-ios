@@ -32,7 +32,7 @@ final class HomeViewController: BaseViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
 
         if let wallet = viewModel.wallet {
-            let coin = wallet.emercoin
+            let coin = wallet.bitcoin
             coins = [coin]
         }
         setupTableView()
@@ -75,7 +75,7 @@ final class HomeViewController: BaseViewController, UITableViewDelegate, UITable
     private func setupRefreshControl() {
         
         let refresh = UIRefreshControl()
-        refresh.tintColor = UIColor(hexString: Constants.Colors.Status.Emercoin)
+        refresh.tintColor = UIColor(hexString: Constants.Colors.Status.Bitcoin)
         refresh.addTarget(self, action: #selector(self.handleRefresh(sender:)), for: .valueChanged)
         tableView.refreshControl = refresh
         

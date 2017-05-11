@@ -30,7 +30,7 @@ class CoinOperationsViewModel {
     
         if let wallet = wallet {
             
-            let coin = wallet.emercoin
+            let coin = wallet.bitcoin
             
             let courseTitle = coin.exchangeAttributedString(color: .white)
             let sign = coin.sign

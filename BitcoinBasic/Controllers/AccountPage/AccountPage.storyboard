@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +23,7 @@
         <!--Account Page View Controller-->
         <scene sceneID="8qU-kb-WtX">
             <objects>
-                <viewController storyboardIdentifier="AccountPageViewController" id="Z58-QP-bts" customClass="AccountPageViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountPageViewController" id="Z58-QP-bts" customClass="AccountPageViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zSQ-zM-1gc"/>
                         <viewControllerLayoutGuide type="bottom" id="hsM-cn-nLS"/>
@@ -55,7 +55,7 @@
         <!--History View Controller-->
         <scene sceneID="zpb-18-Dr0">
             <objects>
-                <viewController storyboardIdentifier="HistoryViewController" id="1k6-jz-AqF" customClass="HistoryViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="1k6-jz-AqF" customClass="HistoryViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zEH-Q7-Gge"/>
                         <viewControllerLayoutGuide type="bottom" id="1SX-Z2-22U"/>
@@ -69,7 +69,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="58" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="66" id="21k-es-nmd" customClass="HistoryCell" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="66" id="21k-es-nmd" customClass="HistoryCell" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21k-es-nmd" id="3ee-hm-lZM">
@@ -94,8 +94,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7b-rN-f14">
-                                                    <rect key="frame" x="325.5" y="11" width="29.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7b-rN-f14">
+                                                    <rect key="frame" x="329" y="11" width="26" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="LDK-QL-E8Q"/>
                                                     </constraints>
@@ -104,7 +104,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwB-Uw-u5d">
-                                                    <rect key="frame" x="293" y="11" width="24.5" height="21"/>
+                                                    <rect key="frame" x="296.5" y="11" width="24.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ccd-UW-7DT"/>
                                                     </constraints>
@@ -150,7 +150,7 @@
                                 </connections>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no any transaction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmL-5V-wox">
-                                <rect key="frame" x="80" y="322.5" width="216" height="21"/>
+                                <rect key="frame" x="79.5" y="322.5" width="216" height="21"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -177,7 +177,7 @@
         <!--Operations View Controller-->
         <scene sceneID="jnN-84-1W2">
             <objects>
-                <viewController storyboardIdentifier="OperationsViewController" id="dtx-ja-bcx" customClass="OperationsViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OperationsViewController" id="dtx-ja-bcx" customClass="OperationsViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jP2-E5-uqs"/>
                         <viewControllerLayoutGuide type="bottom" id="wuH-yF-vBc"/>

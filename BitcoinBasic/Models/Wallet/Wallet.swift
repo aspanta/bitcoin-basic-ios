@@ -14,14 +14,14 @@ class Wallet:BaseModel {
     var error = PublishSubject<NSError>()
     var activityIndicator = PublishSubject<Bool>()
     
-    var emercoin:Coin = {
-        let emCoin = Coin()
-        emCoin.name = "EMERCOIN"
-        emCoin.amount = 0.0
-        emCoin.image = "emer_icon_1"
-        emCoin.sign = "EMC"
-        emCoin.color = Constants.Colors.Coins.Emercoin
-        return emCoin
+    var bitcoin:Coin = {
+        let coin = Coin()
+        coin.name = "BITCOIN"
+        coin.amount = 0.0
+        coin.image = "bit_icon_1"
+        coin.sign = "BTC"
+        coin.color = Constants.Colors.Coins.Bitcoin
+        return coin
     }()
     
     var isLocked = false
@@ -35,7 +35,7 @@ class Wallet:BaseModel {
     }
     
     init(amount:Double) {
-        emercoin.amount = amount
+        bitcoin.amount = amount
         super.init()
     }
     
@@ -45,7 +45,7 @@ class Wallet:BaseModel {
     
     var balance:Double = 0.0 {
         didSet{
-            emercoin.amount = balance
+            bitcoin.amount = balance
             success.onNext(true)
         }
     }
@@ -87,7 +87,7 @@ class Wallet:BaseModel {
     func loadCourse() {
         APIManager.sharedInstance.loadEmercoinCourse {[weak self] (data, error) in
             if let priceUSD = Double(data as! String) {
-                self?.emercoin.priceUSD = priceUSD
+                self?.bitcoin.priceUSD = priceUSD
                 self?.success.onNext(true)
             }
         }

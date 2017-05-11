@@ -73,7 +73,7 @@ class HomeBalanceCell: BaseTableViewCell {
     
     private func updateCellHeader() {
         
-        let titleColor:UIColor = (isExpanded) ? UIColor(hexString: "#9C73B1"): .white
+        let titleColor:UIColor = (isExpanded) ? UIColor(hexString: "#fb8335"): .white
         titleLabel.textColor = titleColor
         
         let iconImage = (isExpanded) ? "wallet_icon_color" : "wallet_icon"

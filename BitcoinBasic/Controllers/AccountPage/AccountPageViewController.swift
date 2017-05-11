@@ -7,8 +7,7 @@ import UIKit
 
 class AccountPageViewController: ButtonBarPagerTabStripViewController {
     
-    let emerColor = Constants.Controllers.Send.HeaderView.EmercoinColor
-    var mainColor:UIColor = UIColor(hexString: Constants.Controllers.Send.HeaderView.EmercoinColor)
+    var mainColor:UIColor = UIColor(hexString: Constants.Controllers.Main.HeaderView.BitcoinColor)
 
     let backgroundColor = UIColor(hexString: "#EAEAEA")
     

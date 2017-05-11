@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9NT-Iv-o9x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9NT-Iv-o9x">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,8 +20,8 @@
         <!--Base Navigation Controller-->
         <scene sceneID="K79-qa-5hG">
             <objects>
-                <navigationController id="9NT-Iv-o9x" customClass="BaseNavigationController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3fC-3m-IeB">
+                <navigationController id="9NT-Iv-o9x" customClass="BaseNavigationController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3fC-3m-IeB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -36,7 +36,7 @@
         <!--Login View Controller-->
         <scene sceneID="9U4-MK-IsF">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="rgu-oq-k0z" customClass="LoginViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="rgu-oq-k0z" customClass="LoginViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a73-Px-job"/>
                         <viewControllerLayoutGuide type="bottom" id="yD6-ts-Q77"/>
@@ -45,22 +45,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-JH-eXa">
-                                <rect key="frame" x="132" y="70" width="111" height="96"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit_image" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-JH-eXa">
+                                <rect key="frame" x="132" y="70" width="111" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="JWG-YF-gGi"/>
-                                    <constraint firstAttribute="height" constant="96" id="O25-zq-6sl"/>
+                                    <constraint firstAttribute="height" constant="111" id="O25-zq-6sl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32n-15-JxQ">
-                                <rect key="frame" x="88.5" y="178" width="198.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BITCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32n-15-JxQ">
+                                <rect key="frame" x="103.5" y="193" width="168.5" height="30"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
-                                <color key="textColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.51372549019607838" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-8c-gUV" customClass="LoginButton" customModule="EmercoinBasic" customModuleProvider="target">
-                                <rect key="frame" x="60" y="483" width="255" height="46"/>
-                                <color key="backgroundColor" red="0.38431372549999998" green="0.20000000000000001" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-8c-gUV" customClass="LoginButton" customModule="BitcoinBasic" customModuleProvider="target">
+                                <rect key="frame" x="60" y="498" width="255" height="46"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.51372549019607838" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="ojx-hB-Oc4"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                                 <state key="selected" backgroundImage="login_but_sel"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enableConfig" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="enableColor" value="623374"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="enableColor" value="fb8335"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="disableColor" value="ABABAB"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -82,9 +82,9 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-ON-KLZ">
-                                <rect key="frame" x="60" y="223" width="255" height="30"/>
+                                <rect key="frame" x="60" y="238" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Host" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYw-qF-6SE" customClass="BaseTextField" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Host" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYw-qF-6SE" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="29"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -92,7 +92,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCB-ow-tVZ">
                                         <rect key="frame" x="0.0" y="29" width="255" height="1"/>
-                                        <color key="backgroundColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.51372549019607838" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="9aC-jI-rIQ"/>
                                         </constraints>
@@ -110,9 +110,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5c-nc-zE4">
-                                <rect key="frame" x="60" y="268" width="255" height="30"/>
+                                <rect key="frame" x="60" y="283" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z77-Q9-iaA" customClass="BaseTextField" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z77-Q9-iaA" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="29"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -120,7 +120,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5n4-Pw-b7S">
                                         <rect key="frame" x="0.0" y="29" width="255" height="1"/>
-                                        <color key="backgroundColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="ms8-fT-bIU"/>
                                         </constraints>
@@ -138,9 +138,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSx-U4-Ekd">
-                                <rect key="frame" x="60" y="313" width="255" height="30"/>
+                                <rect key="frame" x="60" y="328" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Protocol" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-RR-riZ" customClass="BaseTextField" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Protocol" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-RR-riZ" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="246" height="29"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -148,7 +148,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyr-hI-IVC">
                                         <rect key="frame" x="0.0" y="29" width="255" height="1"/>
-                                        <color key="backgroundColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="KyX-ol-g1z"/>
                                         </constraints>
@@ -188,9 +188,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnJ-a1-ehB">
-                                <rect key="frame" x="60" y="358" width="255" height="30"/>
+                                <rect key="frame" x="60" y="373" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aD-BT-ars" customClass="BaseTextField" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aD-BT-ars" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="29"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -198,7 +198,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tko-hV-TrA">
                                         <rect key="frame" x="0.0" y="29" width="255" height="1"/>
-                                        <color key="backgroundColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="WhH-q7-gUj"/>
                                         </constraints>
@@ -216,9 +216,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HB-lr-8Vo">
-                                <rect key="frame" x="60" y="403" width="255" height="30"/>
+                                <rect key="frame" x="60" y="418" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-lX-Zw8" customClass="BaseTextField" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-lX-Zw8" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="29"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
@@ -226,7 +226,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hS-hy-OTr">
                                         <rect key="frame" x="0.0" y="29" width="255" height="1"/>
-                                        <color key="backgroundColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="YE4-ET-qI9"/>
                                         </constraints>
@@ -297,8 +297,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bit_image" width="170" height="170"/>
         <image name="get_down_icon" width="9" height="7"/>
         <image name="login_but_sel" width="255" height="46"/>
-        <image name="reg_logo" width="110" height="96"/>
     </resources>
 </document>

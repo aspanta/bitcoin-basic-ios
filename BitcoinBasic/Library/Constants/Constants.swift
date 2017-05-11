@@ -27,12 +27,9 @@ struct Constants {
         static let ProtectWallet = "encryptwallet"
         static let LockWallet = "walletlock"
         static let UnlockWallet = "walletpassphrase"
-        
     }
     
-    struct Names {
-        static let Prefixes = ["dns","ssh","gpg","kx","ssl","bls","tts","swift","dpo","magnet","enum"]
-    }
+    static let MaxAmountCountNumbers = 15
     
     struct CellHeights {
         struct HomeBalanceCell {
@@ -54,14 +51,14 @@ struct Constants {
         }
         
         struct Coins {
-            static let Bitcoin = "#ED650A"
+            static let Bitcoin = "#fb8335"
             static let Emercoin = "#8C5DA3"
         }
         
         struct Status {
-            static let Main = "#684979"
+            static let Main = "#8a481d"
             static let Menu = "#3d3d3d"
-            static let Emercoin = "#684979"
+            static let Bitcoin = "#8a481d"
             static let Settings = "#897295"
             static let Blockchain = "#5b5e7d"
         }
@@ -96,16 +93,6 @@ struct Constants {
     
         }
         
-        struct Names {
-            
-            static let SearchResults = "Search NVS"
-            static let CreateNVS = "Create NVS"
-            static let EditNVS = "Edit NVS"
-            static let MyAddresses = "My Addresses"
-            static let RecipientAddress = "Address of recipient"
-            static let Addresses = "List of recipients"
-        }
-        
         struct Get {
             static let iphone5 = 40.0
         }
@@ -115,19 +102,14 @@ struct Constants {
             static let HeaderColor = "8387B3"
         }
         
-        struct Send {
+        struct Main {
             struct HeaderView {
-                static let BitcoinColor = "#5db1bc"
-                static let EmercoinColor = "#8C5DA3"
+                static let BitcoinColor = "#fb8335"
                 static let BitcoinImage = "send_bit_icon"
-                static let EmercoinImage = "send_emer_icon"
             }
             struct StatusColor {
-                static let BitcoinColor = "#417c83"
-                static let EmercoinColor = "#684979"
+                static let BitcoinColor = "#8a481d"
             }
-            
-            static let MaxCountNumbers = 15
         }
         
         struct Menu {
@@ -192,8 +174,6 @@ struct Constants {
             static let Home = "tab_home_icon"
             static let Send = "tab_send_icon"
             static let Get = "tab_get_icon"
-            static let Exchange = "tab_exchange_icon"
-            static let Names = "tab_blockchain_icon"
             static let History = "tab_history_icon"
         }
     }
