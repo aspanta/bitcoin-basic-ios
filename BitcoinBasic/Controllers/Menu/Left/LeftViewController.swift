@@ -46,8 +46,6 @@ class LeftViewController: BaseViewController {
                                     image: Constants.Controllers.Menu.Send.Image)
         let getMenuItem = MenuItem(title: Constants.Controllers.Menu.Get.Title,
                                     image: Constants.Controllers.Menu.Get.Image)
-        let bctoolsMenuItem = MenuItem(title: Constants.Controllers.Menu.BCTools.Title,
-                                    image: Constants.Controllers.Menu.BCTools.Image)
         let aboutMenuItem = MenuItem(title: Constants.Controllers.Menu.About.Title,
                                     image: Constants.Controllers.Menu.About.Image)
         let legalMenuItem = MenuItem(title: Constants.Controllers.Menu.Legal.Title,
@@ -59,7 +57,7 @@ class LeftViewController: BaseViewController {
         let bookMenuItem = MenuItem(title: Constants.Controllers.Menu.Book.Title,
                                        image: Constants.Controllers.Menu.Book.Image)
         
-        menuItems = [homeMenuItem,sendMenuItem,getMenuItem,historyMenuItem,bctoolsMenuItem,
+        menuItems = [homeMenuItem,sendMenuItem,getMenuItem,historyMenuItem,
                      bookMenuItem,aboutMenuItem,legalMenuItem,exitMenuItem]
         
     }

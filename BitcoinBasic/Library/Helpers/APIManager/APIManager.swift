@@ -12,11 +12,6 @@ enum APIType {
     case sendCoins
     case myAddresses
     case myNewAddress
-    case names
-    case addName
-    case updateName
-    case deleteName
-    case searchName
     case protectWallet
     case lockWallet
     case unlockWallet
@@ -88,11 +83,7 @@ class APIManager: NSObject {
                 self.loadMyAddresses{ (data, error) in
                     if error == nil {
                         self.loadTransactions{ (data, error) in
-                            if error == nil {
-                                self.loadNames{ (data, error) in
-                                    
-                                }
-                            }
+                            
                         }
                     }
                 }
@@ -112,30 +103,6 @@ class APIManager: NSObject {
         
         if var params = api.object as? [String:AnyObject] {
             params["sendData"] = sendData as AnyObject?
-            api.object = params as AnyObject?
-        }
-        
-        api.startRequest(completion: completion)
-    }
-    
-    func addName(at nameData:AnyObject, completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
-        
-        let api = getApi(at: .addName)
-        
-        if var params = api.object as? [String:AnyObject] {
-            params["nameData"] = nameData as AnyObject?
-            api.object = params as AnyObject?
-        }
-        
-        api.startRequest(completion: completion)
-    }
-    
-    func updateName(at nameData:AnyObject, completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
-        
-        let api = getApi(at: .updateName)
-        
-        if var params = api.object as? [String:AnyObject] {
-            params["nameData"] = nameData as AnyObject?
             api.object = params as AnyObject?
         }
         
@@ -172,39 +139,9 @@ class APIManager: NSObject {
         api.startRequest(completion: completion)
     }
     
-    func deleteName(at nameData:AnyObject, completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
-        
-        let api = getApi(at: .deleteName)
-        
-        if var params = api.object as? [String:AnyObject] {
-            params["nameData"] = nameData as AnyObject?
-            api.object = params as AnyObject?
-        }
-        
-        api.startRequest(completion: completion)
-    }
-    
-    func searchName(at nameData:AnyObject, completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
-        
-        let api = getApi(at: .searchName)
-        
-        if var params = api.object as? [String:AnyObject] {
-            params["nameData"] = nameData as AnyObject?
-            api.object = params as AnyObject?
-        }
-        
-        api.startRequest(completion: completion)
-    }
-    
     func loadMyAddresses(completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
         
         let api = getApi(at: .myAddresses)
-        api.startRequest(completion: completion)
-    }
-    
-    func loadNames(completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
-        
-        let api = getApi(at: .names)
         api.startRequest(completion: completion)
     }
     
@@ -231,14 +168,9 @@ class APIManager: NSObject {
             case .sendCoins:api = SendCoinsAPI()
             case .myAddresses:api = MyAddressesAPI()
             case .myNewAddress:api = AddMyAddressAPI()
-            case .names:api = NamesAPI()
-            case .addName:api = AddNameAPI()
-            case .updateName:api = UpdateNameAPI()
-            case .deleteName:api = DeleteNameAPI()
             case .protectWallet:api = ProtectWalletAPI()
             case .lockWallet:api = LockWalletAPI()
             case .unlockWallet:api = UnlockWalletAPI()
-            case .searchName:api = SearchNameAPI()
             case .blockchainInfo:api = BlockchainInfoAPI()
         }
         

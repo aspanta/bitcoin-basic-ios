@@ -56,26 +56,6 @@ class TabBarController: UITabBarController {
         selectedIndex = index
     }
     
-    func showNVSBrowser(at index:Int, subIndex:Int) {
-        
-        guard let nav = viewControllers?.last as? BaseNavigationController else {
-            return
-        }
-        
-        guard let vc = nav.viewControllers.first as? NamesViewController else {
-            return
-        }
-        
-        checkChildControllers(at: index)
-        
-        if selectedIndex == index {
-            vc.showNamesTab(at: subIndex)
-        } else {
-            subControllerIndex = subIndex
-            selectedIndex = index
-        }
-    }
-    
     private func checkChildControllers(at index:Int) {
         
         guard let nav = viewControllers?[index] as? BaseNavigationController else {
@@ -107,9 +87,6 @@ class TabBarController: UITabBarController {
         let getNav = BaseNavigationController(rootViewController: get)
         let history = CoinOperationsViewController.controller() as! CoinOperationsViewController
         let historyNav = BaseNavigationController(rootViewController: history)
-        let names = NamesViewController.controller() as! NamesViewController
-        let namesNav = BaseNavigationController(rootViewController: names)
-        
         
         send.tabBarObject = TabBarObject(title: Constants.Controllers.TabTitle.Send,
                                         imageName: Constants.Controllers.TabImage.Send)
@@ -122,21 +99,8 @@ class TabBarController: UITabBarController {
         history.tabBarObject = TabBarObject(title: Constants.Controllers.TabTitle.History,
                                             imageName: Constants.Controllers.TabImage.History)
         history.coinsOperation = .history
-        
-        names.tabBarObject = TabBarObject(title: Constants.Controllers.TabTitle.Names,
-                                         imageName: Constants.Controllers.TabImage.Names)
-        
-        names.viewDidAppear = ({[weak self] in
-            
-            let index = self?.subControllerIndex
-            
-            if index != -1 {
-                names.showNamesTab(at: index!)
-            }
-            self?.subControllerIndex = -1
-        })
 
-        viewControllers = [homeNav,sendNav,getNav,historyNav,namesNav]
+        viewControllers = [homeNav,sendNav,getNav,historyNav]
         
         let count:Int = (viewControllers?.count)!
         

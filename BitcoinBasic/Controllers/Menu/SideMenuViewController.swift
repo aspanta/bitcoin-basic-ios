@@ -75,12 +75,9 @@ class SideMenuViewController: LGSideMenuController {
     
     private func selectTabItem(at index:Int, subIndex:Int) {
         
-        if index == 8 {
+        if index == 7 {
             logout()
-        } else if index == 4 && subIndex != -1 {
-            checkRootController()
-            mainTabBarController.showNVSBrowser(at: index, subIndex: subIndex)
-        } else if index > 4 {
+        } else if index > 3 {
             showController(at: index, subIndex: subIndex)
         } else {
             checkRootController()
@@ -105,12 +102,12 @@ class SideMenuViewController: LGSideMenuController {
         var vc:UIViewController?
         
         switch index {
-        case 5:
+        case 4:
             let bookVC = AddressBookViewController.controller() as! AddressBookViewController
             bookVC.isFromMenu = true
             vc = bookVC
-        case 6:vc = AboutViewController.controller()
-        case 7:vc = LicensiesViewController.controller()
+        case 5:vc = AboutViewController.controller()
+        case 6:vc = LicensiesViewController.controller()
         default:
             return
         }

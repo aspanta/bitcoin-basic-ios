@@ -14,21 +14,10 @@ extension LeftViewController: UITableViewDelegate, UITableViewDataSource {
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let row = indexPath.row
-        
-        let cellIdentifier = row == 4 ? "MenuBCToolsCell" : "MenuDefaultCell"
+        let cellIdentifier = "MenuDefaultCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BaseTableViewCell
         cell.object = itemAt(indexPath: indexPath)
-        
-        if row == 4 {
-            let subCell = cell as! MenuDefaultCell
-            subCell.pressedSubMenu = {[weak self] index in
-                if self?.pressed != nil {
-                    self?.pressed!(indexPath.row, index)
-                }
-            }
-        }
         
         return cell
     }

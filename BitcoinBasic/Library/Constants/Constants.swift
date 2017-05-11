@@ -148,10 +148,6 @@ struct Constants {
                 static let Title = "Transaction History"
                 static let Image = "menu_history_icon"
             }
-            struct BCTools {
-                static let Title = "Manage Names"
-                static let Image = "menu_bctools_icon"
-            }
             struct About {
                 static let Title = "About"
                 static let Image = "menu_about_icon"
