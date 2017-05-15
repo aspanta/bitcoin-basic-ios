@@ -168,7 +168,7 @@ class LoginViewController: BaseViewController {
     internal func setupDropDownUI() {
         
         let appearance = DropDown.appearance()
-        appearance.selectionBackgroundColor = UIColor(hexString: "9C73B1")
+        appearance.selectionBackgroundColor = UIColor(hexString: Constants.Colors.Coins.Bitcoin)
         appearance.cellHeight = protocolButton.bounds.height + 5
         appearance.textFont = UIFont(name: "Roboto-Regular", size: 17)!
     }

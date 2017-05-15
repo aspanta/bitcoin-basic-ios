@@ -46,7 +46,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XX-BM-aeU">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_image" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-LM-A7W">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bit_image" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-LM-A7W">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="70" id="6UQ-sc-T6C"/>
@@ -150,7 +150,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOBILE WALLET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-4T-YeX">
-                                        <rect key="frame" x="117.33333333333331" y="135" width="180" height="29"/>
+                                        <rect key="frame" x="117.66666666666669" y="135" width="180" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="hab-M9-PWy"/>
                                         </constraints>
@@ -218,10 +218,10 @@
     </scenes>
     <resources>
         <image name="arrow_exp_icon" width="20" height="20"/>
+        <image name="home_bit_image" width="375" height="70"/>
         <image name="lock_icon" width="16" height="19"/>
         <image name="logo_main" width="60" height="60"/>
         <image name="menu_icon" width="18" height="12"/>
         <image name="wallet_icon" width="19" height="20"/>
-        <image name="wallet_image" width="375" height="69"/>
     </resources>
 </document>
