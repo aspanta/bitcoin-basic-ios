@@ -89,7 +89,7 @@ extension String {
     }
     
     func validAddress() -> Bool {
-        return validData(at: "E{1}[A-Za-z0-9]{33}$")
+        return validData(at: "[1,3]{1}[A-Za-z0-9]{25,34}$")
     }
     
     private func validData(at pattern:String) -> Bool {
