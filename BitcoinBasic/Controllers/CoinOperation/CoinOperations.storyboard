@@ -282,17 +282,46 @@
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65u-bG-BDy">
+                                <rect key="frame" x="20" y="127" width="68" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="M3A-Nh-qpa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nwt-OV-r83">
+                                <rect key="frame" x="94" y="122" width="129" height="31"/>
+                                <color key="tintColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeValueFeeSliderWithSender:" destination="xGE-gn-k5v" eventType="valueChanged" id="p6e-Gs-2qC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00179907 BTC/Kb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-eP-oZh">
+                                <rect key="frame" x="228.5" y="129" width="126.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4cL-eP-oZh" firstAttribute="top" secondItem="0Wf-gd-9A3" secondAttribute="bottom" constant="22" id="0Yq-KR-Zeb"/>
                             <constraint firstItem="0Wf-gd-9A3" firstAttribute="leading" secondItem="efF-a7-STq" secondAttribute="trailing" constant="6" id="5QE-nb-sN4"/>
+                            <constraint firstAttribute="trailing" secondItem="4cL-eP-oZh" secondAttribute="trailing" constant="20" id="Bi7-mf-wMZ"/>
+                            <constraint firstItem="Nwt-OV-r83" firstAttribute="top" secondItem="efF-a7-STq" secondAttribute="bottom" constant="11" id="GwN-KE-KL9"/>
+                            <constraint firstItem="eT9-B3-vAl" firstAttribute="top" secondItem="Nwt-OV-r83" secondAttribute="bottom" constant="30" id="Pd1-oT-vWJ"/>
                             <constraint firstItem="Whz-z0-4dX" firstAttribute="top" secondItem="9Db-hV-U6h" secondAttribute="bottom" constant="20" id="TD9-VE-R9W"/>
                             <constraint firstItem="IlZ-4z-2d2" firstAttribute="top" secondItem="Whz-z0-4dX" secondAttribute="bottom" constant="16" id="UOx-1a-cS0"/>
                             <constraint firstItem="Whz-z0-4dX" firstAttribute="leading" secondItem="5lM-gI-Um8" secondAttribute="leading" constant="20" id="b3a-v4-fxv"/>
-                            <constraint firstItem="eT9-B3-vAl" firstAttribute="top" secondItem="0Wf-gd-9A3" secondAttribute="bottom" constant="75" id="dml-uH-P0b"/>
+                            <constraint firstItem="Nwt-OV-r83" firstAttribute="leading" secondItem="65u-bG-BDy" secondAttribute="trailing" constant="8" id="ctw-er-SN7"/>
                             <constraint firstItem="IlZ-4z-2d2" firstAttribute="leading" secondItem="5lM-gI-Um8" secondAttribute="leading" constant="20" id="gEc-uT-wD2"/>
                             <constraint firstItem="eT9-B3-vAl" firstAttribute="centerX" secondItem="5lM-gI-Um8" secondAttribute="centerX" id="gYz-Sh-SeU"/>
+                            <constraint firstItem="65u-bG-BDy" firstAttribute="top" secondItem="IlZ-4z-2d2" secondAttribute="bottom" constant="20" id="gjr-qs-QiF"/>
+                            <constraint firstItem="65u-bG-BDy" firstAttribute="leading" secondItem="5lM-gI-Um8" secondAttribute="leading" constant="20" id="jOa-WP-e9V"/>
                             <constraint firstAttribute="trailing" secondItem="Whz-z0-4dX" secondAttribute="trailing" constant="20" id="p5F-La-sgq"/>
+                            <constraint firstItem="4cL-eP-oZh" firstAttribute="leading" secondItem="Nwt-OV-r83" secondAttribute="trailing" constant="8" id="q3v-T4-Unr"/>
                             <constraint firstItem="efF-a7-STq" firstAttribute="leading" secondItem="IlZ-4z-2d2" secondAttribute="trailing" constant="5" id="q74-YW-PIJ"/>
                             <constraint firstAttribute="trailing" secondItem="0Wf-gd-9A3" secondAttribute="trailing" constant="20" id="qQ0-Ni-gSF"/>
                             <constraint firstItem="efF-a7-STq" firstAttribute="top" secondItem="Whz-z0-4dX" secondAttribute="bottom" constant="11" id="tTJ-sv-a3J"/>
@@ -304,13 +333,15 @@
                     <connections>
                         <outlet property="addressTextField" destination="Whz-z0-4dX" id="JbJ-kF-87Z"/>
                         <outlet property="amountTextField" destination="efF-a7-STq" id="WKe-qu-1bK"/>
+                        <outlet property="feeLabel" destination="4cL-eP-oZh" id="smH-lm-HaW"/>
+                        <outlet property="feeSlider" destination="Nwt-OV-r83" id="3rE-tV-QtZ"/>
                         <outlet property="sendButton" destination="eT9-B3-vAl" id="z7Z-9b-fPJ"/>
                         <outlet property="signLabel" destination="0Wf-gd-9A3" id="VPR-KK-Rlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIW-0D-FdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-799"/>
+            <point key="canvasLocation" x="1866.5625" y="-799.64788732394368"/>
         </scene>
         <!--Recipient Address View Controller-->
         <scene sceneID="LGy-wb-6bz">

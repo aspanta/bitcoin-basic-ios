@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
+		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
 		2D8574201EC47D9600E2BF88 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572871EC47D9600E2BF88 /* Blockchain.xib */; };
 		2D8574211EC47D9600E2BF88 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */; };
@@ -207,6 +208,7 @@
 
 /* Begin PBXFileReference section */
 		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
+		2D37F7291EC96E2400603FFB /* FeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeeAPI.swift; sourceTree = "<group>"; };
 		2D85725D1EC47CD400E2BF88 /* BitcoinBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8572831EC47D9600E2BF88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8572841EC47D9600E2BF88 /* FRHyperLabelDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabelDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -442,6 +444,14 @@
 				2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */,
 			);
 			path = BitcoinCourseAPI;
+			sourceTree = "<group>";
+		};
+		2D37F7281EC96E1500603FFB /* Fee */ = {
+			isa = PBXGroup;
+			children = (
+				2D37F7291EC96E2400603FFB /* FeeAPI.swift */,
+			);
+			path = Fee;
 			sourceTree = "<group>";
 		};
 		2D8572541EC47CD400E2BF88 = {
@@ -956,6 +966,7 @@
 		2D8573191EC47D9600E2BF88 /* POST */ = {
 			isa = PBXGroup;
 			children = (
+				2D37F7281EC96E1500603FFB /* Fee */,
 				2D85731A1EC47D9600E2BF88 /* AddMyAddress */,
 				2D85731C1EC47D9600E2BF88 /* AddName */,
 				2D85731E1EC47D9600E2BF88 /* Balance */,
@@ -1991,6 +2002,7 @@
 				2D8574AC1EC47D9700E2BF88 /* HistoryTransaction.swift in Sources */,
 				2D8574821EC47D9700E2BF88 /* UIColor + Utils.swift in Sources */,
 				2D8574381EC47D9600E2BF88 /* RecipientAddressViewController.swift in Sources */,
+				2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */,
 				2D8574861EC47D9700E2BF88 /* UIView + Utils.swift in Sources */,
 				2D85742D1EC47D9600E2BF88 /* AddressBookViewController.swift in Sources */,
 				2D8574491EC47D9600E2BF88 /* SideMenuViewController.swift in Sources */,

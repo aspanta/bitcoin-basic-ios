@@ -17,6 +17,7 @@ struct Constants {
         static let GetTransactions = "listtransactions"
         static let GetBalance = "getbalance"
         static let SendCoins = "sendtoaddress"
+        static let Fee = "settxfee"
         static let GetMyAddresses = "getaddressesbyaccount"
         static let GetNewMyAddress = "getnewaddress"
         static let AddName = "name_new"

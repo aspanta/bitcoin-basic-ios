@@ -38,4 +38,13 @@ class SendViewModel: CoinOperationsViewModel {
             }
         }
     }
+    
+    func sendFee(at fee:AnyObject) {
+        APIManager.sharedInstance.sendFee(at: fee) {[weak self] (data, error) in
+            if error != nil {
+                self?.error.onNext(error!)
+                self?.isLoading = false
+            }
+        }
+    }
 }

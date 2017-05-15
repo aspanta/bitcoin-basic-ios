@@ -22,9 +22,10 @@ enum Side:Int{
 }
 
 class CoinOperationsViewController: BaseViewController {
-    
+
     @IBOutlet internal weak var headerView:CoinOperationsHeaderView!
     @IBOutlet internal weak var operationLabel:UILabel!
+    
     @IBOutlet internal weak var menuButton:UIButton!
     @IBOutlet internal weak var backButton:UIButton!
     @IBOutlet internal weak var addButton:UIButton!

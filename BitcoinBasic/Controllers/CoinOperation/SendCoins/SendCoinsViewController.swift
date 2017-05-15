@@ -9,6 +9,11 @@ import RxCocoa
 
 class SendCoinsViewController: BaseViewController {
     
+    private let fee = [0.00136222,0.00148372,0.00162258,0.00179907,0.00199912]
+    private var feeValue = 0.00179907
+    @IBOutlet internal weak var feeLabel:UILabel!
+    @IBOutlet internal weak var feeSlider:UISlider!
+    
     @IBOutlet internal weak  var addressTextField:BaseTextField!
     @IBOutlet internal weak  var signLabel:UILabel!
     @IBOutlet internal weak  var sendButton:BaseButton!
@@ -56,6 +61,15 @@ class SendCoinsViewController: BaseViewController {
             amountTextField.text = amount
             sendButton.isEnabled = true
         }
+        
+        feeSlider.value = 4
+        
+        updateFee()
+    }
+    
+    private func updateFee() {
+        
+        feeLabel.text = String(format:"%0.8f BTC/Kb",feeValue)
     }
     
     private func setupSend() {
@@ -177,6 +191,15 @@ class SendCoinsViewController: BaseViewController {
     @IBAction func sendButtonPressed(sender:UIButton) {
         
         addRequestSendView()
+    }
+    
+    @IBAction internal func changeValueFeeSlider(sender:UISlider) {
+        let index = Int(sender.value)
+        
+        if index < fee.count {
+            feeValue = fee[index]
+            updateFee()
+        }
     }
     
     private func showProtection() {
