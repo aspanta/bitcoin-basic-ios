@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
 		2D8574201EC47D9600E2BF88 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572871EC47D9600E2BF88 /* Blockchain.xib */; };
 		2D8574211EC47D9600E2BF88 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */; };
@@ -66,7 +67,6 @@
 		2D8574691EC47D9600E2BF88 /* AlertsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573121EC47D9600E2BF88 /* AlertsHelper.swift */; };
 		2D85746A1EC47D9600E2BF88 /* BaseAPI + Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573141EC47D9600E2BF88 /* BaseAPI + Errors.swift */; };
 		2D85746B1EC47D9600E2BF88 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573151EC47D9600E2BF88 /* BaseAPI.swift */; };
-		2D85746C1EC47D9600E2BF88 /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573181EC47D9600E2BF88 /* EmercoinCourseAPI.swift */; };
 		2D85746D1EC47D9600E2BF88 /* AddMyAddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85731B1EC47D9600E2BF88 /* AddMyAddressAPI.swift */; };
 		2D85746E1EC47D9600E2BF88 /* AddNameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85731D1EC47D9600E2BF88 /* AddNameAPI.swift */; };
 		2D85746F1EC47D9600E2BF88 /* BalanceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85731F1EC47D9600E2BF88 /* BalanceAPI.swift */; };
@@ -206,6 +206,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D85725D1EC47CD400E2BF88 /* BitcoinBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8572831EC47D9600E2BF88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8572841EC47D9600E2BF88 /* FRHyperLabelDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabelDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -268,7 +269,6 @@
 		2D8573121EC47D9600E2BF88 /* AlertsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsHelper.swift; sourceTree = "<group>"; };
 		2D8573141EC47D9600E2BF88 /* BaseAPI + Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseAPI + Errors.swift"; sourceTree = "<group>"; };
 		2D8573151EC47D9600E2BF88 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
-		2D8573181EC47D9600E2BF88 /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D85731B1EC47D9600E2BF88 /* AddMyAddressAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMyAddressAPI.swift; sourceTree = "<group>"; };
 		2D85731D1EC47D9600E2BF88 /* AddNameAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNameAPI.swift; sourceTree = "<group>"; };
 		2D85731F1EC47D9600E2BF88 /* BalanceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAPI.swift; sourceTree = "<group>"; };
@@ -436,6 +436,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D37F7251EC9576F00603FFB /* BitcoinCourseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */,
+			);
+			path = BitcoinCourseAPI;
+			sourceTree = "<group>";
+		};
 		2D8572541EC47CD400E2BF88 = {
 			isa = PBXGroup;
 			children = (
@@ -496,13 +504,10 @@
 				2D85729E1EC47D9600E2BF88 /* BlockchainLoading */,
 				2D8572A11EC47D9600E2BF88 /* CoinOperation */,
 				2D8572B11EC47D9600E2BF88 /* Common */,
-				2D8572B71EC47D9600E2BF88 /* Exchange */,
-				2D8572B91EC47D9600E2BF88 /* Feedback */,
 				2D8572BA1EC47D9600E2BF88 /* Home */,
 				2D8572C11EC47D9600E2BF88 /* Livecoin */,
 				2D8572D01EC47D9600E2BF88 /* Login */,
 				2D8572D31EC47D9600E2BF88 /* Menu */,
-				2D8572F91EC47D9600E2BF88 /* Settings */,
 				2D8572FC1EC47D9600E2BF88 /* TermOfUse */,
 			);
 			path = Controllers;
@@ -664,28 +669,6 @@
 				2D8572B51EC47D9600E2BF88 /* TabBarController.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		2D8572B71EC47D9600E2BF88 /* Exchange */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572B81EC47D9600E2BF88 /* Cell */,
-			);
-			path = Exchange;
-			sourceTree = "<group>";
-		};
-		2D8572B81EC47D9600E2BF88 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572B91EC47D9600E2BF88 /* Feedback */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Feedback;
 			sourceTree = "<group>";
 		};
 		2D8572BA1EC47D9600E2BF88 /* Home */ = {
@@ -863,29 +846,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2D8572F91EC47D9600E2BF88 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572FA1EC47D9600E2BF88 /* BaseSettings */,
-				2D8572FB1EC47D9600E2BF88 /* ExchangeSettings */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		2D8572FA1EC47D9600E2BF88 /* BaseSettings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseSettings;
-			sourceTree = "<group>";
-		};
-		2D8572FB1EC47D9600E2BF88 /* ExchangeSettings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ExchangeSettings;
-			sourceTree = "<group>";
-		};
 		2D8572FC1EC47D9600E2BF88 /* TermOfUse */ = {
 			isa = PBXGroup;
 			children = (
@@ -988,17 +948,9 @@
 		2D8573161EC47D9600E2BF88 /* GET */ = {
 			isa = PBXGroup;
 			children = (
-				2D8573171EC47D9600E2BF88 /* EmercoinCourseAPI */,
+				2D37F7251EC9576F00603FFB /* BitcoinCourseAPI */,
 			);
 			path = GET;
-			sourceTree = "<group>";
-		};
-		2D8573171EC47D9600E2BF88 /* EmercoinCourseAPI */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573181EC47D9600E2BF88 /* EmercoinCourseAPI.swift */,
-			);
-			path = EmercoinCourseAPI;
 			sourceTree = "<group>";
 		};
 		2D8573191EC47D9600E2BF88 /* POST */ = {
@@ -2064,7 +2016,6 @@
 				2D8574AB1EC47D9700E2BF88 /* History.swift in Sources */,
 				2D8574FA1EC47D9700E2BF88 /* WalletProtectionWarningView.swift in Sources */,
 				2D8574EB1EC47D9700E2BF88 /* YesButton.swift in Sources */,
-				2D85746C1EC47D9600E2BF88 /* EmercoinCourseAPI.swift in Sources */,
 				2D8574B41EC47D9700E2BF88 /* TabBarObject.swift in Sources */,
 				2D85746D1EC47D9600E2BF88 /* AddMyAddressAPI.swift in Sources */,
 				2D8574AE1EC47D9700E2BF88 /* Licensies.swift in Sources */,
@@ -2105,6 +2056,7 @@
 				2D85746E1EC47D9600E2BF88 /* AddNameAPI.swift in Sources */,
 				2D8574681EC47D9600E2BF88 /* Constants.swift in Sources */,
 				2D8574601EC47D9600E2BF88 /* LicensiesViewController.swift in Sources */,
+				2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */,
 				2D85745E1EC47D9600E2BF88 /* LicenseLogoCell.swift in Sources */,
 				2D85748A1EC47D9700E2BF88 /* DPDKeyboardListener.swift in Sources */,
 				2D8574CE1EC47D9700E2BF88 /* BaseTextField.swift in Sources */,

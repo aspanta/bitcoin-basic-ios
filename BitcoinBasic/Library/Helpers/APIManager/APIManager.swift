@@ -151,9 +151,9 @@ class APIManager: NSObject {
         api.startRequest(completion: completion)
     }
     
-    func loadEmercoinCourse(completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
+    func loadBitcoinCourse(completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
         
-        let api = EmercoinCourseAPI()
+        let api = BitcoinCourseAPI()
         api.startRequest(completion: completion)
     }
     

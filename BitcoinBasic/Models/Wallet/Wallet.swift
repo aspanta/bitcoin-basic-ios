@@ -85,7 +85,7 @@ class Wallet:BaseModel {
     }
     
     func loadCourse() {
-        APIManager.sharedInstance.loadEmercoinCourse {[weak self] (data, error) in
+        APIManager.sharedInstance.loadBitcoinCourse {[weak self] (data, error) in
             if let priceUSD = Double(data as! String) {
                 self?.bitcoin.priceUSD = priceUSD
                 self?.success.onNext(true)

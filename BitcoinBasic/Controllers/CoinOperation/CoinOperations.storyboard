@@ -97,15 +97,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8Z-HB-8Zq">
-                                        <rect key="frame" x="76" y="142" width="284" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="E8Z-HB-8Zq">
+                                        <rect key="frame" x="76" y="142" width="236" height="17"/>
                                         <attributedString key="attributedText">
                                             <fragment content="~1 400 USD (1 BTC = 1,4 USD)">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name="Roboto-Medium"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -147,9 +146,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E8Z-HB-8Zq" secondAttribute="bottom" constant="27" id="1Q4-xx-u74"/>
                                     <constraint firstItem="4SR-YX-Mbk" firstAttribute="leading" secondItem="ESh-VJ-DVT" secondAttribute="leading" id="40X-hC-LrD"/>
                                     <constraint firstItem="vBI-rC-4LF" firstAttribute="top" secondItem="ESh-VJ-DVT" secondAttribute="top" constant="40" id="422-Rl-Gxp"/>
                                     <constraint firstItem="vBI-rC-4LF" firstAttribute="leading" secondItem="ESh-VJ-DVT" secondAttribute="leading" constant="76" id="6it-Vh-r5f"/>
+                                    <constraint firstItem="E8Z-HB-8Zq" firstAttribute="top" secondItem="Hff-3l-Iht" secondAttribute="bottom" constant="13" id="9sP-58-m9e"/>
                                     <constraint firstItem="4SR-YX-Mbk" firstAttribute="top" secondItem="ESh-VJ-DVT" secondAttribute="top" id="CLy-oS-lvw"/>
                                     <constraint firstItem="Hff-3l-Iht" firstAttribute="leading" secondItem="ESh-VJ-DVT" secondAttribute="leading" constant="76" id="Chl-6E-MEu"/>
                                     <constraint firstItem="QQ2-O7-CCd" firstAttribute="leading" secondItem="ESh-VJ-DVT" secondAttribute="leading" id="DiN-Sf-epX"/>
@@ -160,7 +161,9 @@
                                     <constraint firstAttribute="trailing" secondItem="Hff-3l-Iht" secondAttribute="trailing" constant="8" id="ZHc-VM-Sho"/>
                                     <constraint firstItem="Hff-3l-Iht" firstAttribute="top" secondItem="cq5-9n-AC3" secondAttribute="bottom" constant="32" id="hCN-Bp-Jtf"/>
                                     <constraint firstItem="QQ2-O7-CCd" firstAttribute="top" secondItem="ESh-VJ-DVT" secondAttribute="top" id="hdD-cq-Ntt"/>
+                                    <constraint firstItem="E8Z-HB-8Zq" firstAttribute="leading" secondItem="ESh-VJ-DVT" secondAttribute="leading" constant="76" id="iVD-uN-MMV"/>
                                     <constraint firstAttribute="trailing" secondItem="cq5-9n-AC3" secondAttribute="trailing" constant="8" id="mgD-wh-yua"/>
+                                    <constraint firstAttribute="trailing" secondItem="E8Z-HB-8Zq" secondAttribute="trailing" constant="8" id="sZ8-MR-V6b"/>
                                     <constraint firstAttribute="height" constant="186" id="yew-ID-ZZt"/>
                                 </constraints>
                                 <connections>
@@ -202,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-6c-JrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-510"/>
+            <point key="canvasLocation" x="112.5" y="-510.21126760563379"/>
         </scene>
         <!--Send Coins View Controller-->
         <scene sceneID="iCj-Tj-4RL">

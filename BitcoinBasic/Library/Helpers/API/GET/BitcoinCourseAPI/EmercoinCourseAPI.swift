@@ -1,16 +1,16 @@
 //
-//  EmercoinCourseAPI.swift
+//  BitcoinCourseAPI.swift
 //  EmercoinBasic
 //
 
 
 import UIKit
 
-class EmercoinCourseAPI {
+class BitcoinCourseAPI {
     
     public func startRequest(completion:@escaping (_ data: AnyObject?,_ error:NSError?) -> Void) {
         
-        let baseUrl = Constants.API.EmercoinCourse
+        let baseUrl = Constants.API.BitcoinCourse
     
         guard let url = URL(string:baseUrl) else {return}
         

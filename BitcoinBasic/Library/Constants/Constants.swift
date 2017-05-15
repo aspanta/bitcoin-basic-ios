@@ -11,7 +11,7 @@ struct Constants {
     
     struct API {
         static let BaseURL = ""
-        static let EmercoinCourse = "https://api.coinmarketcap.com/v1/ticker/emercoin/?convert=USD"
+        static let BitcoinCourse = "https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD"
         static let GetInfo = "getinfo"
         static let GetBlockchainInfo = "getblockchaininfo"
         static let GetTransactions = "listtransactions"
