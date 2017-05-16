@@ -74,7 +74,7 @@ extension String {
     }
     
     static func coinFormat(at number:Double) -> String {
-        let string = number.truncatingRemainder(dividingBy: 1.0) == 0 ? String(format: "%.0f", number) : String(number)
+        let string = number.truncatingRemainder(dividingBy: 1.0) == 0 ? String(format: "%.0f", number) : String(format: "%.8f", number)
         return string
     }
     
@@ -85,7 +85,7 @@ extension String {
     }
     
     func validAmount() -> Bool {
-        return validData(at: "\\d{1,9}\\.(\\d{1,6})?")
+        return validData(at: "\\d{1,9}\\.(\\d{1,8})?")
     }
     
     func validAddress() -> Bool {

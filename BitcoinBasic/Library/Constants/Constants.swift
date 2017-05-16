@@ -30,7 +30,7 @@ struct Constants {
         static let UnlockWallet = "walletpassphrase"
     }
     
-    static let MaxAmountCountNumbers = 15
+    static let MaxAmountCountNumbers = 18
     
     struct CellHeights {
         struct HomeBalanceCell {
