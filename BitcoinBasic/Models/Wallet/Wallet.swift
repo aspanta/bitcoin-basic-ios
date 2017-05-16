@@ -24,6 +24,8 @@ class Wallet:BaseModel {
         return coin
     }()
     
+    var feeIndex = 4
+    
     var isLocked = false
     var isProtected = false
     var isMintonly = false

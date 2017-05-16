@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
+		2D7B29E21ECAEC3200F05DB2 /* BaseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
 		2D8574201EC47D9600E2BF88 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572871EC47D9600E2BF88 /* Blockchain.xib */; };
 		2D8574211EC47D9600E2BF88 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */; };
@@ -209,6 +210,7 @@
 /* Begin PBXFileReference section */
 		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D37F7291EC96E2400603FFB /* FeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeeAPI.swift; sourceTree = "<group>"; };
+		2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSlider.swift; sourceTree = "<group>"; };
 		2D85725D1EC47CD400E2BF88 /* BitcoinBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8572831EC47D9600E2BF88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8572841EC47D9600E2BF88 /* FRHyperLabelDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabelDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -452,6 +454,14 @@
 				2D37F7291EC96E2400603FFB /* FeeAPI.swift */,
 			);
 			path = Fee;
+			sourceTree = "<group>";
+		};
+		2D7B29E01ECAEC2300F05DB2 /* BaseSlider */ = {
+			isa = PBXGroup;
+			children = (
+				2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */,
+			);
+			path = BaseSlider;
 			sourceTree = "<group>";
 		};
 		2D8572541EC47CD400E2BF88 = {
@@ -1532,6 +1542,7 @@
 		2D8573C71EC47D9600E2BF88 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2D7B29E01ECAEC2300F05DB2 /* BaseSlider */,
 				2D8573C81EC47D9600E2BF88 /* BaseButton */,
 				2D8573CA1EC47D9600E2BF88 /* BaseTextField */,
 				2D8573CC1EC47D9600E2BF88 /* BaseView */,
@@ -2130,6 +2141,7 @@
 				2D8574811EC47D9700E2BF88 /* String + Utils.swift in Sources */,
 				2D8574661EC47D9600E2BF88 /* BaseViewController + ActivityIndicator.swift in Sources */,
 				2D85747A1EC47D9600E2BF88 /* UnlockWalletAPI.swift in Sources */,
+				2D7B29E21ECAEC3200F05DB2 /* BaseSlider.swift in Sources */,
 				2D8574D61EC47D9700E2BF88 /* ExchangeHeaderView.swift in Sources */,
 				2D8574D41EC47D9700E2BF88 /* EncryptionButtonView.swift in Sources */,
 				2D8574891EC47D9700E2BF88 /* DPDConstants.swift in Sources */,

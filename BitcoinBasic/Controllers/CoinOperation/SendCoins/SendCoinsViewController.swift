@@ -12,7 +12,7 @@ class SendCoinsViewController: BaseViewController {
     private let fee = [0.00136222,0.00148372,0.00162258,0.00179907,0.00199912]
     private var feeValue = 0.00179907
     @IBOutlet internal weak var feeLabel:UILabel!
-    @IBOutlet internal weak var feeSlider:UISlider!
+    @IBOutlet internal weak var feeSlider:BaseSlider!
     
     @IBOutlet internal weak  var addressTextField:BaseTextField!
     @IBOutlet internal weak  var signLabel:UILabel!
@@ -62,9 +62,16 @@ class SendCoinsViewController: BaseViewController {
             sendButton.isEnabled = true
         }
         
-        feeSlider.value = 4
+        if let wallet = viewModel.wallet {
+            
+            let index = wallet.feeIndex
+            
+            feeSlider.value = Float(index)
+            feeValue = fee[index]
+            
+            updateFee()
+        }
         
-        updateFee()
     }
     
     private func updateFee() {
@@ -198,6 +205,10 @@ class SendCoinsViewController: BaseViewController {
         
         if index < fee.count {
             feeValue = fee[index]
+            
+            if let wallet = viewModel.wallet {
+                wallet.feeIndex = index
+            }
             updateFee()
         }
     }
