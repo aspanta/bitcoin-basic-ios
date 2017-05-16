@@ -15,8 +15,14 @@ extension String {
         return String(characters.prefix(1))
     }
     
-    var second: String {
-        return String(characters.prefix(2))
+    var second: String? {
+        let ind = index(startIndex, offsetBy: 1)
+        
+        if self.length > 1 {
+            return String(self[ind])
+        } else {
+            return nil
+        }
     }
     
     var last: String {
@@ -38,12 +44,16 @@ extension String {
     func removeLast() -> String {
         return String(characters.dropLast())
     }
+    func removeFirst() -> String {
+        return String(characters.dropFirst())
+    }
+
     
     func stringTo(_ index:Int) -> String {
         return  String(self.characters.prefix(index))
     }
     
-    static func dropZero(at text:String) -> String {
+    static func dropZeroLast(at text:String) -> String {
         
         var string = text
         
@@ -51,11 +61,26 @@ extension String {
         
         if ch == "0" {
             string = string.removeLast()
-            string = dropZero(at:string)
+            string = dropZeroLast(at:string)
         } else if ch == "." {
             string = string.removeLast()
         }
         
+        return string
+    }
+    
+    static func dropZeroFirst(at text:String) -> String {
+        
+        var string = text
+        
+        let ch = string.first
+        
+        if ch == "0" {
+            string = string.removeFirst()
+            string = dropZeroFirst(at:string)
+        } else if ch == "." {
+            string  = "0" + string
+        }
         return string
     }
     

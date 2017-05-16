@@ -134,7 +134,8 @@ class SendCoinsViewController: BaseViewController {
     
         var amount = amountTextField.text ?? ""
         amount = amount.replacingOccurrences(of: ",", with: ".")
-        amount = String.dropZero(at: amount)
+        amount = String.dropZeroLast(at: amount)
+        amount = String.dropZeroFirst(at: amount)
         self.amount = Double(amount) ?? 0
         let address = addressTextField.text
         

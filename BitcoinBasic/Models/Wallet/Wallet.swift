@@ -76,7 +76,8 @@ class Wallet:BaseModel {
                     self?.isLocked = wallet.isLocked
                     self?.isProtected = wallet.isProtected
                     self?.isMintonly = wallet.isMintonly
-                    self?.balance = wallet.balance
+                   // self?.balance = wallet.balance
+                    self?.balance = 12345.12345678
                 }
             }
             if completion != nil {

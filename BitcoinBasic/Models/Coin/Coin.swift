@@ -14,7 +14,7 @@ class Coin {
     var priceUSD:Double = 0
 
     func stringAmount() -> String {
-        return amount == -1 ? "?" : String.dropZero(at: String.coinFormat(at:amount)) 
+        return amount == -1 ? "?" : String.dropZeroLast(at: String.coinFormat(at:amount))
     }
     
     func coinInUSD() -> Double {
