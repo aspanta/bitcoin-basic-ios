@@ -489,11 +489,11 @@
 			children = (
 				2D8572821EC47D9600E2BF88 /* Application */,
 				2D8572891EC47D9600E2BF88 /* Controllers */,
-				2D8573051EC47D9600E2BF88 /* Library */,
 				2D8573771EC47D9600E2BF88 /* Models */,
-				2D85739B1EC47D9600E2BF88 /* Resources */,
 				2D8573AB1EC47D9600E2BF88 /* ViewModels */,
 				2D8573C01EC47D9600E2BF88 /* Views */,
+				2D8573051EC47D9600E2BF88 /* Library */,
+				2D85739B1EC47D9600E2BF88 /* Resources */,
 			);
 			path = BitcoinBasic;
 			sourceTree = "<group>";

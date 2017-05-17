@@ -114,7 +114,7 @@ extension String {
     }
     
     func validAddress() -> Bool {
-        return validData(at: "[1,3]{1}[A-Za-z0-9]{25,34}$")
+        return validData(at: "[1,3]{1}[A-Za-z0-9]{27,34}$")
     }
     
     private func validData(at pattern:String) -> Bool {
