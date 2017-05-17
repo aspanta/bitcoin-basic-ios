@@ -124,8 +124,8 @@ class GetCoinsViewController: BaseViewController {
         amount = amount.replacingOccurrences(of: ",", with: ".")
         if amount.contains(".") == true {
             amount = String.dropZeroLast(at: amount)
-            amount = String.dropZeroFirst(at: amount)
         }
+        amount = String.dropZeroFirst(at: amount)
         
         let name = "emercoin"
         var text = ""
