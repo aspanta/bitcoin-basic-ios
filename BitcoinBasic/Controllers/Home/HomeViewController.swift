@@ -74,11 +74,9 @@ final class HomeViewController: BaseViewController, UITableViewDelegate, UITable
     
     private func setupRefreshControl() {
         
-        let refresh = UIRefreshControl()
-        refresh.tintColor = UIColor(hexString: Constants.Colors.Status.Bitcoin)
+        let refresh = tableView.setupRefresh()
         refresh.addTarget(self, action: #selector(self.handleRefresh(sender:)), for: .valueChanged)
-        tableView.refreshControl = refresh
-        
+    
         viewModel.activityIndicator.subscribe(onNext:{ [weak self] state in
             
             if state == false {

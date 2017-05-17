@@ -68,9 +68,8 @@ class MyAdressViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     private func setupRefreshControl() {
         
-        let refresh = UIRefreshControl()
+        let refresh = tableView.setupRefresh()
         refresh.addTarget(self, action: #selector(self.handleRefresh(sender:)), for: .valueChanged)
-        tableView.refreshControl = refresh
     }
     
     internal func handleRefresh(sender:UIRefreshControl) {

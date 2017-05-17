@@ -13,6 +13,14 @@ extension UITableView {
         self.enableAutolayout()
     }
     
+    func setupRefresh() -> UIRefreshControl {
+    
+        let refresh = UIRefreshControl()
+        refresh.tintColor = UIColor(hexString: Constants.Colors.Coins.Bitcoin)
+        self.refreshControl = refresh
+        return refresh
+    }
+    
     func hideEmtyCells() {
         tableFooterView = UIView()
     }
@@ -28,4 +36,6 @@ extension UITableView {
             self.reloadData()
         }
     }
+    
+    
 }
