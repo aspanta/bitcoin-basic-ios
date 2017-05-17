@@ -45,6 +45,16 @@ class SendCoinsViewController: BaseViewController {
         viewModel.coinSign.bind(to: signLabel.rx.text)
         .addDisposableTo(disposeBag)
         
+        if let wallet = viewModel.wallet {
+            
+            let index = wallet.feeIndex
+            
+            feeSlider.value = Float(index)
+            feeValue = fee[index]
+            
+            updateFee()
+        }
+        
         if object != nil {
             guard let dict = object as? [String:Any] else {
                 return
@@ -61,17 +71,6 @@ class SendCoinsViewController: BaseViewController {
             amountTextField.text = amount
             sendButton.isEnabled = true
         }
-        
-        if let wallet = viewModel.wallet {
-            
-            let index = wallet.feeIndex
-            
-            feeSlider.value = Float(index)
-            feeValue = fee[index]
-            
-            updateFee()
-        }
-        
     }
     
     private func updateFee() {
