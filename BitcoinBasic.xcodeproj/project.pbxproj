@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D33B8BA1ECC600F004DB497 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8B81ECC600F004DB497 /* Blockchain.xib */; };
+		2D33B8BB1ECC600F004DB497 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */; };
+		2D33B8BD1ECC6315004DB497 /* WalletProtection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */; };
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
 		2D7B29E21ECAEC3200F05DB2 /* BaseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
-		2D8574201EC47D9600E2BF88 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572871EC47D9600E2BF88 /* Blockchain.xib */; };
-		2D8574211EC47D9600E2BF88 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */; };
 		2D8574221EC47D9600E2BF88 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D85728B1EC47D9600E2BF88 /* About.storyboard */; };
 		2D8574231EC47D9600E2BF88 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85728C1EC47D9600E2BF88 /* AboutViewController.swift */; };
 		2D8574241EC47D9600E2BF88 /* AccountPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D85728E1EC47D9600E2BF88 /* AccountPage.storyboard */; };
@@ -40,7 +41,6 @@
 		2D85743A1EC47D9600E2BF88 /* SendCoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B01EC47D9600E2BF88 /* SendCoinsViewController.swift */; };
 		2D85743B1EC47D9600E2BF88 /* ScanQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B31EC47D9600E2BF88 /* ScanQRCodeController.swift */; };
 		2D85743C1EC47D9600E2BF88 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B51EC47D9600E2BF88 /* TabBarController.swift */; };
-		2D85743D1EC47D9600E2BF88 /* WalletProtection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572B61EC47D9600E2BF88 /* WalletProtection.xib */; };
 		2D85743E1EC47D9600E2BF88 /* HomeBalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572BC1EC47D9600E2BF88 /* HomeBalanceCell.swift */; };
 		2D85743F1EC47D9600E2BF88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572BD1EC47D9600E2BF88 /* Home.storyboard */; };
 		2D8574401EC47D9600E2BF88 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572BE1EC47D9600E2BF88 /* Home.xib */; };
@@ -170,9 +170,6 @@
 		2D8574D61EC47D9700E2BF88 /* ExchangeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573DC1EC47D9600E2BF88 /* ExchangeHeaderView.swift */; };
 		2D8574D71EC47D9700E2BF88 /* ExpireDaysTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573DE1EC47D9600E2BF88 /* ExpireDaysTextField.swift */; };
 		2D8574D81EC47D9700E2BF88 /* ExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573E01EC47D9600E2BF88 /* ExtendedView.swift */; };
-		2D8574D91EC47D9700E2BF88 /* FeedbackMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573E31EC47D9600E2BF88 /* FeedbackMessageView.swift */; };
-		2D8574DA1EC47D9700E2BF88 /* FeedBackSendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573E51EC47D9600E2BF88 /* FeedBackSendButton.swift */; };
-		2D8574DB1EC47D9700E2BF88 /* SuccessSendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573E71EC47D9600E2BF88 /* SuccessSendMessage.swift */; };
 		2D8574DC1EC47D9700E2BF88 /* HomeLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573EA1EC47D9600E2BF88 /* HomeLogoView.swift */; };
 		2D8574DD1EC47D9700E2BF88 /* HyperlinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */; };
 		2D8574DE1EC47D9700E2BF88 /* LockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573F21EC47D9600E2BF88 /* LockButton.swift */; };
@@ -208,6 +205,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D33B8B81ECC600F004DB497 /* Blockchain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Blockchain.xib; sourceTree = "<group>"; };
+		2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainLoadingView.swift; sourceTree = "<group>"; };
+		2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletProtection.xib; sourceTree = "<group>"; };
 		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D37F7291EC96E2400603FFB /* FeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeeAPI.swift; sourceTree = "<group>"; };
 		2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSlider.swift; sourceTree = "<group>"; };
@@ -215,8 +215,6 @@
 		2D8572831EC47D9600E2BF88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8572841EC47D9600E2BF88 /* FRHyperLabelDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabelDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D8572851EC47D9600E2BF88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D8572871EC47D9600E2BF88 /* Blockchain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Blockchain.xib; sourceTree = "<group>"; };
-		2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainLoadingView.swift; sourceTree = "<group>"; };
 		2D85728B1EC47D9600E2BF88 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		2D85728C1EC47D9600E2BF88 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2D85728E1EC47D9600E2BF88 /* AccountPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountPage.storyboard; sourceTree = "<group>"; };
@@ -244,7 +242,6 @@
 		2D8572B01EC47D9600E2BF88 /* SendCoinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendCoinsViewController.swift; sourceTree = "<group>"; };
 		2D8572B31EC47D9600E2BF88 /* ScanQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRCodeController.swift; sourceTree = "<group>"; };
 		2D8572B51EC47D9600E2BF88 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		2D8572B61EC47D9600E2BF88 /* WalletProtection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletProtection.xib; sourceTree = "<group>"; };
 		2D8572BC1EC47D9600E2BF88 /* HomeBalanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBalanceCell.swift; sourceTree = "<group>"; };
 		2D8572BD1EC47D9600E2BF88 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2D8572BE1EC47D9600E2BF88 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
@@ -377,9 +374,6 @@
 		2D8573DC1EC47D9600E2BF88 /* ExchangeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeHeaderView.swift; sourceTree = "<group>"; };
 		2D8573DE1EC47D9600E2BF88 /* ExpireDaysTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpireDaysTextField.swift; sourceTree = "<group>"; };
 		2D8573E01EC47D9600E2BF88 /* ExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedView.swift; sourceTree = "<group>"; };
-		2D8573E31EC47D9600E2BF88 /* FeedbackMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackMessageView.swift; sourceTree = "<group>"; };
-		2D8573E51EC47D9600E2BF88 /* FeedBackSendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackSendButton.swift; sourceTree = "<group>"; };
-		2D8573E71EC47D9600E2BF88 /* SuccessSendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessSendMessage.swift; sourceTree = "<group>"; };
 		2D8573EA1EC47D9600E2BF88 /* HomeLogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLogoView.swift; sourceTree = "<group>"; };
 		2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkLabel.swift; sourceTree = "<group>"; };
 		2D8573F21EC47D9600E2BF88 /* LockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockButton.swift; sourceTree = "<group>"; };
@@ -440,6 +434,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D33B8B71ECC600F004DB497 /* Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				2D33B8B81ECC600F004DB497 /* Blockchain.xib */,
+				2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */,
+			);
+			path = Blockchain;
+			sourceTree = "<group>";
+		};
 		2D37F7251EC9576F00603FFB /* BitcoinCourseAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,7 +488,6 @@
 			isa = PBXGroup;
 			children = (
 				2D8572821EC47D9600E2BF88 /* Application */,
-				2D8572861EC47D9600E2BF88 /* Blockchain */,
 				2D8572891EC47D9600E2BF88 /* Controllers */,
 				2D8573051EC47D9600E2BF88 /* Library */,
 				2D8573771EC47D9600E2BF88 /* Models */,
@@ -506,15 +508,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		2D8572861EC47D9600E2BF88 /* Blockchain */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572871EC47D9600E2BF88 /* Blockchain.xib */,
-				2D8572881EC47D9600E2BF88 /* BlockchainLoadingView.swift */,
-			);
-			path = Blockchain;
-			sourceTree = "<group>";
-		};
 		2D8572891EC47D9600E2BF88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,9 +518,7 @@
 				2D8572A11EC47D9600E2BF88 /* CoinOperation */,
 				2D8572B11EC47D9600E2BF88 /* Common */,
 				2D8572BA1EC47D9600E2BF88 /* Home */,
-				2D8572C11EC47D9600E2BF88 /* Livecoin */,
 				2D8572D01EC47D9600E2BF88 /* Login */,
-				2D8572D31EC47D9600E2BF88 /* Menu */,
 				2D8572FC1EC47D9600E2BF88 /* TermOfUse */,
 			);
 			path = Controllers;
@@ -613,19 +604,11 @@
 			children = (
 				2D8572A21EC47D9600E2BF88 /* CoinOperations.storyboard */,
 				2D8572A31EC47D9600E2BF88 /* CoinOperationsViewController.swift */,
-				2D8572A41EC47D9600E2BF88 /* ExchangeCoins */,
 				2D8572A51EC47D9600E2BF88 /* GetCoins */,
 				2D8572A81EC47D9600E2BF88 /* MyAddress */,
 				2D8572AD1EC47D9600E2BF88 /* SendCoins */,
 			);
 			path = CoinOperation;
-			sourceTree = "<group>";
-		};
-		2D8572A41EC47D9600E2BF88 /* ExchangeCoins */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ExchangeCoins;
 			sourceTree = "<group>";
 		};
 		2D8572A51EC47D9600E2BF88 /* GetCoins */ = {
@@ -668,9 +651,9 @@
 		2D8572B11EC47D9600E2BF88 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2D8572D31EC47D9600E2BF88 /* Menu */,
 				2D8572B21EC47D9600E2BF88 /* ScanQRCode */,
 				2D8572B41EC47D9600E2BF88 /* TabBar */,
-				2D8572B61EC47D9600E2BF88 /* WalletProtection.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -711,125 +694,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		2D8572C11EC47D9600E2BF88 /* Livecoin */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572C21EC47D9600E2BF88 /* LivecoinBalances */,
-				2D8572C41EC47D9600E2BF88 /* LivecoinHistory */,
-				2D8572C51EC47D9600E2BF88 /* LivecoinOrders */,
-				2D8572CC1EC47D9600E2BF88 /* LivecoinTrade */,
-				2D8572CF1EC47D9600E2BF88 /* LoginLive */,
-			);
-			path = Livecoin;
-			sourceTree = "<group>";
-		};
-		2D8572C21EC47D9600E2BF88 /* LivecoinBalances */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572C31EC47D9600E2BF88 /* Cell */,
-			);
-			path = LivecoinBalances;
-			sourceTree = "<group>";
-		};
-		2D8572C31EC47D9600E2BF88 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572C41EC47D9600E2BF88 /* LivecoinHistory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LivecoinHistory;
-			sourceTree = "<group>";
-		};
-		2D8572C51EC47D9600E2BF88 /* LivecoinOrders */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572C61EC47D9600E2BF88 /* AllOrders */,
-				2D8572C71EC47D9600E2BF88 /* BaseOrders */,
-				2D8572C91EC47D9600E2BF88 /* CoinsOrders */,
-				2D8572CA1EC47D9600E2BF88 /* PutOrder */,
-			);
-			path = LivecoinOrders;
-			sourceTree = "<group>";
-		};
-		2D8572C61EC47D9600E2BF88 /* AllOrders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AllOrders;
-			sourceTree = "<group>";
-		};
-		2D8572C71EC47D9600E2BF88 /* BaseOrders */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572C81EC47D9600E2BF88 /* Cell */,
-			);
-			path = BaseOrders;
-			sourceTree = "<group>";
-		};
-		2D8572C81EC47D9600E2BF88 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572C91EC47D9600E2BF88 /* CoinsOrders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoinsOrders;
-			sourceTree = "<group>";
-		};
-		2D8572CA1EC47D9600E2BF88 /* PutOrder */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572CB1EC47D9600E2BF88 /* Cell */,
-			);
-			path = PutOrder;
-			sourceTree = "<group>";
-		};
-		2D8572CB1EC47D9600E2BF88 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572CC1EC47D9600E2BF88 /* LivecoinTrade */ = {
-			isa = PBXGroup;
-			children = (
-				2D8572CD1EC47D9600E2BF88 /* Cell */,
-				2D8572CE1EC47D9600E2BF88 /* TradeGraph */,
-			);
-			path = LivecoinTrade;
-			sourceTree = "<group>";
-		};
-		2D8572CD1EC47D9600E2BF88 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2D8572CE1EC47D9600E2BF88 /* TradeGraph */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TradeGraph;
-			sourceTree = "<group>";
-		};
-		2D8572CF1EC47D9600E2BF88 /* LoginLive */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginLive;
-			sourceTree = "<group>";
-		};
 		2D8572D01EC47D9600E2BF88 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -845,7 +709,8 @@
 				2D8572D41EC47D9600E2BF88 /* Left */,
 				2D8572DA1EC47D9600E2BF88 /* SideMenuViewController.swift */,
 			);
-			path = Menu;
+			name = Menu;
+			path = ../Menu;
 			sourceTree = "<group>";
 		};
 		2D8572D41EC47D9600E2BF88 /* Left */ = {
@@ -1470,13 +1335,11 @@
 		2D8573C01EC47D9600E2BF88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D8573C11EC47D9600E2BF88 /* AddPhrase */,
+				2D33B8B71ECC600F004DB497 /* Blockchain */,
 				2D8573C21EC47D9600E2BF88 /* AddressBook */,
-				2D8573C61EC47D9600E2BF88 /* AddressBookHeader */,
 				2D8573C71EC47D9600E2BF88 /* Base */,
 				2D8573CE1EC47D9600E2BF88 /* Check */,
 				2D8573D01EC47D9600E2BF88 /* CoinsOperationHeader */,
-				2D8573D21EC47D9600E2BF88 /* CopyableLabel */,
 				2D8573D31EC47D9600E2BF88 /* Course */,
 				2D8573D51EC47D9600E2BF88 /* DeleteContact */,
 				2D8573D71EC47D9600E2BF88 /* EncryptionButton */,
@@ -1484,11 +1347,8 @@
 				2D8573DB1EC47D9600E2BF88 /* ExchangeHeader */,
 				2D8573DD1EC47D9600E2BF88 /* ExpiresDays */,
 				2D8573DF1EC47D9600E2BF88 /* ExtendedView */,
-				2D8573E11EC47D9600E2BF88 /* Feedback */,
-				2D8573E81EC47D9600E2BF88 /* History */,
 				2D8573E91EC47D9600E2BF88 /* HomeLogo */,
 				2D8573EB1EC47D9600E2BF88 /* HyperlinkLabel */,
-				2D8573ED1EC47D9600E2BF88 /* Livecoin */,
 				2D8573F11EC47D9600E2BF88 /* LockButton */,
 				2D8573F31EC47D9600E2BF88 /* Login */,
 				2D8573F51EC47D9600E2BF88 /* MyAddreses */,
@@ -1501,18 +1361,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2D8573C11EC47D9600E2BF88 /* AddPhrase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddPhrase;
-			sourceTree = "<group>";
-		};
 		2D8573C21EC47D9600E2BF88 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
 				2D8573C31EC47D9600E2BF88 /* AddContact */,
-				2D8573C51EC47D9600E2BF88 /* EditContact */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -1523,20 +1375,6 @@
 				2D8573C41EC47D9600E2BF88 /* AddContactView.swift */,
 			);
 			path = AddContact;
-			sourceTree = "<group>";
-		};
-		2D8573C51EC47D9600E2BF88 /* EditContact */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EditContact;
-			sourceTree = "<group>";
-		};
-		2D8573C61EC47D9600E2BF88 /* AddressBookHeader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddressBookHeader;
 			sourceTree = "<group>";
 		};
 		2D8573C71EC47D9600E2BF88 /* Base */ = {
@@ -1588,13 +1426,6 @@
 				2D8573D11EC47D9600E2BF88 /* CoinsOpeartionHeaderView.swift */,
 			);
 			path = CoinsOperationHeader;
-			sourceTree = "<group>";
-		};
-		2D8573D21EC47D9600E2BF88 /* CopyableLabel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CopyableLabel;
 			sourceTree = "<group>";
 		};
 		2D8573D31EC47D9600E2BF88 /* Course */ = {
@@ -1653,47 +1484,6 @@
 			path = ExtendedView;
 			sourceTree = "<group>";
 		};
-		2D8573E11EC47D9600E2BF88 /* Feedback */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573E21EC47D9600E2BF88 /* FeedbackMessageView */,
-				2D8573E41EC47D9600E2BF88 /* FeedBackSendButton */,
-				2D8573E61EC47D9600E2BF88 /* SuccessSendMessage */,
-			);
-			path = Feedback;
-			sourceTree = "<group>";
-		};
-		2D8573E21EC47D9600E2BF88 /* FeedbackMessageView */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573E31EC47D9600E2BF88 /* FeedbackMessageView.swift */,
-			);
-			path = FeedbackMessageView;
-			sourceTree = "<group>";
-		};
-		2D8573E41EC47D9600E2BF88 /* FeedBackSendButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573E51EC47D9600E2BF88 /* FeedBackSendButton.swift */,
-			);
-			path = FeedBackSendButton;
-			sourceTree = "<group>";
-		};
-		2D8573E61EC47D9600E2BF88 /* SuccessSendMessage */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573E71EC47D9600E2BF88 /* SuccessSendMessage.swift */,
-			);
-			path = SuccessSendMessage;
-			sourceTree = "<group>";
-		};
-		2D8573E81EC47D9600E2BF88 /* History */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = History;
-			sourceTree = "<group>";
-		};
 		2D8573E91EC47D9600E2BF88 /* HomeLogo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1708,37 +1498,6 @@
 				2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */,
 			);
 			path = HyperlinkLabel;
-			sourceTree = "<group>";
-		};
-		2D8573ED1EC47D9600E2BF88 /* Livecoin */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573EE1EC47D9600E2BF88 /* LoginLive */,
-				2D8573EF1EC47D9600E2BF88 /* Orders */,
-				2D8573F01EC47D9600E2BF88 /* Trade */,
-			);
-			path = Livecoin;
-			sourceTree = "<group>";
-		};
-		2D8573EE1EC47D9600E2BF88 /* LoginLive */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginLive;
-			sourceTree = "<group>";
-		};
-		2D8573EF1EC47D9600E2BF88 /* Orders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Orders;
-			sourceTree = "<group>";
-		};
-		2D8573F01EC47D9600E2BF88 /* Trade */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Trade;
 			sourceTree = "<group>";
 		};
 		2D8573F11EC47D9600E2BF88 /* LockButton */ = {
@@ -1845,6 +1604,7 @@
 		2D8574161EC47D9600E2BF88 /* WalletProtection */ = {
 			isa = PBXGroup;
 			children = (
+				2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */,
 				2D8574171EC47D9600E2BF88 /* WalletProtectionActivityView.swift */,
 				2D8574181EC47D9600E2BF88 /* WalletProtectionEncryptActivityView.swift */,
 				2D8574191EC47D9600E2BF88 /* WalletProtectionEncryptSuccessView.swift */,
@@ -1942,21 +1702,21 @@
 				2D85742F1EC47D9600E2BF88 /* BlockchainLoading.storyboard in Resources */,
 				2D8574B71EC47D9700E2BF88 /* Assets.xcassets in Resources */,
 				2D8574B91EC47D9700E2BF88 /* Main.storyboard in Resources */,
+				2D33B8BA1ECC600F004DB497 /* Blockchain.xib in Resources */,
 				2D8574C01EC47D9700E2BF88 /* RobotoCondensed-Light.ttf in Resources */,
 				2D8574BA1EC47D9700E2BF88 /* Blogger_Sans-Light.otf in Resources */,
 				2D8574BE1EC47D9700E2BF88 /* Roboto-Regular.ttf in Resources */,
 				2D8574BF1EC47D9700E2BF88 /* RobotoCondensed-Bold.ttf in Resources */,
 				2D85743F1EC47D9600E2BF88 /* Home.storyboard in Resources */,
+				2D33B8BD1ECC6315004DB497 /* WalletProtection.xib in Resources */,
 				2D85742A1EC47D9600E2BF88 /* AddressBook.storyboard in Resources */,
 				2D85742B1EC47D9600E2BF88 /* AddressBook.xib in Resources */,
 				2D8574BC1EC47D9700E2BF88 /* Roboto-Light.ttf in Resources */,
 				2D8574391EC47D9600E2BF88 /* Send.xib in Resources */,
-				2D8574201EC47D9600E2BF88 /* Blockchain.xib in Resources */,
 				2D8574B81EC47D9700E2BF88 /* LaunchScreen.storyboard in Resources */,
 				2D8574311EC47D9600E2BF88 /* CoinOperations.storyboard in Resources */,
 				2D85748C1EC47D9700E2BF88 /* Info.plist in Resources */,
 				2D8574BB1EC47D9700E2BF88 /* Roboto-Bold.ttf in Resources */,
-				2D85743D1EC47D9600E2BF88 /* WalletProtection.xib in Resources */,
 				2D8574221EC47D9600E2BF88 /* About.storyboard in Resources */,
 				2D8574401EC47D9600E2BF88 /* Home.xib in Resources */,
 				2D8574241EC47D9600E2BF88 /* AccountPage.storyboard in Resources */,
@@ -2042,7 +1802,6 @@
 				2D8574B41EC47D9700E2BF88 /* TabBarObject.swift in Sources */,
 				2D85746D1EC47D9600E2BF88 /* AddMyAddressAPI.swift in Sources */,
 				2D8574AE1EC47D9700E2BF88 /* Licensies.swift in Sources */,
-				2D8574211EC47D9600E2BF88 /* BlockchainLoadingView.swift in Sources */,
 				2D8574791EC47D9600E2BF88 /* TransactionsAPI.swift in Sources */,
 				2D8574271EC47D9600E2BF88 /* HistoryViewController + TableView.swift in Sources */,
 				2D8574B61EC47D9700E2BF88 /* Wallet.swift in Sources */,
@@ -2064,7 +1823,6 @@
 				2D8574CB1EC47D9700E2BF88 /* SendViewModel.swift in Sources */,
 				2D8574AD1EC47D9700E2BF88 /* License.swift in Sources */,
 				2D8574961EC47D9700E2BF88 /* WalletProtectionHelper.swift in Sources */,
-				2D8574DB1EC47D9700E2BF88 /* SuccessSendMessage.swift in Sources */,
 				2D8574C31EC47D9700E2BF88 /* BlockchainLoadingViewModel.swift in Sources */,
 				2D8574DD1EC47D9700E2BF88 /* HyperlinkLabel.swift in Sources */,
 				2D85749C1EC47D9700E2BF88 /* ButtonBarViewCell.swift in Sources */,
@@ -2129,6 +1887,7 @@
 				2D8574F71EC47D9700E2BF88 /* WalletProtectionLockView.swift in Sources */,
 				2D8574911EC47D9700E2BF88 /* FRHyperLabel.m in Sources */,
 				2D8574971EC47D9700E2BF88 /* BarPagerTabStripViewController.swift in Sources */,
+				2D33B8BB1ECC600F004DB497 /* BlockchainLoadingView.swift in Sources */,
 				2D8574D51EC47D9700E2BF88 /* ExchangeEnterButtonView.swift in Sources */,
 				2D8574A31EC47D9700E2BF88 /* SegmentedPagerTabStripViewController.swift in Sources */,
 				2D8574941EC47D9700E2BF88 /* QRCodeHelper.swift in Sources */,
@@ -2147,7 +1906,6 @@
 				2D8574891EC47D9700E2BF88 /* DPDConstants.swift in Sources */,
 				2D8574C71EC47D9700E2BF88 /* HistoryTransactionViewModel.swift in Sources */,
 				2D8574D21EC47D9700E2BF88 /* CourseView.swift in Sources */,
-				2D8574DA1EC47D9700E2BF88 /* FeedBackSendButton.swift in Sources */,
 				2D8574841EC47D9700E2BF88 /* UIImageView + Utils.swift in Sources */,
 				2D8574D31EC47D9700E2BF88 /* DeleteContactView.swift in Sources */,
 				2D85749B1EC47D9700E2BF88 /* ButtonBarView.swift in Sources */,
@@ -2160,7 +1918,6 @@
 				2D8574721EC47D9600E2BF88 /* InfoAPI.swift in Sources */,
 				2D8574441EC47D9600E2BF88 /* LoginViewController.swift in Sources */,
 				2D85748F1EC47D9700E2BF88 /* DropDown.swift in Sources */,
-				2D8574D91EC47D9700E2BF88 /* FeedbackMessageView.swift in Sources */,
 				2D8574301EC47D9600E2BF88 /* BlockchainLoadingViewController.swift in Sources */,
 				2D8574A91EC47D9700E2BF88 /* Coin.swift in Sources */,
 			);

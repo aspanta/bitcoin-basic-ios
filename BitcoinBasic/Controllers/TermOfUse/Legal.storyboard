@@ -20,7 +20,7 @@
         <!--Licensies View Controller-->
         <scene sceneID="unV-aH-O5g">
             <objects>
-                <viewController storyboardIdentifier="LicensiesViewController" id="CTg-51-aAf" customClass="LicensiesViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LicensiesViewController" id="CTg-51-aAf" customClass="LicensiesViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RMx-HS-qu0"/>
                         <viewControllerLayoutGuide type="bottom" id="UbY-ol-dcL"/>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="81" width="375" height="586"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LicenseLogoCell" rowHeight="200" id="z43-Bi-2eh" customClass="LicenseLogoCell" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LicenseLogoCell" rowHeight="200" id="z43-Bi-2eh" customClass="LicenseLogoCell" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z43-Bi-2eh" id="zqp-Ms-TfZ">
@@ -54,24 +54,24 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-iJ-r0B">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NVl-Yi-LIH">
-                                                            <rect key="frame" x="158" y="0.0" width="58" height="50"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit_image" translatesAutoresizingMaskIntoConstraints="NO" id="NVl-Yi-LIH">
+                                                            <rect key="frame" x="158" y="0.0" width="58" height="58"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="50" id="V8O-gX-Wep"/>
+                                                                <constraint firstAttribute="height" constant="58" id="V8O-gX-Wep"/>
                                                                 <constraint firstAttribute="width" constant="58" id="sQA-Z3-Zdl"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKf-YG-YJi">
-                                                            <rect key="frame" x="46" y="65" width="282" height="42"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BITCOIN BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKf-YG-YJi">
+                                                            <rect key="frame" x="66" y="73" width="242" height="42"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="42" id="Hbs-1A-egY"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="35"/>
-                                                            <color key="textColor" red="0.61176470589999998" green="0.45098039220000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emercoin Basic License and its Components" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-aA-Nnz">
-                                                            <rect key="frame" x="8" y="117" width="359" height="62.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Basic License and its Components" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-aA-Nnz">
+                                                            <rect key="frame" x="8" y="125" width="359" height="54.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LicenseCell" rowHeight="44" id="JbN-aB-H5h" customClass="LicenseCell" customModule="EmercoinBasic" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LicenseCell" rowHeight="44" id="JbN-aB-H5h" customClass="LicenseCell" customModule="BitcoinBasic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="228" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JbN-aB-H5h" id="k14-FK-fAd">
@@ -151,7 +151,7 @@
         <!--Legal View Controller-->
         <scene sceneID="c3W-Zb-8hM">
             <objects>
-                <viewController storyboardIdentifier="LegalViewController" id="Fkz-QV-z9s" customClass="LegalViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LegalViewController" id="Fkz-QV-z9s" customClass="LegalViewController" customModule="BitcoinBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ePC-Bu-BeT"/>
                         <viewControllerLayoutGuide type="bottom" id="Ofh-11-Uoa"/>
@@ -246,7 +246,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bit_image" width="170" height="170"/>
         <image name="reg_arrow_icon" width="19" height="16"/>
-        <image name="reg_logo" width="110" height="96"/>
     </resources>
 </document>

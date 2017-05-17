@@ -18,7 +18,7 @@ class RequestSendView: PopupView {
     }
     
     private func updateUI() {
-        let requestString = String(format:"Do you want to send to the address %@ EMC?",amount)
+        let requestString = String(format:"Do you want to send to the address %@ BTC?",amount)
         amountLabel?.text = requestString
     }
     
