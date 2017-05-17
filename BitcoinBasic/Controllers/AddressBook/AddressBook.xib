@@ -155,7 +155,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-Qd-lOk">
                             <rect key="frame" x="7" y="57" width="332" height="37"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzs-yO-68j" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Label" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzs-yO-68j" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="7" width="332" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="oLX-3g-AG7"/>
@@ -309,7 +309,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEq-1G-9CO">
                             <rect key="frame" x="7" y="57" width="332" height="37"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZF-py-gdT" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Label" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZF-py-gdT" customClass="BaseTextField" customModule="BitcoinBasic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="7" width="332" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="hMf-Xn-i7Z"/>
