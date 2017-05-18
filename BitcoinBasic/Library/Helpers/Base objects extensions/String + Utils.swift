@@ -114,7 +114,11 @@ extension String {
     }
     
     func validAddress() -> Bool {
-        return validData(at: "[1,3]{1}[A-Za-z0-9]{27,34}$")
+        return validData(at: "[1,3]{1}[A-Za-z0-9]{26,33}$")
+    }
+    
+    func containOnlyZero() -> Bool {
+        return validData(at: "(?!^0+$)^.{1,}")
     }
     
     private func validData(at pattern:String) -> Bool {

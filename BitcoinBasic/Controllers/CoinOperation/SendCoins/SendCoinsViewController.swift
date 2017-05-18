@@ -114,7 +114,7 @@ class SendCoinsViewController: BaseViewController {
         let address = addressTextField.text ?? ""
         let amount = amountTextField.text ?? ""
         
-        sendButton.isEnabled = address.validAddress() && !amount.isEmpty
+        sendButton.isEnabled = address.validAddress() && !amount.isEmpty  && amount.containOnlyZero()
     }
     
     private func setupActivityIndicator() {
