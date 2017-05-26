@@ -22,7 +22,7 @@ class RequestSendView: PopupView {
         amountLabel?.text = requestString
     }
     
-    @IBAction override func doneButtonPressed(sender:UIButton) {
+    @IBAction override func doneButtonPressed(sender:UIButton?) {
         if sendCoins != nil {
             sendCoins!()
             cancelButtonPressed(sender: nil)

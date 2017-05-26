@@ -14,7 +14,7 @@ class PopupView: UIView {
         backgroundColor = UIColor.black.withAlphaComponent(0.5)
     }
     
-    @IBAction func doneButtonPressed(sender:UIButton) {
+    @IBAction func doneButtonPressed(sender:UIButton?) {
         self.removeFromSuperview()
     }
     

@@ -7,24 +7,37 @@ import UIKit
 import ObjectMapper
 import RealmSwift
 
-enum TransactionDirection:String {
-    case incoming = "receive"
-    case outcoming = "send"
+enum TransactionDirection:Int {
+    case incoming = 0
+    case outcoming = 1
 }
 
 class HistoryTransaction:Object, Mappable {
     
     dynamic var amount:Double = 0
+    dynamic var fee:Double = 0
+    dynamic var vout:Int = 0
     dynamic var date = ""
-    dynamic var address = ""
-    
-    dynamic var timereceived:TimeInterval = 0 {
+    dynamic var dateFull = ""
+    dynamic var blockheight = 0
+    dynamic var transactionId = ""
+    dynamic var isConfirmed = true
+    dynamic var stringDate = "" {
         didSet {
-            date = Date.init(timeIntervalSince1970: timereceived).transactionStringDate()
+            
+            var string = stringDate
+            let array = stringDate.components(separatedBy: ".")
+            if array.count == 2 {
+                string = array.first ?? stringDate
+            }
+            
+            date = Date.fromString(string: string).transactionStringDate()
+            dateFull = Date.fromString(string: string).transactionStringDateFull()
         }
     }
+    dynamic var address = ""
     
-    dynamic var category = ""
+    dynamic var category = 0
     
     func direction() -> TransactionDirection {
         return TransactionDirection(rawValue: category)!
@@ -37,7 +50,11 @@ class HistoryTransaction:Object, Mappable {
     func mapping(map: Map) {
         amount <- map["amount"]
         address <- map["address"]
-        timereceived <- map["timereceived"]
+        stringDate <- map["date"]
         category <- map["category"]
+        blockheight <- map["blockheight"]
+        transactionId <- map["txid"]
+        fee <- map["fee"]
+        vout <- map["vout"]
     }
 }

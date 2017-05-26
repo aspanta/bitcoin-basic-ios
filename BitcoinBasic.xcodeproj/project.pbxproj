@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D075FE71ED840A400A5A741 /* DetailValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FE41ED840A400A5A741 /* DetailValueView.swift */; };
+		2D075FE81ED840A400A5A741 /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D075FE51ED840A400A5A741 /* History.xib */; };
+		2D075FE91ED840A400A5A741 /* HistoryTransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */; };
+		2D075FEB1ED843FF00A5A741 /* NVSValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */; };
 		2D33B8BA1ECC600F004DB497 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8B81ECC600F004DB497 /* Blockchain.xib */; };
 		2D33B8BB1ECC600F004DB497 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */; };
 		2D33B8BD1ECC6315004DB497 /* WalletProtection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */; };
@@ -205,6 +209,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D075FE41ED840A400A5A741 /* DetailValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailValueView.swift; sourceTree = "<group>"; };
+		2D075FE51ED840A400A5A741 /* History.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
+		2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTransactionDetailView.swift; sourceTree = "<group>"; };
+		2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVSValueView.swift; sourceTree = "<group>"; };
 		2D33B8B81ECC600F004DB497 /* Blockchain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Blockchain.xib; sourceTree = "<group>"; };
 		2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainLoadingView.swift; sourceTree = "<group>"; };
 		2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletProtection.xib; sourceTree = "<group>"; };
@@ -434,6 +442,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D075FE31ED840A400A5A741 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */,
+				2D075FE41ED840A400A5A741 /* DetailValueView.swift */,
+				2D075FE51ED840A400A5A741 /* History.xib */,
+				2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		2D33B8B71ECC600F004DB497 /* Blockchain */ = {
 			isa = PBXGroup;
 			children = (
@@ -1335,6 +1354,7 @@
 		2D8573C01EC47D9600E2BF88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2D075FE31ED840A400A5A741 /* History */,
 				2D33B8B71ECC600F004DB497 /* Blockchain */,
 				2D8573C21EC47D9600E2BF88 /* AddressBook */,
 				2D8573C71EC47D9600E2BF88 /* Base */,
@@ -1722,6 +1742,7 @@
 				2D8574241EC47D9600E2BF88 /* AccountPage.storyboard in Resources */,
 				2D85745B1EC47D9600E2BF88 /* Legal.storyboard in Resources */,
 				2D8574431EC47D9600E2BF88 /* Login.storyboard in Resources */,
+				2D075FE81ED840A400A5A741 /* History.xib in Resources */,
 				2D8574BD1EC47D9700E2BF88 /* Roboto-Medium.ttf in Resources */,
 				2D85749D1EC47D9700E2BF88 /* ButtonCell.xib in Resources */,
 				2D85748D1EC47D9700E2BF88 /* DropDownCell.xib in Resources */,
@@ -1883,6 +1904,7 @@
 				2D8574611EC47D9600E2BF88 /* BaseAlertController.swift in Sources */,
 				2D8574471EC47D9600E2BF88 /* LeftViewController + TableView.swift in Sources */,
 				2D8574781EC47D9600E2BF88 /* SendCoinsAPI.swift in Sources */,
+				2D075FEB1ED843FF00A5A741 /* NVSValueView.swift in Sources */,
 				2D85749F1EC47D9700E2BF88 /* IndicatorInfo.swift in Sources */,
 				2D8574F71EC47D9700E2BF88 /* WalletProtectionLockView.swift in Sources */,
 				2D8574911EC47D9700E2BF88 /* FRHyperLabel.m in Sources */,
@@ -1907,6 +1929,7 @@
 				2D8574C71EC47D9700E2BF88 /* HistoryTransactionViewModel.swift in Sources */,
 				2D8574D21EC47D9700E2BF88 /* CourseView.swift in Sources */,
 				2D8574841EC47D9700E2BF88 /* UIImageView + Utils.swift in Sources */,
+				2D075FE71ED840A400A5A741 /* DetailValueView.swift in Sources */,
 				2D8574D31EC47D9700E2BF88 /* DeleteContactView.swift in Sources */,
 				2D85749B1EC47D9700E2BF88 /* ButtonBarView.swift in Sources */,
 				2D85745C1EC47D9600E2BF88 /* LegalViewController.swift in Sources */,
@@ -1918,6 +1941,7 @@
 				2D8574721EC47D9600E2BF88 /* InfoAPI.swift in Sources */,
 				2D8574441EC47D9600E2BF88 /* LoginViewController.swift in Sources */,
 				2D85748F1EC47D9700E2BF88 /* DropDown.swift in Sources */,
+				2D075FE91ED840A400A5A741 /* HistoryTransactionDetailView.swift in Sources */,
 				2D8574301EC47D9600E2BF88 /* BlockchainLoadingViewController.swift in Sources */,
 				2D8574A91EC47D9700E2BF88 /* Coin.swift in Sources */,
 			);
@@ -2042,7 +2066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5AJAAW94U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2052,8 +2076,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspanta.bitcoinbasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a20f10f1-5fa0-4053-bbeb-c6b9809246cd";
-				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDev;
+				PROVISIONING_PROFILE = "17ed5a58-3045-4923-8734-484024a0a34a";
+				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2063,7 +2087,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5AJAAW94U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2073,8 +2097,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspanta.bitcoinbasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a20f10f1-5fa0-4053-bbeb-c6b9809246cd";
-				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDev;
+				PROVISIONING_PROFILE = "17ed5a58-3045-4923-8734-484024a0a34a";
+				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

@@ -20,7 +20,7 @@ class WalletProtectionUnlockView: PopupView {
         }
     }
     
-    override func doneButtonPressed(sender: UIButton) {
+    override func doneButtonPressed(sender: UIButton?) {
         if unlock != nil {
             unlock!(passwordTextField.text ?? "")
             super.doneButtonPressed(sender: sender)

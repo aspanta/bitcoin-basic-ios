@@ -31,7 +31,7 @@ class AddAddressView: PopupView {
         }
     }
     
-    @IBAction override func doneButtonPressed(sender:UIButton) {
+    @IBAction override func doneButtonPressed(sender:UIButton?) {
         
         let name = nameTextField.text
         

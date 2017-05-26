@@ -24,25 +24,18 @@ extension HistoryViewController:UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    private func itemAt(indexPath:IndexPath) -> HistoryTransaction {
+    internal func itemAt(indexPath:IndexPath) -> HistoryTransaction {
         return history.transactions[indexPath.row]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let item = itemAt(indexPath: indexPath)
+        selectedIndexPath = indexPath
         
-        var data = [String:Any]()
-        data["address"] = item.address as AnyObject
-        data["amount"] = String.coinFormat(at: abs(item.amount)) as AnyObject
+        let cell = tableView.cellForRow(at: indexPath) as? BaseTableViewCell
+        let item = cell?.object
         
-        let menu = Router.sharedInstance.sideMenu
-        
-        if item.direction() == .outcoming {
-            menu?.showSendController(at: data as AnyObject)
-        } else {
-            menu?.showGetCoinsController(at: data as AnyObject)
-        }
+        showTransactionDetailView(at:item as! HistoryTransactionViewModel)
     }
 }

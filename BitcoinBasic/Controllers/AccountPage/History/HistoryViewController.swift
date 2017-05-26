@@ -16,6 +16,8 @@ class HistoryViewController: UIViewController, IndicatorInfoProvider {
     
     let disposeBag = DisposeBag()
     
+    internal var selectedIndexPath:IndexPath?
+    
     override class func storyboardName() -> String {
         return "AccountPage"
     }
@@ -91,5 +93,41 @@ class HistoryViewController: UIViewController, IndicatorInfoProvider {
         
         let alert = AlertsHelper.errorAlert(at: error)
         present(alert, animated: true, completion: nil)
+    }
+    
+    internal func showTransactionDetailView(at viewModel:HistoryTransactionViewModel) {
+        
+        let transactionDetailView = loadViewFromXib(name: "History", index: 0,
+                                                    frame: self.parent?.parent?.view.frame) as! HistoryTransactionDetailView
+        transactionDetailView.viewModel = viewModel
+        
+        transactionDetailView.repeatTransaction = {[weak self] in
+            self?.repeatTransaction()
+        }
+        
+        self.parent?.parent?.view.addSubview(transactionDetailView)
+        
+    }
+    
+    private func repeatTransaction() {
+        
+        if let indexPath = selectedIndexPath {
+            
+            let item = itemAt(indexPath: indexPath)
+            
+            var data = [String:Any]()
+            data["address"] = item.address as AnyObject
+            data["amount"] = String.coinFormat(at: abs(item.amount)) as AnyObject
+            
+            let menu = Router.sharedInstance.sideMenu
+            
+            if item.direction() == .outcoming {
+                menu?.showSendController(at: data as AnyObject)
+            } else {
+                menu?.showGetCoinsController(at: data as AnyObject)
+            }
+            
+            selectedIndexPath = nil
+        }
     }
 }
