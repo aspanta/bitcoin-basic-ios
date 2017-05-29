@@ -15,7 +15,7 @@ class HistoryTransactionViewModel {
     var category:String = ""
     var fee:String = ""
     var vout:String = ""
-    var blockheight:String = ""
+    var blockhash:String = ""
     var transactionId = ""
     var isConfirmed = true
     var imageTransactionDirection:UIImage? = nil
@@ -28,10 +28,9 @@ class HistoryTransactionViewModel {
         self.amount = String.dropZeroLast(at: String.coinFormat(at: historyTransaction.amount))
         self.fee = String(historyTransaction.fee)
         self.vout = String(historyTransaction.vout)
-        self.blockheight = historyTransaction.isConfirmed ? String(historyTransaction.blockheight) : "unconfirmed"
+        self.blockhash = historyTransaction.blockhash.isEmpty ? "unconfirmed" : String(historyTransaction.blockhash)
         self.transactionId = historyTransaction.transactionId
-        self.isConfirmed = historyTransaction.isConfirmed
-        
+        self.isConfirmed = !historyTransaction.blockhash.isEmpty
         let isIncoming = historyTransaction.direction() == .incoming
         
         category = isIncoming ? "Receive" : "Send"

@@ -19,9 +19,8 @@ class HistoryTransaction:Object, Mappable {
     dynamic var vout:Int = 0
     dynamic var date = ""
     dynamic var dateFull = ""
-    dynamic var blockheight = 0
+    dynamic var blockhash = ""
     dynamic var transactionId = ""
-    dynamic var isConfirmed = true
     dynamic var stringDate = "" {
         didSet {
             
@@ -52,7 +51,7 @@ class HistoryTransaction:Object, Mappable {
         address <- map["address"]
         stringDate <- map["date"]
         category <- map["category"]
-        blockheight <- map["blockheight"]
+        blockhash <- map["blockhash"]
         transactionId <- map["txid"]
         fee <- map["fee"]
         vout <- map["vout"]

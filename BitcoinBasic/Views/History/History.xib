@@ -541,10 +541,10 @@
                             <rect key="frame" x="11" y="284" width="354" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCO-TT-Xvr" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="58" y="0.0" width="296" height="30"/>
+                                    <rect key="frame" x="97" y="0.0" width="257" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RW-eY-JQW">
-                                            <rect key="frame" x="0.0" y="0.0" width="296" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="257" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-gq-4DP">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -582,8 +582,8 @@
                                         <outlet property="valueScrollView" destination="6RW-eY-JQW" id="Q77-Zm-vlB"/>
                                     </connections>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-sg-bga">
-                                    <rect key="frame" x="0.0" y="7" width="50" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockhash:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-sg-bga">
+                                    <rect key="frame" x="0.0" y="7" width="89" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="8kG-2P-D6z"/>
                                     </constraints>
