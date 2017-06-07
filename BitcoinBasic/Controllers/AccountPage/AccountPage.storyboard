@@ -77,8 +77,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOw-8b-Yyd">
-                                                    <rect key="frame" x="59" y="11" width="28" height="21"/>
+                                                    <rect key="frame" x="59" y="11" width="75" height="21"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="e1O-au-ovb"/>
                                                         <constraint firstAttribute="height" constant="21" id="kKP-u7-geH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
@@ -98,13 +99,14 @@
                                                     <rect key="frame" x="329" y="11" width="26" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="LDK-QL-E8Q"/>
+                                                        <constraint firstAttribute="width" constant="26" id="RjT-De-Rxt"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwB-Uw-u5d">
-                                                    <rect key="frame" x="296.5" y="11" width="24.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="ZwB-Uw-u5d">
+                                                    <rect key="frame" x="142" y="11" width="179" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ccd-UW-7DT"/>
                                                     </constraints>
@@ -122,6 +124,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="B7b-rN-f14" firstAttribute="leading" secondItem="ZwB-Uw-u5d" secondAttribute="trailing" constant="8" id="14k-Id-IEx"/>
+                                                <constraint firstItem="ZwB-Uw-u5d" firstAttribute="leading" secondItem="ZOw-8b-Yyd" secondAttribute="trailing" constant="8" id="5KN-F0-vqI"/>
                                                 <constraint firstItem="Ole-U4-5ww" firstAttribute="top" secondItem="3ee-hm-lZM" secondAttribute="top" constant="24" id="7h0-uW-dps"/>
                                                 <constraint firstAttribute="trailing" secondItem="TUM-dG-bGO" secondAttribute="trailing" constant="8" id="J6V-Ub-NHC"/>
                                                 <constraint firstAttribute="bottom" secondItem="TUM-dG-bGO" secondAttribute="bottom" constant="12" id="MV7-r8-rzh"/>
@@ -150,7 +153,7 @@
                                 </connections>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no any transaction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmL-5V-wox">
-                                <rect key="frame" x="79.5" y="322.5" width="216" height="21"/>
+                                <rect key="frame" x="80" y="322.5" width="216" height="21"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
