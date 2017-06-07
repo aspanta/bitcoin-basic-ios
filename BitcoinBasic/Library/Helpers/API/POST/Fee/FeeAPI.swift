@@ -26,11 +26,8 @@ class FeeAPI: BaseAPI {
     
     override func apiDidReturnData(data: AnyObject) {
         
-        if let result = data["result"] as? String  {
-            let success = result.length > 0
-            super.apiDidReturnData(data: success as AnyObject)
-        } else {
-            super.apiDidReturnData(data: data)
+        if let result = data["result"] as? Bool  {
+            super.apiDidReturnData(data: result as AnyObject)
         }
     }
 }

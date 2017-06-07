@@ -161,7 +161,10 @@ class APIManager: NSObject {
     func sendFee(at fee:AnyObject, completion:@escaping (_ data: AnyObject?, _ error:NSError?) -> Void) {
         
         let api = getApi(at: .fee)
-        api.object = fee
+        if var params = api.object as? [String:AnyObject] {
+            params["fee"] = fee as AnyObject?
+            api.object = params as AnyObject?
+        }
         api.startRequest(completion: completion)
     }
     

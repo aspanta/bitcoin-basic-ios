@@ -152,7 +152,7 @@ class SendCoinsViewController: BaseViewController {
             requestSendView.sendCoins = ({[weak self] in
                 let data = [address ?? "", self?.amount as Any] as AnyObject
                 self?.sendData = data
-                self?.viewModel.checkWalletAndSend(at: data)
+                self?.viewModel.checkWalletAndSend(at: data, fee:[self?.feeValue] as AnyObject)
             })
              self.parent?.view.addSubview(requestSendView)
         }
@@ -228,7 +228,7 @@ class SendCoinsViewController: BaseViewController {
             }
             protectionHelper.unlock = {[weak self] in
                 if let data = self?.sendData {
-                    self?.viewModel.sendCoins(at: data)
+                    self?.viewModel.sendCoinsWithFee(at: data,fee:[self?.feeValue] as AnyObject)
                 }
             }
             self.walletProtectionHelper = protectionHelper

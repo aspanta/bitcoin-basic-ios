@@ -118,6 +118,10 @@ extension String {
         return number != 0
     }
     
+    func validEnterAmount() -> Bool {
+        return validData(at: "\\d{1,9}\\.(\\d{1,8})?")
+    }
+    
     func validAddress() -> Bool {
         return validData(at: "[1,3]{1}[A-Za-z0-9]{26,33}$")
     }

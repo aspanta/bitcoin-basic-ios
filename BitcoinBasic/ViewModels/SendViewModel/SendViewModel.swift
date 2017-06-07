@@ -7,13 +7,13 @@ import UIKit
 
 class SendViewModel: CoinOperationsViewModel {
     
-    func checkWalletAndSend(at sendData:AnyObject) {
+    func checkWalletAndSend(at sendData:AnyObject, fee:AnyObject) {
         wallet?.loadInfo(completion: {[weak self] in
             if self?.wallet?.isLocked == true {
                 self?.walletLock.onNext(true)
                 return
             } else {
-                self?.sendCoins(at: sendData)
+                self?.sendCoinsWithFee(at: sendData, fee:fee)
             }
         })
     }
@@ -27,10 +27,9 @@ class SendViewModel: CoinOperationsViewModel {
         
         APIManager.sharedInstance.sendCoins(at: sendData) {[weak self] (data, error) in
             self?.activityIndicator.onNext(false)
-            
+            self?.isLoading = false
             if error != nil {
                 self?.error.onNext(error!)
-                self?.isLoading = false
             } else {
                 if let success = data as? Bool {
                     self?.success.onNext(success)
@@ -39,11 +38,22 @@ class SendViewModel: CoinOperationsViewModel {
         }
     }
     
-    func sendFee(at fee:AnyObject) {
+    func sendCoinsWithFee(at sendData:AnyObject, fee:AnyObject) {
+        
+        if isLoading {return}
+        
+        isLoading = true
         APIManager.sharedInstance.sendFee(at: fee) {[weak self] (data, error) in
+            self?.isLoading = false
             if error != nil {
                 self?.error.onNext(error!)
                 self?.isLoading = false
+            } else {
+                if let state = data as? Bool {
+                    if state {
+                        self?.sendCoins(at: sendData)
+                    }
+                }
             }
         }
     }

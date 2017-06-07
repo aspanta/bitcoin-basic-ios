@@ -7,9 +7,9 @@ import UIKit
 import ObjectMapper
 import RealmSwift
 
-enum TransactionDirection:Int {
-    case incoming = 0
-    case outcoming = 1
+enum TransactionDirection:String {
+    case incoming = "receive"
+    case outcoming = "send"
 }
 
 class HistoryTransaction:Object, Mappable {
@@ -30,8 +30,7 @@ class HistoryTransaction:Object, Mappable {
     }
     
     dynamic var address = ""
-    
-    dynamic var category = 0
+    dynamic var category = ""
     
     func direction() -> TransactionDirection {
         return TransactionDirection(rawValue: category)!

@@ -68,7 +68,7 @@ class BaseTextField: UITextField, UITextFieldDelegate {
         
         if validAmount {
             if fullText.contains(".") {
-                return fullText.validAmount()
+                return fullText.validEnterAmount()
             } else {
                 return maxIntCharacters == 0 ? true : fullText.length <= maxIntCharacters
             }
