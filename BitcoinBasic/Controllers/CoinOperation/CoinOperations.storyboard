@@ -244,7 +244,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT9-B3-vAl" customClass="BaseButton" customModule="BitcoinBasic" customModuleProvider="target">
-                                <rect key="frame" x="99" y="193.5" width="177" height="42"/>
+                                <rect key="frame" x="99" y="202.5" width="177" height="42"/>
                                 <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Rc5-sv-88g"/>
@@ -292,14 +292,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nwt-OV-r83" customClass="BaseSlider" customModule="BitcoinBasic" customModuleProvider="target">
-                                <rect key="frame" x="94" y="122" width="263" height="31"/>
+                                <rect key="frame" x="94" y="131" width="263" height="31"/>
                                 <color key="tintColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="changeValueFeeSliderWithSender:" destination="xGE-gn-k5v" eventType="valueChanged" id="p6e-Gs-2qC"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00179907 BTC/Kb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-eP-oZh">
-                                <rect key="frame" x="228" y="157" width="126.5" height="16.5"/>
+                                <rect key="frame" x="228" y="166" width="126.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -310,7 +310,7 @@
                             <constraint firstItem="0Wf-gd-9A3" firstAttribute="leading" secondItem="efF-a7-STq" secondAttribute="trailing" constant="6" id="5QE-nb-sN4"/>
                             <constraint firstAttribute="trailing" secondItem="4cL-eP-oZh" secondAttribute="trailing" constant="20" id="Bi7-mf-wMZ"/>
                             <constraint firstItem="eT9-B3-vAl" firstAttribute="top" secondItem="4cL-eP-oZh" secondAttribute="bottom" constant="20" id="FAz-cx-ttc"/>
-                            <constraint firstItem="Nwt-OV-r83" firstAttribute="top" secondItem="efF-a7-STq" secondAttribute="bottom" constant="11" id="GwN-KE-KL9"/>
+                            <constraint firstItem="Nwt-OV-r83" firstAttribute="top" secondItem="efF-a7-STq" secondAttribute="bottom" constant="20" id="GwN-KE-KL9"/>
                             <constraint firstItem="4cL-eP-oZh" firstAttribute="top" secondItem="Nwt-OV-r83" secondAttribute="bottom" constant="5" id="Jed-xQ-HcP"/>
                             <constraint firstItem="Whz-z0-4dX" firstAttribute="top" secondItem="9Db-hV-U6h" secondAttribute="bottom" constant="20" id="TD9-VE-R9W"/>
                             <constraint firstItem="IlZ-4z-2d2" firstAttribute="top" secondItem="Whz-z0-4dX" secondAttribute="bottom" constant="16" id="UOx-1a-cS0"/>

@@ -28,7 +28,7 @@ class HistoryTransactionViewModel {
         self.amount = String.dropZeroLast(at: String.coinFormat(at: historyTransaction.amount))
         self.fee = String(historyTransaction.fee)
         self.vout = String(historyTransaction.vout)
-        self.blockhash = historyTransaction.blockhash.isEmpty ? "unconfirmed" : String(historyTransaction.blockhash)
+        self.blockhash = historyTransaction.confirmations == 0 ? "unconfirmed" : String(historyTransaction.blockhash)
         self.transactionId = historyTransaction.transactionId
         self.isConfirmed = !historyTransaction.blockhash.isEmpty
         let isIncoming = historyTransaction.direction() == .incoming

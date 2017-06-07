@@ -14,7 +14,7 @@ class History: NSObject {
     var transactions:Results<HistoryTransaction> {
         get {
             let realm = try! Realm()
-            return realm.objects(HistoryTransaction.self)
+            return realm.objects(HistoryTransaction.self).sorted(byKeyPath: "timereceived", ascending: false)
         }
     }
     

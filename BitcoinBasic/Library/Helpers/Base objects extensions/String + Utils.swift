@@ -84,6 +84,10 @@ extension String {
         return string
     }
     
+    func replaceСommas() -> String {
+        return self.replacingOccurrences(of: ",", with: ".")
+    }
+    
     static func randomStringWithLength (_ len : Int) -> String {
         
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -110,7 +114,8 @@ extension String {
     }
     
     func validAmount() -> Bool {
-        return validData(at: "\\d{1,9}\\.(\\d{1,8})?")
+        let number = Double(self) ?? 0.0
+        return number != 0
     }
     
     func validAddress() -> Bool {
