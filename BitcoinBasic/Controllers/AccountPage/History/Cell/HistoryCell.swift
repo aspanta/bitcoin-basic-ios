@@ -7,11 +7,15 @@ import UIKit
 
 class HistoryCell: BaseTableViewCell {
 
-    @IBOutlet weak var dateLabeL:UILabel!
-    @IBOutlet weak var addressLabeL:UILabel!
-    @IBOutlet weak var amountLabeL:UILabel!
-    @IBOutlet weak var signLabeL:UILabel!
-    @IBOutlet weak var directionImageView:UIImageView!
+    let timeIconConfirmedHeight:CGFloat = 0
+    let timeIconNoConfirmedHeight:CGFloat = 8
+    
+    @IBOutlet internal weak var dateLabeL:UILabel!
+    @IBOutlet internal weak var addressLabeL:UILabel!
+    @IBOutlet internal weak var amountLabeL:UILabel!
+    @IBOutlet internal weak var directionImageView:UIImageView!
+    @IBOutlet internal weak var timeImageView:UIImageView!
+    @IBOutlet internal weak var timeWidthConstraint:NSLayoutConstraint!
     
     override func updateUI() {
         
@@ -21,8 +25,11 @@ class HistoryCell: BaseTableViewCell {
         
         dateLabeL.text = viewModel.date
         addressLabeL.text = viewModel.address
-        amountLabeL.text = viewModel.amount
-        signLabeL.text = viewModel.sign
+        amountLabeL.text = String(format:"%@ %@",viewModel.amount,viewModel.sign)
         directionImageView.image = viewModel.imageTransactionDirection
+        
+        let isConfirmed = viewModel.isConfirmed
+        timeImageView.isHidden = isConfirmed
+        timeWidthConstraint.constant = isConfirmed ? timeIconConfirmedHeight : timeIconNoConfirmedHeight
     }
 }

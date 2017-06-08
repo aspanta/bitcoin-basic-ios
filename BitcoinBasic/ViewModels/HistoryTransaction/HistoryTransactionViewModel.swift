@@ -30,7 +30,7 @@ class HistoryTransactionViewModel {
         self.vout = String(historyTransaction.vout)
         self.blockhash = historyTransaction.confirmations == 0 ? "unconfirmed" : String(historyTransaction.blockhash)
         self.transactionId = historyTransaction.transactionId
-        self.isConfirmed = !historyTransaction.blockhash.isEmpty
+        self.isConfirmed = historyTransaction.confirmations > 0
         let isIncoming = historyTransaction.direction() == .incoming
         
         category = isIncoming ? "Receive" : "Send"
