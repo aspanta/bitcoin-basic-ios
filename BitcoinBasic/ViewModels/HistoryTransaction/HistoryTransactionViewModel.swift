@@ -26,7 +26,7 @@ class HistoryTransactionViewModel {
         self.dateFull =  historyTransaction.dateFull
         self.address = historyTransaction.address
         self.amount = String.dropZeroLast(at: String.coinFormat(at: historyTransaction.amount))
-        self.fee = String(historyTransaction.fee)
+        self.fee = String.coinFormat(at: historyTransaction.fee)
         self.vout = String(historyTransaction.vout)
         self.blockhash = historyTransaction.confirmations == 0 ? "unconfirmed" : String(historyTransaction.blockhash)
         self.transactionId = historyTransaction.transactionId
