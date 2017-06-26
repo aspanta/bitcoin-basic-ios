@@ -121,16 +121,12 @@ class GetCoinsViewController: BaseViewController {
     internal func generateQRCode(at address:String) {
     
         var amount = amountTextField.text ?? ""
-        amount = amount.replaceСommas()
-        if amount.contains(".") == true {
-            amount = String.dropZeroLast(at: amount)
-        }
-        amount = String.dropZeroFirst(at: amount)
-        
+        amount.formattedNumber()
+    
+        let isValidAmount = amount.validAmount()
+    
         let name = "bitcoin"
         var text = ""
-        
-        let isValidAmount = amount.validAmount()
         
         if (address.length) > 0 {
             text =  name+":\(address)"

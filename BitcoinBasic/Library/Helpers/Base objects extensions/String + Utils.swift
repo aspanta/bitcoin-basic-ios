@@ -53,9 +53,19 @@ extension String {
         return  String(self.characters.prefix(index))
     }
     
+    mutating func formattedNumber() {
+        self = self.replaceСommas()
+        self = String.dropZeroLast(at: self)
+        self = String.dropZeroFirst(at: self)
+    }
+    
     static func dropZeroLast(at text:String) -> String {
         
         var string = text
+        
+        if string.contains(".") == false {
+            return string
+        }
         
         let ch = string.last
         
