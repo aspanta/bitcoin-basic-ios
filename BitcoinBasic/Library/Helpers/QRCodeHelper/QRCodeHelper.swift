@@ -8,6 +8,8 @@ import QRCode
 
 class QRCodeHelper {
     
+    static let currency = "bitcoin"
+    
     class func parseScanedText(result:String, completion:@escaping (_ data: AnyObject?,_ success:Bool?) -> Void) {
         
         var coin:[String:Any] = [:]
@@ -34,16 +36,27 @@ class QRCodeHelper {
             }
         }
         
-        let coinArray = array[0].components(separatedBy: ":")
+        let currencyArray = array[0].components(separatedBy: ":")
+        let count = currencyArray.count
         
-        if coinArray.count == 2 {
+        if count == 2 {
             
-            let name = coinArray[0].lowercased()
+            let name = currencyArray[0].lowercased()
+            let address = currencyArray[1]
             
-            if name == "emercoin" {
+            if name == currency {
                 coin["name"] = name
-                coin["address"] = coinArray[1]
+                coin["address"] = address
                 isSuccess = true
+            }
+        } else if count == 1 {
+            let address = currencyArray[0]
+            
+            isSuccess = address.validAddress()
+            
+            if isSuccess {
+                coin["name"] = currency
+                coin["address"] = address
             }
         }
         completion(coin as AnyObject?,isSuccess)

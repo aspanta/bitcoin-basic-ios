@@ -2066,7 +2066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5AJAAW94U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2076,8 +2076,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspanta.bitcoinbasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "17ed5a58-3045-4923-8734-484024a0a34a";
-				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDis;
+				PROVISIONING_PROFILE = "a20f10f1-5fa0-4053-bbeb-c6b9809246cd";
+				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

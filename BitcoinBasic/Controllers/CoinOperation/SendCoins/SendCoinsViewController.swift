@@ -114,7 +114,7 @@ class SendCoinsViewController: BaseViewController {
         let address = addressTextField.text ?? ""
         var amount = amountTextField.text ?? ""
         
-        amount = amount.replaceСommas()
+        amount.formattedNumber()
         
         let isValidAddress = address.validAddress()
         let isValidAmount = amount.validAmount()
