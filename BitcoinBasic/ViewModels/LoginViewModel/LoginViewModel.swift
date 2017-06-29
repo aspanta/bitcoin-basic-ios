@@ -17,6 +17,7 @@ class LoginViewModel {
     var password:String = "" {didSet{validateCredentials()}}
     
     var topConstraint = PublishSubject<CGFloat>()
+    var topButtonConstraint = PublishSubject<CGFloat>()
     var leftConstraint = PublishSubject<CGFloat>()
     var isValidCredentials = PublishSubject<Bool>()
     var successLogin = PublishSubject<Bool>()
@@ -42,6 +43,7 @@ class LoginViewModel {
             let value = Constants.Constraints.Login.Top.iphone5
             topConstraint.onNext(CGFloat(value))
             leftConstraint.onNext(CGFloat(value))
+            topButtonConstraint.onNext(CGFloat(value + 12))
         }
     }
     

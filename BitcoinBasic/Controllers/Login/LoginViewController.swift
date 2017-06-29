@@ -17,7 +17,11 @@ class LoginViewController: BaseViewController {
     @IBOutlet internal weak var protocolTextField:BaseTextField!
     @IBOutlet internal weak var protocolButton:UIButton!
     @IBOutlet internal weak var topConstraint:NSLayoutConstraint!
+    @IBOutlet internal weak var topAboutConstraint:NSLayoutConstraint!
+    @IBOutlet internal weak var topLoginConstraint:NSLayoutConstraint!
     @IBOutlet internal weak var leftConstraint:NSLayoutConstraint!
+
+    private var basicLink = "https://www.aspanta.com/project/btcbasic"
     
     var dropDown:DropDown?
     let disposeBag = DisposeBag()
@@ -58,8 +62,10 @@ class LoginViewController: BaseViewController {
             .addDisposableTo(disposeBag)
         viewModel.topConstraint.bind(to: topConstraint.rx.constant)
             .addDisposableTo(disposeBag)
-//        viewModel.leftConstraint.bindTo(leftConstraint.rx.constant)
-//            .addDisposableTo(disposeBag)
+        viewModel.topButtonConstraint.bind(to: topLoginConstraint.rx.constant)
+            .addDisposableTo(disposeBag)
+        viewModel.topButtonConstraint.bind(to: topAboutConstraint.rx.constant)
+            .addDisposableTo(disposeBag)
         
         setupLogin()
         
@@ -98,16 +104,6 @@ class LoginViewController: BaseViewController {
         .addDisposableTo(disposeBag)
     }
     
-    @IBAction func enterButtonPressed(sender:UIButton) {
-        
-        viewModel.performLogin()
-    }
-    
-    @IBAction func skipButtonPressed(sender:UIButton) {
-        
-        showMainController()
-    }
-    
     private func showMainController() {
         
         Router.sharedInstance.showMainController()
@@ -124,14 +120,20 @@ class LoginViewController: BaseViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func termsButtonPressed(sender:UIButton) {
-        let controller = LicensiesViewController.controller()
-        navigationController?.pushViewController(controller, animated: true)
+    @IBAction func enterButtonPressed(sender:UIButton) {
+        
+        viewModel.performLogin()
     }
     
     @IBAction func dropButtonPressed() {
         
         dropDown?.show()
+    }
+    
+    @IBAction func aboutButtonPressed(sender:UIButton) {
+        if let url = URL(string: basicLink) {
+            UIApplication.shared.open(url, options: [:])
+        }
     }
     
     internal func setupDropDown() {
