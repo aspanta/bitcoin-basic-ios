@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blockchain Loading View Controller-->
+        <scene sceneID="Sav-uT-Yb0">
+            <objects>
+                <viewController storyboardIdentifier="BlockchainLoadingViewController" id="q6l-Hp-M3E" customClass="BlockchainLoadingViewController" customModule="EmercoinBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Jm-cY-GQ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="KCF-6f-be4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rp4-XI-uAT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boot_basic_img" translatesAutoresizingMaskIntoConstraints="NO" id="2Pp-Bv-dcO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Pp-Bv-dcO" firstAttribute="leading" secondItem="Rp4-XI-uAT" secondAttribute="leading" id="FOk-VH-Ne0"/>
+                            <constraint firstItem="2Pp-Bv-dcO" firstAttribute="top" secondItem="Rp4-XI-uAT" secondAttribute="top" id="IHu-Nc-nOD"/>
+                            <constraint firstAttribute="bottom" secondItem="2Pp-Bv-dcO" secondAttribute="bottom" id="L7U-Xr-FBU"/>
+                            <constraint firstAttribute="trailing" secondItem="2Pp-Bv-dcO" secondAttribute="trailing" id="gJu-7t-qGO"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPg-jR-N6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="293.66197183098592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boot_basic_img" width="375" height="592"/>
+    </resources>
+</document>
