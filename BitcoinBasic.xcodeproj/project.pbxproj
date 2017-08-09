@@ -7,16 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D075FE71ED840A400A5A741 /* DetailValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FE41ED840A400A5A741 /* DetailValueView.swift */; };
-		2D075FE81ED840A400A5A741 /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D075FE51ED840A400A5A741 /* History.xib */; };
-		2D075FE91ED840A400A5A741 /* HistoryTransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */; };
-		2D075FEB1ED843FF00A5A741 /* NVSValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */; };
-		2D33B8BA1ECC600F004DB497 /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8B81ECC600F004DB497 /* Blockchain.xib */; };
-		2D33B8BB1ECC600F004DB497 /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */; };
-		2D33B8BD1ECC6315004DB497 /* WalletProtection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */; };
+		2D004AC01F3B353A00D52A4D /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A6B1F3B353A00D52A4D /* AddContactView.swift */; };
+		2D004AC11F3B353A00D52A4D /* AddressBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004A6C1F3B353A00D52A4D /* AddressBook.xib */; };
+		2D004AC21F3B353A00D52A4D /* DeleteContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A6E1F3B353A00D52A4D /* DeleteContactView.swift */; };
+		2D004AC31F3B353A00D52A4D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A721F3B353A00D52A4D /* BaseButton.swift */; };
+		2D004AC41F3B353A00D52A4D /* BaseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A741F3B353A00D52A4D /* BaseSlider.swift */; };
+		2D004AC51F3B353A00D52A4D /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A761F3B353A00D52A4D /* BaseTextField.swift */; };
+		2D004AC61F3B353A00D52A4D /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A781F3B353A00D52A4D /* BaseTextView.swift */; };
+		2D004AC71F3B353A00D52A4D /* Blockchain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004A7A1F3B353A00D52A4D /* Blockchain.xib */; };
+		2D004AC81F3B353A00D52A4D /* BlockchainLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A7B1F3B353A00D52A4D /* BlockchainLoadingView.swift */; };
+		2D004AC91F3B353A00D52A4D /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A7D1F3B353A00D52A4D /* CheckButton.swift */; };
+		2D004ACA1F3B353A00D52A4D /* CoinsOpeartionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A7F1F3B353A00D52A4D /* CoinsOpeartionHeaderView.swift */; };
+		2D004ACB1F3B353A00D52A4D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A821F3B353A00D52A4D /* CourseView.swift */; };
+		2D004ACC1F3B353A00D52A4D /* EncryptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A841F3B353A00D52A4D /* EncryptionButtonView.swift */; };
+		2D004ACD1F3B353A00D52A4D /* ExchangeEnterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A861F3B353A00D52A4D /* ExchangeEnterButtonView.swift */; };
+		2D004ACE1F3B353A00D52A4D /* ExchangeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A881F3B353A00D52A4D /* ExchangeHeaderView.swift */; };
+		2D004ACF1F3B353A00D52A4D /* ExpireDaysTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A8A1F3B353A00D52A4D /* ExpireDaysTextField.swift */; };
+		2D004AD01F3B353A00D52A4D /* ExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A8C1F3B353A00D52A4D /* ExtendedView.swift */; };
+		2D004AD11F3B353A00D52A4D /* DetailValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A921F3B353A00D52A4D /* DetailValueView.swift */; };
+		2D004AD21F3B353A00D52A4D /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004A931F3B353A00D52A4D /* History.xib */; };
+		2D004AD31F3B353A00D52A4D /* HistoryTransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A941F3B353A00D52A4D /* HistoryTransactionDetailView.swift */; };
+		2D004AD41F3B353A00D52A4D /* NVSValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A951F3B353A00D52A4D /* NVSValueView.swift */; };
+		2D004AD51F3B353A00D52A4D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004A971F3B353A00D52A4D /* Home.xib */; };
+		2D004AD61F3B353A00D52A4D /* HomeLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A991F3B353A00D52A4D /* HomeLogoView.swift */; };
+		2D004AD71F3B353A00D52A4D /* MyMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A9B1F3B353A00D52A4D /* MyMoneyView.swift */; };
+		2D004AD81F3B353A00D52A4D /* HyperlinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A9D1F3B353A00D52A4D /* HyperlinkLabel.swift */; };
+		2D004AD91F3B353A00D52A4D /* LockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A9F1F3B353A00D52A4D /* LockButton.swift */; };
+		2D004ADA1F3B353A00D52A4D /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AA11F3B353A00D52A4D /* LoginButton.swift */; };
+		2D004ADB1F3B353A00D52A4D /* AddAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AA41F3B353A00D52A4D /* AddAddressView.swift */; };
+		2D004ADC1F3B353A00D52A4D /* PopupBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AA71F3B353A00D52A4D /* PopupBackgroundView.swift */; };
+		2D004ADD1F3B353A00D52A4D /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AA81F3B353A00D52A4D /* CancelButton.swift */; };
+		2D004ADE1F3B353A00D52A4D /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AA91F3B353A00D52A4D /* PopupView.swift */; };
+		2D004ADF1F3B353A00D52A4D /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AAA1F3B353A00D52A4D /* YesButton.swift */; };
+		2D004AE01F3B353A00D52A4D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AAC1F3B353A00D52A4D /* RoundButton.swift */; };
+		2D004AE11F3B353A00D52A4D /* OperationActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AAF1F3B353A00D52A4D /* OperationActivityView.swift */; };
+		2D004AE21F3B353A00D52A4D /* RequestSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AB11F3B353A00D52A4D /* RequestSendView.swift */; };
+		2D004AE31F3B353A00D52A4D /* Send.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004AB21F3B353A00D52A4D /* Send.xib */; };
+		2D004AE41F3B353B00D52A4D /* SendAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AB41F3B353A00D52A4D /* SendAmountTextField.swift */; };
+		2D004AE51F3B353B00D52A4D /* SuccessSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AB61F3B353A00D52A4D /* SuccessSendView.swift */; };
+		2D004AE61F3B353B00D52A4D /* WalletProtection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004AB81F3B353A00D52A4D /* WalletProtection.xib */; };
+		2D004AE71F3B353B00D52A4D /* WalletProtectionActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004AB91F3B353A00D52A4D /* WalletProtectionActivityView.swift */; };
+		2D004AE81F3B353B00D52A4D /* WalletProtectionEncryptActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABA1F3B353A00D52A4D /* WalletProtectionEncryptActivityView.swift */; };
+		2D004AE91F3B353B00D52A4D /* WalletProtectionEncryptSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABB1F3B353A00D52A4D /* WalletProtectionEncryptSuccessView.swift */; };
+		2D004AEA1F3B353B00D52A4D /* WalletProtectionLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABC1F3B353A00D52A4D /* WalletProtectionLockView.swift */; };
+		2D004AEB1F3B353B00D52A4D /* WalletProtectionUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */; };
+		2D004AEC1F3B353B00D52A4D /* WalletProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */; };
+		2D004AED1F3B353B00D52A4D /* WalletProtectionWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */; };
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
-		2D7B29E21ECAEC3200F05DB2 /* BaseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
 		2D8574221EC47D9600E2BF88 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D85728B1EC47D9600E2BF88 /* About.storyboard */; };
 		2D8574231EC47D9600E2BF88 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85728C1EC47D9600E2BF88 /* AboutViewController.swift */; };
@@ -27,7 +65,6 @@
 		2D8574281EC47D9600E2BF88 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572941EC47D9600E2BF88 /* HistoryViewController.swift */; };
 		2D8574291EC47D9600E2BF88 /* OperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572961EC47D9600E2BF88 /* OperationsViewController.swift */; };
 		2D85742A1EC47D9600E2BF88 /* AddressBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572981EC47D9600E2BF88 /* AddressBook.storyboard */; };
-		2D85742B1EC47D9600E2BF88 /* AddressBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572991EC47D9600E2BF88 /* AddressBook.xib */; };
 		2D85742C1EC47D9600E2BF88 /* AddressBookViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85729A1EC47D9600E2BF88 /* AddressBookViewController + TableView.swift */; };
 		2D85742D1EC47D9600E2BF88 /* AddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85729B1EC47D9600E2BF88 /* AddressBookViewController.swift */; };
 		2D85742E1EC47D9600E2BF88 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85729D1EC47D9600E2BF88 /* ContactCell.swift */; };
@@ -41,13 +78,11 @@
 		2D8574361EC47D9600E2BF88 /* MyAdressViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572AB1EC47D9600E2BF88 /* MyAdressViewController + TableView.swift */; };
 		2D8574371EC47D9600E2BF88 /* MyAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572AC1EC47D9600E2BF88 /* MyAdressViewController.swift */; };
 		2D8574381EC47D9600E2BF88 /* RecipientAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572AE1EC47D9600E2BF88 /* RecipientAddressViewController.swift */; };
-		2D8574391EC47D9600E2BF88 /* Send.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572AF1EC47D9600E2BF88 /* Send.xib */; };
 		2D85743A1EC47D9600E2BF88 /* SendCoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B01EC47D9600E2BF88 /* SendCoinsViewController.swift */; };
 		2D85743B1EC47D9600E2BF88 /* ScanQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B31EC47D9600E2BF88 /* ScanQRCodeController.swift */; };
 		2D85743C1EC47D9600E2BF88 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572B51EC47D9600E2BF88 /* TabBarController.swift */; };
 		2D85743E1EC47D9600E2BF88 /* HomeBalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572BC1EC47D9600E2BF88 /* HomeBalanceCell.swift */; };
 		2D85743F1EC47D9600E2BF88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572BD1EC47D9600E2BF88 /* Home.storyboard */; };
-		2D8574401EC47D9600E2BF88 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572BE1EC47D9600E2BF88 /* Home.xib */; };
 		2D8574411EC47D9600E2BF88 /* HomeViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572BF1EC47D9600E2BF88 /* HomeViewController + TableView.swift */; };
 		2D8574421EC47D9600E2BF88 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572C01EC47D9600E2BF88 /* HomeViewController.swift */; };
 		2D8574431EC47D9600E2BF88 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8572D11EC47D9600E2BF88 /* Login.storyboard */; };
@@ -161,40 +196,6 @@
 		2D8574C81EC47D9700E2BF88 /* LicenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573B71EC47D9600E2BF88 /* LicenseViewModel.swift */; };
 		2D8574C91EC47D9700E2BF88 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573BA1EC47D9600E2BF88 /* LoginViewModel.swift */; };
 		2D8574CB1EC47D9700E2BF88 /* SendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573BF1EC47D9600E2BF88 /* SendViewModel.swift */; };
-		2D8574CC1EC47D9700E2BF88 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573C41EC47D9600E2BF88 /* AddContactView.swift */; };
-		2D8574CD1EC47D9700E2BF88 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573C91EC47D9600E2BF88 /* BaseButton.swift */; };
-		2D8574CE1EC47D9700E2BF88 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573CB1EC47D9600E2BF88 /* BaseTextField.swift */; };
-		2D8574CF1EC47D9700E2BF88 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573CD1EC47D9600E2BF88 /* BaseTextView.swift */; };
-		2D8574D01EC47D9700E2BF88 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573CF1EC47D9600E2BF88 /* CheckButton.swift */; };
-		2D8574D11EC47D9700E2BF88 /* CoinsOpeartionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573D11EC47D9600E2BF88 /* CoinsOpeartionHeaderView.swift */; };
-		2D8574D21EC47D9700E2BF88 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573D41EC47D9600E2BF88 /* CourseView.swift */; };
-		2D8574D31EC47D9700E2BF88 /* DeleteContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573D61EC47D9600E2BF88 /* DeleteContactView.swift */; };
-		2D8574D41EC47D9700E2BF88 /* EncryptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573D81EC47D9600E2BF88 /* EncryptionButtonView.swift */; };
-		2D8574D51EC47D9700E2BF88 /* ExchangeEnterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573DA1EC47D9600E2BF88 /* ExchangeEnterButtonView.swift */; };
-		2D8574D61EC47D9700E2BF88 /* ExchangeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573DC1EC47D9600E2BF88 /* ExchangeHeaderView.swift */; };
-		2D8574D71EC47D9700E2BF88 /* ExpireDaysTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573DE1EC47D9600E2BF88 /* ExpireDaysTextField.swift */; };
-		2D8574D81EC47D9700E2BF88 /* ExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573E01EC47D9600E2BF88 /* ExtendedView.swift */; };
-		2D8574DC1EC47D9700E2BF88 /* HomeLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573EA1EC47D9600E2BF88 /* HomeLogoView.swift */; };
-		2D8574DD1EC47D9700E2BF88 /* HyperlinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */; };
-		2D8574DE1EC47D9700E2BF88 /* LockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573F21EC47D9600E2BF88 /* LockButton.swift */; };
-		2D8574DF1EC47D9700E2BF88 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573F41EC47D9600E2BF88 /* LoginButton.swift */; };
-		2D8574E01EC47D9700E2BF88 /* AddAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573F71EC47D9600E2BF88 /* AddAddressView.swift */; };
-		2D8574E11EC47D9700E2BF88 /* MyMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573F91EC47D9600E2BF88 /* MyMoneyView.swift */; };
-		2D8574E91EC47D9700E2BF88 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574041EC47D9600E2BF88 /* CancelButton.swift */; };
-		2D8574EA1EC47D9700E2BF88 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574051EC47D9600E2BF88 /* PopupView.swift */; };
-		2D8574EB1EC47D9700E2BF88 /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574061EC47D9600E2BF88 /* YesButton.swift */; };
-		2D8574EF1EC47D9700E2BF88 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85740C1EC47D9600E2BF88 /* RoundButton.swift */; };
-		2D8574F01EC47D9700E2BF88 /* OperationActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85740F1EC47D9600E2BF88 /* OperationActivityView.swift */; };
-		2D8574F11EC47D9700E2BF88 /* RequestSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574111EC47D9600E2BF88 /* RequestSendView.swift */; };
-		2D8574F21EC47D9700E2BF88 /* SendAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574131EC47D9600E2BF88 /* SendAmountTextField.swift */; };
-		2D8574F31EC47D9700E2BF88 /* SuccessSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574151EC47D9600E2BF88 /* SuccessSendView.swift */; };
-		2D8574F41EC47D9700E2BF88 /* WalletProtectionActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574171EC47D9600E2BF88 /* WalletProtectionActivityView.swift */; };
-		2D8574F51EC47D9700E2BF88 /* WalletProtectionEncryptActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574181EC47D9600E2BF88 /* WalletProtectionEncryptActivityView.swift */; };
-		2D8574F61EC47D9700E2BF88 /* WalletProtectionEncryptSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8574191EC47D9600E2BF88 /* WalletProtectionEncryptSuccessView.swift */; };
-		2D8574F71EC47D9700E2BF88 /* WalletProtectionLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85741A1EC47D9600E2BF88 /* WalletProtectionLockView.swift */; };
-		2D8574F81EC47D9700E2BF88 /* WalletProtectionUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85741B1EC47D9600E2BF88 /* WalletProtectionUnlockView.swift */; };
-		2D8574F91EC47D9700E2BF88 /* WalletProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85741C1EC47D9600E2BF88 /* WalletProtectionView.swift */; };
-		2D8574FA1EC47D9700E2BF88 /* WalletProtectionWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85741D1EC47D9600E2BF88 /* WalletProtectionWarningView.swift */; };
 		2D85750C1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FD1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework */; };
 		2D85750D1EC47F4700E2BF88 /* LGSideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FE1EC47F4700E2BF88 /* LGSideMenuController.framework */; };
 		2D85750E1EC47F4700E2BF88 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FF1EC47F4700E2BF88 /* ObjectMapper.framework */; };
@@ -209,16 +210,54 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D075FE41ED840A400A5A741 /* DetailValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailValueView.swift; sourceTree = "<group>"; };
-		2D075FE51ED840A400A5A741 /* History.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
-		2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTransactionDetailView.swift; sourceTree = "<group>"; };
-		2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVSValueView.swift; sourceTree = "<group>"; };
-		2D33B8B81ECC600F004DB497 /* Blockchain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Blockchain.xib; sourceTree = "<group>"; };
-		2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainLoadingView.swift; sourceTree = "<group>"; };
-		2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletProtection.xib; sourceTree = "<group>"; };
+		2D004A6B1F3B353A00D52A4D /* AddContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		2D004A6C1F3B353A00D52A4D /* AddressBook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBook.xib; sourceTree = "<group>"; };
+		2D004A6E1F3B353A00D52A4D /* DeleteContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactView.swift; sourceTree = "<group>"; };
+		2D004A721F3B353A00D52A4D /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		2D004A741F3B353A00D52A4D /* BaseSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSlider.swift; sourceTree = "<group>"; };
+		2D004A761F3B353A00D52A4D /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		2D004A781F3B353A00D52A4D /* BaseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		2D004A7A1F3B353A00D52A4D /* Blockchain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Blockchain.xib; sourceTree = "<group>"; };
+		2D004A7B1F3B353A00D52A4D /* BlockchainLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainLoadingView.swift; sourceTree = "<group>"; };
+		2D004A7D1F3B353A00D52A4D /* CheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		2D004A7F1F3B353A00D52A4D /* CoinsOpeartionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsOpeartionHeaderView.swift; sourceTree = "<group>"; };
+		2D004A821F3B353A00D52A4D /* CourseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		2D004A841F3B353A00D52A4D /* EncryptionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionButtonView.swift; sourceTree = "<group>"; };
+		2D004A861F3B353A00D52A4D /* ExchangeEnterButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeEnterButtonView.swift; sourceTree = "<group>"; };
+		2D004A881F3B353A00D52A4D /* ExchangeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeHeaderView.swift; sourceTree = "<group>"; };
+		2D004A8A1F3B353A00D52A4D /* ExpireDaysTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpireDaysTextField.swift; sourceTree = "<group>"; };
+		2D004A8C1F3B353A00D52A4D /* ExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedView.swift; sourceTree = "<group>"; };
+		2D004A921F3B353A00D52A4D /* DetailValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailValueView.swift; sourceTree = "<group>"; };
+		2D004A931F3B353A00D52A4D /* History.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
+		2D004A941F3B353A00D52A4D /* HistoryTransactionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTransactionDetailView.swift; sourceTree = "<group>"; };
+		2D004A951F3B353A00D52A4D /* NVSValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVSValueView.swift; sourceTree = "<group>"; };
+		2D004A971F3B353A00D52A4D /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		2D004A991F3B353A00D52A4D /* HomeLogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLogoView.swift; sourceTree = "<group>"; };
+		2D004A9B1F3B353A00D52A4D /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
+		2D004A9D1F3B353A00D52A4D /* HyperlinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkLabel.swift; sourceTree = "<group>"; };
+		2D004A9F1F3B353A00D52A4D /* LockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockButton.swift; sourceTree = "<group>"; };
+		2D004AA11F3B353A00D52A4D /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		2D004AA41F3B353A00D52A4D /* AddAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressView.swift; sourceTree = "<group>"; };
+		2D004AA71F3B353A00D52A4D /* PopupBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupBackgroundView.swift; sourceTree = "<group>"; };
+		2D004AA81F3B353A00D52A4D /* CancelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		2D004AA91F3B353A00D52A4D /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		2D004AAA1F3B353A00D52A4D /* YesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
+		2D004AAC1F3B353A00D52A4D /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2D004AAF1F3B353A00D52A4D /* OperationActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationActivityView.swift; sourceTree = "<group>"; };
+		2D004AB11F3B353A00D52A4D /* RequestSendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendView.swift; sourceTree = "<group>"; };
+		2D004AB21F3B353A00D52A4D /* Send.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Send.xib; sourceTree = "<group>"; };
+		2D004AB41F3B353A00D52A4D /* SendAmountTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAmountTextField.swift; sourceTree = "<group>"; };
+		2D004AB61F3B353A00D52A4D /* SuccessSendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessSendView.swift; sourceTree = "<group>"; };
+		2D004AB81F3B353A00D52A4D /* WalletProtection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletProtection.xib; sourceTree = "<group>"; };
+		2D004AB91F3B353A00D52A4D /* WalletProtectionActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionActivityView.swift; sourceTree = "<group>"; };
+		2D004ABA1F3B353A00D52A4D /* WalletProtectionEncryptActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionEncryptActivityView.swift; sourceTree = "<group>"; };
+		2D004ABB1F3B353A00D52A4D /* WalletProtectionEncryptSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionEncryptSuccessView.swift; sourceTree = "<group>"; };
+		2D004ABC1F3B353A00D52A4D /* WalletProtectionLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionLockView.swift; sourceTree = "<group>"; };
+		2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionUnlockView.swift; sourceTree = "<group>"; };
+		2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionView.swift; sourceTree = "<group>"; };
+		2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionWarningView.swift; sourceTree = "<group>"; };
 		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D37F7291EC96E2400603FFB /* FeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeeAPI.swift; sourceTree = "<group>"; };
-		2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSlider.swift; sourceTree = "<group>"; };
 		2D85725D1EC47CD400E2BF88 /* BitcoinBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8572831EC47D9600E2BF88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8572841EC47D9600E2BF88 /* FRHyperLabelDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabelDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -232,7 +271,6 @@
 		2D8572941EC47D9600E2BF88 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2D8572961EC47D9600E2BF88 /* OperationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsViewController.swift; sourceTree = "<group>"; };
 		2D8572981EC47D9600E2BF88 /* AddressBook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddressBook.storyboard; sourceTree = "<group>"; };
-		2D8572991EC47D9600E2BF88 /* AddressBook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBook.xib; sourceTree = "<group>"; };
 		2D85729A1EC47D9600E2BF88 /* AddressBookViewController + TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddressBookViewController + TableView.swift"; sourceTree = "<group>"; };
 		2D85729B1EC47D9600E2BF88 /* AddressBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressBookViewController.swift; sourceTree = "<group>"; };
 		2D85729D1EC47D9600E2BF88 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
@@ -246,13 +284,11 @@
 		2D8572AB1EC47D9600E2BF88 /* MyAdressViewController + TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyAdressViewController + TableView.swift"; sourceTree = "<group>"; };
 		2D8572AC1EC47D9600E2BF88 /* MyAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdressViewController.swift; sourceTree = "<group>"; };
 		2D8572AE1EC47D9600E2BF88 /* RecipientAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientAddressViewController.swift; sourceTree = "<group>"; };
-		2D8572AF1EC47D9600E2BF88 /* Send.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Send.xib; sourceTree = "<group>"; };
 		2D8572B01EC47D9600E2BF88 /* SendCoinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendCoinsViewController.swift; sourceTree = "<group>"; };
 		2D8572B31EC47D9600E2BF88 /* ScanQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRCodeController.swift; sourceTree = "<group>"; };
 		2D8572B51EC47D9600E2BF88 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2D8572BC1EC47D9600E2BF88 /* HomeBalanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBalanceCell.swift; sourceTree = "<group>"; };
 		2D8572BD1EC47D9600E2BF88 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		2D8572BE1EC47D9600E2BF88 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		2D8572BF1EC47D9600E2BF88 /* HomeViewController + TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewController + TableView.swift"; sourceTree = "<group>"; };
 		2D8572C01EC47D9600E2BF88 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D8572D11EC47D9600E2BF88 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -369,40 +405,6 @@
 		2D8573B71EC47D9600E2BF88 /* LicenseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewModel.swift; sourceTree = "<group>"; };
 		2D8573BA1EC47D9600E2BF88 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2D8573BF1EC47D9600E2BF88 /* SendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewModel.swift; sourceTree = "<group>"; };
-		2D8573C41EC47D9600E2BF88 /* AddContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
-		2D8573C91EC47D9600E2BF88 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
-		2D8573CB1EC47D9600E2BF88 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
-		2D8573CD1EC47D9600E2BF88 /* BaseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
-		2D8573CF1EC47D9600E2BF88 /* CheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
-		2D8573D11EC47D9600E2BF88 /* CoinsOpeartionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsOpeartionHeaderView.swift; sourceTree = "<group>"; };
-		2D8573D41EC47D9600E2BF88 /* CourseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
-		2D8573D61EC47D9600E2BF88 /* DeleteContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactView.swift; sourceTree = "<group>"; };
-		2D8573D81EC47D9600E2BF88 /* EncryptionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionButtonView.swift; sourceTree = "<group>"; };
-		2D8573DA1EC47D9600E2BF88 /* ExchangeEnterButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeEnterButtonView.swift; sourceTree = "<group>"; };
-		2D8573DC1EC47D9600E2BF88 /* ExchangeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeHeaderView.swift; sourceTree = "<group>"; };
-		2D8573DE1EC47D9600E2BF88 /* ExpireDaysTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpireDaysTextField.swift; sourceTree = "<group>"; };
-		2D8573E01EC47D9600E2BF88 /* ExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedView.swift; sourceTree = "<group>"; };
-		2D8573EA1EC47D9600E2BF88 /* HomeLogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLogoView.swift; sourceTree = "<group>"; };
-		2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkLabel.swift; sourceTree = "<group>"; };
-		2D8573F21EC47D9600E2BF88 /* LockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockButton.swift; sourceTree = "<group>"; };
-		2D8573F41EC47D9600E2BF88 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		2D8573F71EC47D9600E2BF88 /* AddAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressView.swift; sourceTree = "<group>"; };
-		2D8573F91EC47D9600E2BF88 /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
-		2D8574041EC47D9600E2BF88 /* CancelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
-		2D8574051EC47D9600E2BF88 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
-		2D8574061EC47D9600E2BF88 /* YesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
-		2D85740C1EC47D9600E2BF88 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		2D85740F1EC47D9600E2BF88 /* OperationActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationActivityView.swift; sourceTree = "<group>"; };
-		2D8574111EC47D9600E2BF88 /* RequestSendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendView.swift; sourceTree = "<group>"; };
-		2D8574131EC47D9600E2BF88 /* SendAmountTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAmountTextField.swift; sourceTree = "<group>"; };
-		2D8574151EC47D9600E2BF88 /* SuccessSendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessSendView.swift; sourceTree = "<group>"; };
-		2D8574171EC47D9600E2BF88 /* WalletProtectionActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionActivityView.swift; sourceTree = "<group>"; };
-		2D8574181EC47D9600E2BF88 /* WalletProtectionEncryptActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionEncryptActivityView.swift; sourceTree = "<group>"; };
-		2D8574191EC47D9600E2BF88 /* WalletProtectionEncryptSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionEncryptSuccessView.swift; sourceTree = "<group>"; };
-		2D85741A1EC47D9600E2BF88 /* WalletProtectionLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionLockView.swift; sourceTree = "<group>"; };
-		2D85741B1EC47D9600E2BF88 /* WalletProtectionUnlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionUnlockView.swift; sourceTree = "<group>"; };
-		2D85741C1EC47D9600E2BF88 /* WalletProtectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionView.swift; sourceTree = "<group>"; };
-		2D85741D1EC47D9600E2BF88 /* WalletProtectionWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionWarningView.swift; sourceTree = "<group>"; };
 		2D8574FC1EC47F4700E2BF88 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
 		2D8574FD1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		2D8574FE1EC47F4700E2BF88 /* LGSideMenuController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LGSideMenuController.framework; path = Carthage/Build/iOS/LGSideMenuController.framework; sourceTree = "<group>"; };
@@ -442,24 +444,309 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D075FE31ED840A400A5A741 /* History */ = {
+		2D004A691F3B353A00D52A4D /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				2D075FEA1ED843FF00A5A741 /* NVSValueView.swift */,
-				2D075FE41ED840A400A5A741 /* DetailValueView.swift */,
-				2D075FE51ED840A400A5A741 /* History.xib */,
-				2D075FE61ED840A400A5A741 /* HistoryTransactionDetailView.swift */,
+				2D004A6A1F3B353A00D52A4D /* AddContact */,
+				2D004A6C1F3B353A00D52A4D /* AddressBook.xib */,
+				2D004A6D1F3B353A00D52A4D /* DeleteContact */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		2D004A6A1F3B353A00D52A4D /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A6B1F3B353A00D52A4D /* AddContactView.swift */,
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		2D004A6D1F3B353A00D52A4D /* DeleteContact */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A6E1F3B353A00D52A4D /* DeleteContactView.swift */,
+			);
+			path = DeleteContact;
+			sourceTree = "<group>";
+		};
+		2D004A701F3B353A00D52A4D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A711F3B353A00D52A4D /* BaseButton */,
+				2D004A731F3B353A00D52A4D /* BaseSlider */,
+				2D004A751F3B353A00D52A4D /* BaseTextField */,
+				2D004A771F3B353A00D52A4D /* BaseView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2D004A711F3B353A00D52A4D /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A721F3B353A00D52A4D /* BaseButton.swift */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
+		2D004A731F3B353A00D52A4D /* BaseSlider */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A741F3B353A00D52A4D /* BaseSlider.swift */,
+			);
+			path = BaseSlider;
+			sourceTree = "<group>";
+		};
+		2D004A751F3B353A00D52A4D /* BaseTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A761F3B353A00D52A4D /* BaseTextField.swift */,
+			);
+			path = BaseTextField;
+			sourceTree = "<group>";
+		};
+		2D004A771F3B353A00D52A4D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A781F3B353A00D52A4D /* BaseTextView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		2D004A791F3B353A00D52A4D /* Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A7A1F3B353A00D52A4D /* Blockchain.xib */,
+				2D004A7B1F3B353A00D52A4D /* BlockchainLoadingView.swift */,
+			);
+			path = Blockchain;
+			sourceTree = "<group>";
+		};
+		2D004A7C1F3B353A00D52A4D /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A7D1F3B353A00D52A4D /* CheckButton.swift */,
+			);
+			path = Check;
+			sourceTree = "<group>";
+		};
+		2D004A7E1F3B353A00D52A4D /* CoinsOperationHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A7F1F3B353A00D52A4D /* CoinsOpeartionHeaderView.swift */,
+			);
+			path = CoinsOperationHeader;
+			sourceTree = "<group>";
+		};
+		2D004A811F3B353A00D52A4D /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A821F3B353A00D52A4D /* CourseView.swift */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		2D004A831F3B353A00D52A4D /* EncryptionButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A841F3B353A00D52A4D /* EncryptionButtonView.swift */,
+			);
+			path = EncryptionButton;
+			sourceTree = "<group>";
+		};
+		2D004A851F3B353A00D52A4D /* ExchangeEnterButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A861F3B353A00D52A4D /* ExchangeEnterButtonView.swift */,
+			);
+			path = ExchangeEnterButton;
+			sourceTree = "<group>";
+		};
+		2D004A871F3B353A00D52A4D /* ExchangeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A881F3B353A00D52A4D /* ExchangeHeaderView.swift */,
+			);
+			path = ExchangeHeader;
+			sourceTree = "<group>";
+		};
+		2D004A891F3B353A00D52A4D /* ExpiresDays */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A8A1F3B353A00D52A4D /* ExpireDaysTextField.swift */,
+			);
+			path = ExpiresDays;
+			sourceTree = "<group>";
+		};
+		2D004A8B1F3B353A00D52A4D /* Extended */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A8C1F3B353A00D52A4D /* ExtendedView.swift */,
+			);
+			path = Extended;
+			sourceTree = "<group>";
+		};
+		2D004A911F3B353A00D52A4D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A921F3B353A00D52A4D /* DetailValueView.swift */,
+				2D004A931F3B353A00D52A4D /* History.xib */,
+				2D004A941F3B353A00D52A4D /* HistoryTransactionDetailView.swift */,
+				2D004A951F3B353A00D52A4D /* NVSValueView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
 		};
-		2D33B8B71ECC600F004DB497 /* Blockchain */ = {
+		2D004A961F3B353A00D52A4D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2D33B8B81ECC600F004DB497 /* Blockchain.xib */,
-				2D33B8B91ECC600F004DB497 /* BlockchainLoadingView.swift */,
+				2D004A971F3B353A00D52A4D /* Home.xib */,
+				2D004A981F3B353A00D52A4D /* HomeLogo */,
+				2D004A9A1F3B353A00D52A4D /* MyMoney */,
 			);
-			path = Blockchain;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2D004A981F3B353A00D52A4D /* HomeLogo */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A991F3B353A00D52A4D /* HomeLogoView.swift */,
+			);
+			path = HomeLogo;
+			sourceTree = "<group>";
+		};
+		2D004A9A1F3B353A00D52A4D /* MyMoney */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A9B1F3B353A00D52A4D /* MyMoneyView.swift */,
+			);
+			path = MyMoney;
+			sourceTree = "<group>";
+		};
+		2D004A9C1F3B353A00D52A4D /* HyperlinkLabel */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A9D1F3B353A00D52A4D /* HyperlinkLabel.swift */,
+			);
+			path = HyperlinkLabel;
+			sourceTree = "<group>";
+		};
+		2D004A9E1F3B353A00D52A4D /* LockButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D004A9F1F3B353A00D52A4D /* LockButton.swift */,
+			);
+			path = LockButton;
+			sourceTree = "<group>";
+		};
+		2D004AA01F3B353A00D52A4D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AA11F3B353A00D52A4D /* LoginButton.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2D004AA21F3B353A00D52A4D /* MyAddreses */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AA31F3B353A00D52A4D /* AddAddress */,
+			);
+			path = MyAddreses;
+			sourceTree = "<group>";
+		};
+		2D004AA31F3B353A00D52A4D /* AddAddress */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AA41F3B353A00D52A4D /* AddAddressView.swift */,
+			);
+			path = AddAddress;
+			sourceTree = "<group>";
+		};
+		2D004AA51F3B353A00D52A4D /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AA61F3B353A00D52A4D /* Background */,
+				2D004AA81F3B353A00D52A4D /* CancelButton.swift */,
+				2D004AA91F3B353A00D52A4D /* PopupView.swift */,
+				2D004AAA1F3B353A00D52A4D /* YesButton.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		2D004AA61F3B353A00D52A4D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AA71F3B353A00D52A4D /* PopupBackgroundView.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		2D004AAB1F3B353A00D52A4D /* RoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AAC1F3B353A00D52A4D /* RoundButton.swift */,
+			);
+			path = RoundButton;
+			sourceTree = "<group>";
+		};
+		2D004AAD1F3B353A00D52A4D /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AAE1F3B353A00D52A4D /* OperationActivity */,
+				2D004AB01F3B353A00D52A4D /* RequestSend */,
+				2D004AB21F3B353A00D52A4D /* Send.xib */,
+				2D004AB31F3B353A00D52A4D /* SendAmount */,
+				2D004AB51F3B353A00D52A4D /* SuccessSend */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		2D004AAE1F3B353A00D52A4D /* OperationActivity */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AAF1F3B353A00D52A4D /* OperationActivityView.swift */,
+			);
+			path = OperationActivity;
+			sourceTree = "<group>";
+		};
+		2D004AB01F3B353A00D52A4D /* RequestSend */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AB11F3B353A00D52A4D /* RequestSendView.swift */,
+			);
+			path = RequestSend;
+			sourceTree = "<group>";
+		};
+		2D004AB31F3B353A00D52A4D /* SendAmount */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AB41F3B353A00D52A4D /* SendAmountTextField.swift */,
+			);
+			path = SendAmount;
+			sourceTree = "<group>";
+		};
+		2D004AB51F3B353A00D52A4D /* SuccessSend */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AB61F3B353A00D52A4D /* SuccessSendView.swift */,
+			);
+			path = SuccessSend;
+			sourceTree = "<group>";
+		};
+		2D004AB71F3B353A00D52A4D /* WalletProtection */ = {
+			isa = PBXGroup;
+			children = (
+				2D004AB81F3B353A00D52A4D /* WalletProtection.xib */,
+				2D004AB91F3B353A00D52A4D /* WalletProtectionActivityView.swift */,
+				2D004ABA1F3B353A00D52A4D /* WalletProtectionEncryptActivityView.swift */,
+				2D004ABB1F3B353A00D52A4D /* WalletProtectionEncryptSuccessView.swift */,
+				2D004ABC1F3B353A00D52A4D /* WalletProtectionLockView.swift */,
+				2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */,
+				2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */,
+				2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */,
+			);
+			path = WalletProtection;
 			sourceTree = "<group>";
 		};
 		2D37F7251EC9576F00603FFB /* BitcoinCourseAPI */ = {
@@ -476,14 +763,6 @@
 				2D37F7291EC96E2400603FFB /* FeeAPI.swift */,
 			);
 			path = Fee;
-			sourceTree = "<group>";
-		};
-		2D7B29E01ECAEC2300F05DB2 /* BaseSlider */ = {
-			isa = PBXGroup;
-			children = (
-				2D7B29E11ECAEC3200F05DB2 /* BaseSlider.swift */,
-			);
-			path = BaseSlider;
 			sourceTree = "<group>";
 		};
 		2D8572541EC47CD400E2BF88 = {
@@ -593,7 +872,6 @@
 			isa = PBXGroup;
 			children = (
 				2D8572981EC47D9600E2BF88 /* AddressBook.storyboard */,
-				2D8572991EC47D9600E2BF88 /* AddressBook.xib */,
 				2D85729A1EC47D9600E2BF88 /* AddressBookViewController + TableView.swift */,
 				2D85729B1EC47D9600E2BF88 /* AddressBookViewController.swift */,
 				2D85729C1EC47D9600E2BF88 /* Cell */,
@@ -661,7 +939,6 @@
 			isa = PBXGroup;
 			children = (
 				2D8572AE1EC47D9600E2BF88 /* RecipientAddressViewController.swift */,
-				2D8572AF1EC47D9600E2BF88 /* Send.xib */,
 				2D8572B01EC47D9600E2BF88 /* SendCoinsViewController.swift */,
 			);
 			path = SendCoins;
@@ -698,7 +975,6 @@
 			children = (
 				2D8572BB1EC47D9600E2BF88 /* Cells */,
 				2D8572BD1EC47D9600E2BF88 /* Home.storyboard */,
-				2D8572BE1EC47D9600E2BF88 /* Home.xib */,
 				2D8572BF1EC47D9600E2BF88 /* HomeViewController + TableView.swift */,
 				2D8572C01EC47D9600E2BF88 /* HomeViewController.swift */,
 			);
@@ -1354,286 +1630,29 @@
 		2D8573C01EC47D9600E2BF88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D075FE31ED840A400A5A741 /* History */,
-				2D33B8B71ECC600F004DB497 /* Blockchain */,
-				2D8573C21EC47D9600E2BF88 /* AddressBook */,
-				2D8573C71EC47D9600E2BF88 /* Base */,
-				2D8573CE1EC47D9600E2BF88 /* Check */,
-				2D8573D01EC47D9600E2BF88 /* CoinsOperationHeader */,
-				2D8573D31EC47D9600E2BF88 /* Course */,
-				2D8573D51EC47D9600E2BF88 /* DeleteContact */,
-				2D8573D71EC47D9600E2BF88 /* EncryptionButton */,
-				2D8573D91EC47D9600E2BF88 /* ExchangeEnterButton */,
-				2D8573DB1EC47D9600E2BF88 /* ExchangeHeader */,
-				2D8573DD1EC47D9600E2BF88 /* ExpiresDays */,
-				2D8573DF1EC47D9600E2BF88 /* ExtendedView */,
-				2D8573E91EC47D9600E2BF88 /* HomeLogo */,
-				2D8573EB1EC47D9600E2BF88 /* HyperlinkLabel */,
-				2D8573F11EC47D9600E2BF88 /* LockButton */,
-				2D8573F31EC47D9600E2BF88 /* Login */,
-				2D8573F51EC47D9600E2BF88 /* MyAddreses */,
-				2D8573F81EC47D9600E2BF88 /* MyMoney */,
-				2D8574031EC47D9600E2BF88 /* Popup */,
-				2D85740B1EC47D9600E2BF88 /* RoundButton */,
-				2D85740D1EC47D9600E2BF88 /* Send */,
-				2D8574161EC47D9600E2BF88 /* WalletProtection */,
+				2D004A691F3B353A00D52A4D /* AddressBook */,
+				2D004A701F3B353A00D52A4D /* Base */,
+				2D004A791F3B353A00D52A4D /* Blockchain */,
+				2D004A7C1F3B353A00D52A4D /* Check */,
+				2D004A7E1F3B353A00D52A4D /* CoinsOperationHeader */,
+				2D004A811F3B353A00D52A4D /* Course */,
+				2D004A831F3B353A00D52A4D /* EncryptionButton */,
+				2D004A851F3B353A00D52A4D /* ExchangeEnterButton */,
+				2D004A871F3B353A00D52A4D /* ExchangeHeader */,
+				2D004A891F3B353A00D52A4D /* ExpiresDays */,
+				2D004A8B1F3B353A00D52A4D /* Extended */,
+				2D004A911F3B353A00D52A4D /* History */,
+				2D004A961F3B353A00D52A4D /* Home */,
+				2D004A9C1F3B353A00D52A4D /* HyperlinkLabel */,
+				2D004A9E1F3B353A00D52A4D /* LockButton */,
+				2D004AA01F3B353A00D52A4D /* Login */,
+				2D004AA21F3B353A00D52A4D /* MyAddreses */,
+				2D004AA51F3B353A00D52A4D /* Popup */,
+				2D004AAB1F3B353A00D52A4D /* RoundButton */,
+				2D004AAD1F3B353A00D52A4D /* Send */,
+				2D004AB71F3B353A00D52A4D /* WalletProtection */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		2D8573C21EC47D9600E2BF88 /* AddressBook */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573C31EC47D9600E2BF88 /* AddContact */,
-			);
-			path = AddressBook;
-			sourceTree = "<group>";
-		};
-		2D8573C31EC47D9600E2BF88 /* AddContact */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573C41EC47D9600E2BF88 /* AddContactView.swift */,
-			);
-			path = AddContact;
-			sourceTree = "<group>";
-		};
-		2D8573C71EC47D9600E2BF88 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				2D7B29E01ECAEC2300F05DB2 /* BaseSlider */,
-				2D8573C81EC47D9600E2BF88 /* BaseButton */,
-				2D8573CA1EC47D9600E2BF88 /* BaseTextField */,
-				2D8573CC1EC47D9600E2BF88 /* BaseView */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		2D8573C81EC47D9600E2BF88 /* BaseButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573C91EC47D9600E2BF88 /* BaseButton.swift */,
-			);
-			path = BaseButton;
-			sourceTree = "<group>";
-		};
-		2D8573CA1EC47D9600E2BF88 /* BaseTextField */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573CB1EC47D9600E2BF88 /* BaseTextField.swift */,
-			);
-			path = BaseTextField;
-			sourceTree = "<group>";
-		};
-		2D8573CC1EC47D9600E2BF88 /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573CD1EC47D9600E2BF88 /* BaseTextView.swift */,
-			);
-			path = BaseView;
-			sourceTree = "<group>";
-		};
-		2D8573CE1EC47D9600E2BF88 /* Check */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573CF1EC47D9600E2BF88 /* CheckButton.swift */,
-			);
-			path = Check;
-			sourceTree = "<group>";
-		};
-		2D8573D01EC47D9600E2BF88 /* CoinsOperationHeader */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573D11EC47D9600E2BF88 /* CoinsOpeartionHeaderView.swift */,
-			);
-			path = CoinsOperationHeader;
-			sourceTree = "<group>";
-		};
-		2D8573D31EC47D9600E2BF88 /* Course */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573D41EC47D9600E2BF88 /* CourseView.swift */,
-			);
-			path = Course;
-			sourceTree = "<group>";
-		};
-		2D8573D51EC47D9600E2BF88 /* DeleteContact */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573D61EC47D9600E2BF88 /* DeleteContactView.swift */,
-			);
-			path = DeleteContact;
-			sourceTree = "<group>";
-		};
-		2D8573D71EC47D9600E2BF88 /* EncryptionButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573D81EC47D9600E2BF88 /* EncryptionButtonView.swift */,
-			);
-			path = EncryptionButton;
-			sourceTree = "<group>";
-		};
-		2D8573D91EC47D9600E2BF88 /* ExchangeEnterButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573DA1EC47D9600E2BF88 /* ExchangeEnterButtonView.swift */,
-			);
-			path = ExchangeEnterButton;
-			sourceTree = "<group>";
-		};
-		2D8573DB1EC47D9600E2BF88 /* ExchangeHeader */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573DC1EC47D9600E2BF88 /* ExchangeHeaderView.swift */,
-			);
-			path = ExchangeHeader;
-			sourceTree = "<group>";
-		};
-		2D8573DD1EC47D9600E2BF88 /* ExpiresDays */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573DE1EC47D9600E2BF88 /* ExpireDaysTextField.swift */,
-			);
-			path = ExpiresDays;
-			sourceTree = "<group>";
-		};
-		2D8573DF1EC47D9600E2BF88 /* ExtendedView */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573E01EC47D9600E2BF88 /* ExtendedView.swift */,
-			);
-			path = ExtendedView;
-			sourceTree = "<group>";
-		};
-		2D8573E91EC47D9600E2BF88 /* HomeLogo */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573EA1EC47D9600E2BF88 /* HomeLogoView.swift */,
-			);
-			path = HomeLogo;
-			sourceTree = "<group>";
-		};
-		2D8573EB1EC47D9600E2BF88 /* HyperlinkLabel */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573EC1EC47D9600E2BF88 /* HyperlinkLabel.swift */,
-			);
-			path = HyperlinkLabel;
-			sourceTree = "<group>";
-		};
-		2D8573F11EC47D9600E2BF88 /* LockButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573F21EC47D9600E2BF88 /* LockButton.swift */,
-			);
-			path = LockButton;
-			sourceTree = "<group>";
-		};
-		2D8573F31EC47D9600E2BF88 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573F41EC47D9600E2BF88 /* LoginButton.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		2D8573F51EC47D9600E2BF88 /* MyAddreses */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573F61EC47D9600E2BF88 /* AddAddress */,
-			);
-			path = MyAddreses;
-			sourceTree = "<group>";
-		};
-		2D8573F61EC47D9600E2BF88 /* AddAddress */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573F71EC47D9600E2BF88 /* AddAddressView.swift */,
-			);
-			path = AddAddress;
-			sourceTree = "<group>";
-		};
-		2D8573F81EC47D9600E2BF88 /* MyMoney */ = {
-			isa = PBXGroup;
-			children = (
-				2D8573F91EC47D9600E2BF88 /* MyMoneyView.swift */,
-			);
-			path = MyMoney;
-			sourceTree = "<group>";
-		};
-		2D8574031EC47D9600E2BF88 /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-				2D8574041EC47D9600E2BF88 /* CancelButton.swift */,
-				2D8574051EC47D9600E2BF88 /* PopupView.swift */,
-				2D8574061EC47D9600E2BF88 /* YesButton.swift */,
-			);
-			path = Popup;
-			sourceTree = "<group>";
-		};
-		2D85740B1EC47D9600E2BF88 /* RoundButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D85740C1EC47D9600E2BF88 /* RoundButton.swift */,
-			);
-			path = RoundButton;
-			sourceTree = "<group>";
-		};
-		2D85740D1EC47D9600E2BF88 /* Send */ = {
-			isa = PBXGroup;
-			children = (
-				2D85740E1EC47D9600E2BF88 /* OperationActivity */,
-				2D8574101EC47D9600E2BF88 /* RequestSend */,
-				2D8574121EC47D9600E2BF88 /* SendAmount */,
-				2D8574141EC47D9600E2BF88 /* SuccessSend */,
-			);
-			path = Send;
-			sourceTree = "<group>";
-		};
-		2D85740E1EC47D9600E2BF88 /* OperationActivity */ = {
-			isa = PBXGroup;
-			children = (
-				2D85740F1EC47D9600E2BF88 /* OperationActivityView.swift */,
-			);
-			path = OperationActivity;
-			sourceTree = "<group>";
-		};
-		2D8574101EC47D9600E2BF88 /* RequestSend */ = {
-			isa = PBXGroup;
-			children = (
-				2D8574111EC47D9600E2BF88 /* RequestSendView.swift */,
-			);
-			path = RequestSend;
-			sourceTree = "<group>";
-		};
-		2D8574121EC47D9600E2BF88 /* SendAmount */ = {
-			isa = PBXGroup;
-			children = (
-				2D8574131EC47D9600E2BF88 /* SendAmountTextField.swift */,
-			);
-			path = SendAmount;
-			sourceTree = "<group>";
-		};
-		2D8574141EC47D9600E2BF88 /* SuccessSend */ = {
-			isa = PBXGroup;
-			children = (
-				2D8574151EC47D9600E2BF88 /* SuccessSendView.swift */,
-			);
-			path = SuccessSend;
-			sourceTree = "<group>";
-		};
-		2D8574161EC47D9600E2BF88 /* WalletProtection */ = {
-			isa = PBXGroup;
-			children = (
-				2D33B8BC1ECC6315004DB497 /* WalletProtection.xib */,
-				2D8574171EC47D9600E2BF88 /* WalletProtectionActivityView.swift */,
-				2D8574181EC47D9600E2BF88 /* WalletProtectionEncryptActivityView.swift */,
-				2D8574191EC47D9600E2BF88 /* WalletProtectionEncryptSuccessView.swift */,
-				2D85741A1EC47D9600E2BF88 /* WalletProtectionLockView.swift */,
-				2D85741B1EC47D9600E2BF88 /* WalletProtectionUnlockView.swift */,
-				2D85741C1EC47D9600E2BF88 /* WalletProtectionView.swift */,
-				2D85741D1EC47D9600E2BF88 /* WalletProtectionWarningView.swift */,
-			);
-			path = WalletProtection;
 			sourceTree = "<group>";
 		};
 		2D8574FB1EC47F4600E2BF88 /* Frameworks */ = {
@@ -1720,29 +1739,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D85742F1EC47D9600E2BF88 /* BlockchainLoading.storyboard in Resources */,
+				2D004AC11F3B353A00D52A4D /* AddressBook.xib in Resources */,
 				2D8574B71EC47D9700E2BF88 /* Assets.xcassets in Resources */,
+				2D004AE31F3B353A00D52A4D /* Send.xib in Resources */,
 				2D8574B91EC47D9700E2BF88 /* Main.storyboard in Resources */,
-				2D33B8BA1ECC600F004DB497 /* Blockchain.xib in Resources */,
+				2D004AD51F3B353A00D52A4D /* Home.xib in Resources */,
 				2D8574C01EC47D9700E2BF88 /* RobotoCondensed-Light.ttf in Resources */,
 				2D8574BA1EC47D9700E2BF88 /* Blogger_Sans-Light.otf in Resources */,
 				2D8574BE1EC47D9700E2BF88 /* Roboto-Regular.ttf in Resources */,
+				2D004AE61F3B353B00D52A4D /* WalletProtection.xib in Resources */,
 				2D8574BF1EC47D9700E2BF88 /* RobotoCondensed-Bold.ttf in Resources */,
 				2D85743F1EC47D9600E2BF88 /* Home.storyboard in Resources */,
-				2D33B8BD1ECC6315004DB497 /* WalletProtection.xib in Resources */,
 				2D85742A1EC47D9600E2BF88 /* AddressBook.storyboard in Resources */,
-				2D85742B1EC47D9600E2BF88 /* AddressBook.xib in Resources */,
 				2D8574BC1EC47D9700E2BF88 /* Roboto-Light.ttf in Resources */,
-				2D8574391EC47D9600E2BF88 /* Send.xib in Resources */,
 				2D8574B81EC47D9700E2BF88 /* LaunchScreen.storyboard in Resources */,
 				2D8574311EC47D9600E2BF88 /* CoinOperations.storyboard in Resources */,
 				2D85748C1EC47D9700E2BF88 /* Info.plist in Resources */,
 				2D8574BB1EC47D9700E2BF88 /* Roboto-Bold.ttf in Resources */,
 				2D8574221EC47D9600E2BF88 /* About.storyboard in Resources */,
-				2D8574401EC47D9600E2BF88 /* Home.xib in Resources */,
 				2D8574241EC47D9600E2BF88 /* AccountPage.storyboard in Resources */,
 				2D85745B1EC47D9600E2BF88 /* Legal.storyboard in Resources */,
+				2D004AD21F3B353A00D52A4D /* History.xib in Resources */,
+				2D004AC71F3B353A00D52A4D /* Blockchain.xib in Resources */,
 				2D8574431EC47D9600E2BF88 /* Login.storyboard in Resources */,
-				2D075FE81ED840A400A5A741 /* History.xib in Resources */,
 				2D8574BD1EC47D9700E2BF88 /* Roboto-Medium.ttf in Resources */,
 				2D85749D1EC47D9700E2BF88 /* ButtonCell.xib in Resources */,
 				2D85748D1EC47D9700E2BF88 /* DropDownCell.xib in Resources */,
@@ -1785,67 +1804,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D004ADE1F3B353A00D52A4D /* PopupView.swift in Sources */,
+				2D004AE11F3B353A00D52A4D /* OperationActivityView.swift in Sources */,
 				2D8574A41EC47D9700E2BF88 /* SwipeDirection.swift in Sources */,
+				2D004AE41F3B353B00D52A4D /* SendAmountTextField.swift in Sources */,
 				2D85745F1EC47D9600E2BF88 /* LicensiesViewController + TableView.swift in Sources */,
 				2D8574421EC47D9600E2BF88 /* HomeViewController.swift in Sources */,
-				2D8574F81EC47D9700E2BF88 /* WalletProtectionUnlockView.swift in Sources */,
 				2D8574691EC47D9600E2BF88 /* AlertsHelper.swift in Sources */,
 				2D8574701EC47D9600E2BF88 /* BlockchainInfoAPI.swift in Sources */,
 				2D8574AC1EC47D9700E2BF88 /* HistoryTransaction.swift in Sources */,
 				2D8574821EC47D9700E2BF88 /* UIColor + Utils.swift in Sources */,
 				2D8574381EC47D9600E2BF88 /* RecipientAddressViewController.swift in Sources */,
+				2D004AD41F3B353A00D52A4D /* NVSValueView.swift in Sources */,
+				2D004AE01F3B353A00D52A4D /* RoundButton.swift in Sources */,
+				2D004ACD1F3B353A00D52A4D /* ExchangeEnterButtonView.swift in Sources */,
+				2D004AD81F3B353A00D52A4D /* HyperlinkLabel.swift in Sources */,
 				2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */,
 				2D8574861EC47D9700E2BF88 /* UIView + Utils.swift in Sources */,
+				2D004AC21F3B353A00D52A4D /* DeleteContactView.swift in Sources */,
 				2D85742D1EC47D9600E2BF88 /* AddressBookViewController.swift in Sources */,
 				2D8574491EC47D9600E2BF88 /* SideMenuViewController.swift in Sources */,
 				2D8574A21EC47D9700E2BF88 /* PagerTabStripViewController.swift in Sources */,
 				2D8574AA1EC47D9700E2BF88 /* Contact.swift in Sources */,
 				2D85746A1EC47D9600E2BF88 /* BaseAPI + Errors.swift in Sources */,
+				2D004AED1F3B353B00D52A4D /* WalletProtectionWarningView.swift in Sources */,
 				2D8574671EC47D9600E2BF88 /* BaseViewController.swift in Sources */,
 				2D8574481EC47D9600E2BF88 /* LeftViewController.swift in Sources */,
-				2D8574CC1EC47D9700E2BF88 /* AddContactView.swift in Sources */,
 				2D85746B1EC47D9600E2BF88 /* BaseAPI.swift in Sources */,
 				2D8574981EC47D9700E2BF88 /* BarView.swift in Sources */,
 				2D8574321EC47D9600E2BF88 /* CoinOperationsViewController.swift in Sources */,
 				2D8574831EC47D9700E2BF88 /* UIImage + Utils.swift in Sources */,
-				2D8574F01EC47D9700E2BF88 /* OperationActivityView.swift in Sources */,
 				2D8574231EC47D9600E2BF88 /* AboutViewController.swift in Sources */,
 				2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */,
-				2D8574D01EC47D9700E2BF88 /* CheckButton.swift in Sources */,
 				2D8574A61EC47D9700E2BF88 /* AddressBook.swift in Sources */,
-				2D8574F11EC47D9700E2BF88 /* RequestSendView.swift in Sources */,
 				2D85748B1EC47D9700E2BF88 /* DPDUIView+Extension.swift in Sources */,
-				2D8574E11EC47D9700E2BF88 /* MyMoneyView.swift in Sources */,
 				2D85742C1EC47D9600E2BF88 /* AddressBookViewController + TableView.swift in Sources */,
 				2D8574AB1EC47D9700E2BF88 /* History.swift in Sources */,
-				2D8574FA1EC47D9700E2BF88 /* WalletProtectionWarningView.swift in Sources */,
-				2D8574EB1EC47D9700E2BF88 /* YesButton.swift in Sources */,
 				2D8574B41EC47D9700E2BF88 /* TabBarObject.swift in Sources */,
 				2D85746D1EC47D9600E2BF88 /* AddMyAddressAPI.swift in Sources */,
 				2D8574AE1EC47D9700E2BF88 /* Licensies.swift in Sources */,
 				2D8574791EC47D9600E2BF88 /* TransactionsAPI.swift in Sources */,
 				2D8574271EC47D9600E2BF88 /* HistoryViewController + TableView.swift in Sources */,
+				2D004AE21F3B353A00D52A4D /* RequestSendView.swift in Sources */,
 				2D8574B61EC47D9700E2BF88 /* Wallet.swift in Sources */,
 				2D8574B51EC47D9700E2BF88 /* Wallet + Protection.swift in Sources */,
-				2D8574D11EC47D9700E2BF88 /* CoinsOpeartionHeaderView.swift in Sources */,
 				2D8574621EC47D9600E2BF88 /* BaseNavigationController.swift in Sources */,
 				2D8574871EC47D9700E2BF88 /* UIViewController + Utils.swift in Sources */,
-				2D8574EA1EC47D9700E2BF88 /* PopupView.swift in Sources */,
 				2D8574741EC47D9600E2BF88 /* MyAddressesAPI.swift in Sources */,
 				2D85747B1EC47D9600E2BF88 /* UpdateNameAPI.swift in Sources */,
-				2D8574F51EC47D9700E2BF88 /* WalletProtectionEncryptActivityView.swift in Sources */,
-				2D8574F21EC47D9700E2BF88 /* SendAmountTextField.swift in Sources */,
 				2D85742E1EC47D9600E2BF88 /* ContactCell.swift in Sources */,
-				2D8574DE1EC47D9700E2BF88 /* LockButton.swift in Sources */,
-				2D8574F91EC47D9700E2BF88 /* WalletProtectionView.swift in Sources */,
 				2D8574C91EC47D9700E2BF88 /* LoginViewModel.swift in Sources */,
 				2D8574651EC47D9600E2BF88 /* BaseTextViewController.swift in Sources */,
-				2D8574EF1EC47D9700E2BF88 /* RoundButton.swift in Sources */,
+				2D004AC51F3B353A00D52A4D /* BaseTextField.swift in Sources */,
 				2D8574CB1EC47D9700E2BF88 /* SendViewModel.swift in Sources */,
+				2D004AE91F3B353B00D52A4D /* WalletProtectionEncryptSuccessView.swift in Sources */,
+				2D004AC81F3B353A00D52A4D /* BlockchainLoadingView.swift in Sources */,
 				2D8574AD1EC47D9700E2BF88 /* License.swift in Sources */,
 				2D8574961EC47D9700E2BF88 /* WalletProtectionHelper.swift in Sources */,
 				2D8574C31EC47D9700E2BF88 /* BlockchainLoadingViewModel.swift in Sources */,
-				2D8574DD1EC47D9700E2BF88 /* HyperlinkLabel.swift in Sources */,
 				2D85749C1EC47D9700E2BF88 /* ButtonBarViewCell.swift in Sources */,
 				2D8574A51EC47D9700E2BF88 /* TwitterPagerTabStripViewController.swift in Sources */,
 				2D8574291EC47D9600E2BF88 /* OperationsViewController.swift in Sources */,
@@ -1854,94 +1870,98 @@
 				2D85748E1EC47D9700E2BF88 /* DropDown+Appearance.swift in Sources */,
 				2D8574761EC47D9600E2BF88 /* ProtectWalletAPI.swift in Sources */,
 				2D8574731EC47D9600E2BF88 /* LockWalletAPI.swift in Sources */,
-				2D8574D81EC47D9700E2BF88 /* ExtendedView.swift in Sources */,
+				2D004ADC1F3B353A00D52A4D /* PopupBackgroundView.swift in Sources */,
 				2D85746E1EC47D9600E2BF88 /* AddNameAPI.swift in Sources */,
 				2D8574681EC47D9600E2BF88 /* Constants.swift in Sources */,
 				2D8574601EC47D9600E2BF88 /* LicensiesViewController.swift in Sources */,
+				2D004ACC1F3B353A00D52A4D /* EncryptionButtonView.swift in Sources */,
 				2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */,
 				2D85745E1EC47D9600E2BF88 /* LicenseLogoCell.swift in Sources */,
+				2D004AE81F3B353B00D52A4D /* WalletProtectionEncryptActivityView.swift in Sources */,
 				2D85748A1EC47D9700E2BF88 /* DPDKeyboardListener.swift in Sources */,
-				2D8574CE1EC47D9700E2BF88 /* BaseTextField.swift in Sources */,
 				2D8574C81EC47D9700E2BF88 /* LicenseViewModel.swift in Sources */,
 				2D8574801EC47D9700E2BF88 /* Dictionary + Utils.swift in Sources */,
 				2D8574921EC47D9700E2BF88 /* GenerationWordsHelper.swift in Sources */,
+				2D004AD11F3B353A00D52A4D /* DetailValueView.swift in Sources */,
 				2D8574641EC47D9600E2BF88 /* BaseTableViewCell.swift in Sources */,
 				2D8574251EC47D9600E2BF88 /* AccountPageViewController.swift in Sources */,
+				2D004ADD1F3B353A00D52A4D /* CancelButton.swift in Sources */,
 				2D8574851EC47D9700E2BF88 /* UITableView + Utils.swift in Sources */,
 				2D8574351EC47D9600E2BF88 /* MyAddressCell.swift in Sources */,
+				2D004AE51F3B353B00D52A4D /* SuccessSendView.swift in Sources */,
+				2D004AC31F3B353A00D52A4D /* BaseButton.swift in Sources */,
+				2D004AC91F3B353A00D52A4D /* CheckButton.swift in Sources */,
 				2D85747F1EC47D9700E2BF88 /* Date + Utils.swift in Sources */,
+				2D004ADA1F3B353A00D52A4D /* LoginButton.swift in Sources */,
 				2D8574951EC47D9700E2BF88 /* Router.swift in Sources */,
 				2D8574C41EC47D9700E2BF88 /* CoinsOperationViewModel.swift in Sources */,
+				2D004AEA1F3B353B00D52A4D /* WalletProtectionLockView.swift in Sources */,
+				2D004ADF1F3B353A00D52A4D /* YesButton.swift in Sources */,
 				2D8574A81EC47D9700E2BF88 /* Blockchain.swift in Sources */,
-				2D8574D71EC47D9700E2BF88 /* ExpireDaysTextField.swift in Sources */,
+				2D004AC01F3B353A00D52A4D /* AddContactView.swift in Sources */,
+				2D004ACA1F3B353A00D52A4D /* CoinsOpeartionHeaderView.swift in Sources */,
+				2D004AD61F3B353A00D52A4D /* HomeLogoView.swift in Sources */,
 				2D85743C1EC47D9600E2BF88 /* TabBarController.swift in Sources */,
-				2D8574DC1EC47D9700E2BF88 /* HomeLogoView.swift in Sources */,
 				2D8574631EC47D9600E2BF88 /* BasePageViewController.swift in Sources */,
 				2D85747D1EC47D9600E2BF88 /* AppManager.swift in Sources */,
 				2D8574341EC47D9600E2BF88 /* GetCoinsViewController.swift in Sources */,
 				2D8574881EC47D9700E2BF88 /* Utils.swift in Sources */,
 				2D8574711EC47D9600E2BF88 /* DeleteNameAPI.swift in Sources */,
-				2D8574F31EC47D9700E2BF88 /* SuccessSendView.swift in Sources */,
 				2D85747E1EC47D9600E2BF88 /* Array + Utils.swift in Sources */,
 				2D85747C1EC47D9600E2BF88 /* APIManager.swift in Sources */,
-				2D8574E01EC47D9700E2BF88 /* AddAddressView.swift in Sources */,
+				2D004AD01F3B353A00D52A4D /* ExtendedView.swift in Sources */,
 				2D85743A1EC47D9600E2BF88 /* SendCoinsViewController.swift in Sources */,
+				2D004AEB1F3B353B00D52A4D /* WalletProtectionUnlockView.swift in Sources */,
 				2D8574A11EC47D9700E2BF88 /* PagerTabStripError.swift in Sources */,
-				2D8574E91EC47D9700E2BF88 /* CancelButton.swift in Sources */,
+				2D004ACB1F3B353A00D52A4D /* CourseView.swift in Sources */,
 				2D8574991EC47D9700E2BF88 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
 				2D8574371EC47D9600E2BF88 /* MyAdressViewController.swift in Sources */,
 				2D8574901EC47D9700E2BF88 /* DropDownCell.swift in Sources */,
+				2D004AD91F3B353A00D52A4D /* LockButton.swift in Sources */,
+				2D004AE71F3B353B00D52A4D /* WalletProtectionActivityView.swift in Sources */,
 				2D85746F1EC47D9600E2BF88 /* BalanceAPI.swift in Sources */,
 				2D8574B01EC47D9700E2BF88 /* MyAddressBook.swift in Sources */,
 				2D8574B31EC47D9700E2BF88 /* Settings.swift in Sources */,
 				2D8574A71EC47D9700E2BF88 /* BaseModel.swift in Sources */,
 				2D8574C51EC47D9700E2BF88 /* ContactViewModel.swift in Sources */,
-				2D8574CD1EC47D9700E2BF88 /* BaseButton.swift in Sources */,
 				2D8574461EC47D9600E2BF88 /* MenuDefaultCell.swift in Sources */,
-				2D8574F61EC47D9700E2BF88 /* WalletProtectionEncryptSuccessView.swift in Sources */,
 				2D8574AF1EC47D9700E2BF88 /* MenuItem.swift in Sources */,
 				2D85745D1EC47D9600E2BF88 /* LicenseCell.swift in Sources */,
 				2D8574611EC47D9600E2BF88 /* BaseAlertController.swift in Sources */,
 				2D8574471EC47D9600E2BF88 /* LeftViewController + TableView.swift in Sources */,
 				2D8574781EC47D9600E2BF88 /* SendCoinsAPI.swift in Sources */,
-				2D075FEB1ED843FF00A5A741 /* NVSValueView.swift in Sources */,
 				2D85749F1EC47D9700E2BF88 /* IndicatorInfo.swift in Sources */,
-				2D8574F71EC47D9700E2BF88 /* WalletProtectionLockView.swift in Sources */,
 				2D8574911EC47D9700E2BF88 /* FRHyperLabel.m in Sources */,
 				2D8574971EC47D9700E2BF88 /* BarPagerTabStripViewController.swift in Sources */,
-				2D33B8BB1ECC600F004DB497 /* BlockchainLoadingView.swift in Sources */,
-				2D8574D51EC47D9700E2BF88 /* ExchangeEnterButtonView.swift in Sources */,
+				2D004ACF1F3B353A00D52A4D /* ExpireDaysTextField.swift in Sources */,
 				2D8574A31EC47D9700E2BF88 /* SegmentedPagerTabStripViewController.swift in Sources */,
 				2D8574941EC47D9700E2BF88 /* QRCodeHelper.swift in Sources */,
-				2D8574DF1EC47D9700E2BF88 /* LoginButton.swift in Sources */,
 				2D8574361EC47D9600E2BF88 /* MyAdressViewController + TableView.swift in Sources */,
 				2D85743E1EC47D9600E2BF88 /* HomeBalanceCell.swift in Sources */,
+				2D004ACE1F3B353A00D52A4D /* ExchangeHeaderView.swift in Sources */,
+				2D004AD71F3B353A00D52A4D /* MyMoneyView.swift in Sources */,
 				2D8574281EC47D9600E2BF88 /* HistoryViewController.swift in Sources */,
-				2D8574CF1EC47D9700E2BF88 /* BaseTextView.swift in Sources */,
-				2D8574F41EC47D9700E2BF88 /* WalletProtectionActivityView.swift in Sources */,
+				2D004AC41F3B353A00D52A4D /* BaseSlider.swift in Sources */,
 				2D8574811EC47D9700E2BF88 /* String + Utils.swift in Sources */,
 				2D8574661EC47D9600E2BF88 /* BaseViewController + ActivityIndicator.swift in Sources */,
 				2D85747A1EC47D9600E2BF88 /* UnlockWalletAPI.swift in Sources */,
-				2D7B29E21ECAEC3200F05DB2 /* BaseSlider.swift in Sources */,
-				2D8574D61EC47D9700E2BF88 /* ExchangeHeaderView.swift in Sources */,
-				2D8574D41EC47D9700E2BF88 /* EncryptionButtonView.swift in Sources */,
 				2D8574891EC47D9700E2BF88 /* DPDConstants.swift in Sources */,
 				2D8574C71EC47D9700E2BF88 /* HistoryTransactionViewModel.swift in Sources */,
-				2D8574D21EC47D9700E2BF88 /* CourseView.swift in Sources */,
 				2D8574841EC47D9700E2BF88 /* UIImageView + Utils.swift in Sources */,
-				2D075FE71ED840A400A5A741 /* DetailValueView.swift in Sources */,
-				2D8574D31EC47D9700E2BF88 /* DeleteContactView.swift in Sources */,
 				2D85749B1EC47D9700E2BF88 /* ButtonBarView.swift in Sources */,
 				2D85745C1EC47D9600E2BF88 /* LegalViewController.swift in Sources */,
 				2D8574331EC47D9600E2BF88 /* GetCoinsViewController + DropDown.swift in Sources */,
+				2D004AEC1F3B353B00D52A4D /* WalletProtectionView.swift in Sources */,
 				2D8574A01EC47D9700E2BF88 /* PagerTabStripBehaviour.swift in Sources */,
 				2D85749A1EC47D9700E2BF88 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				2D004AD31F3B353A00D52A4D /* HistoryTransactionDetailView.swift in Sources */,
 				2D8574411EC47D9600E2BF88 /* HomeViewController + TableView.swift in Sources */,
 				2D8574261EC47D9600E2BF88 /* HistoryCell.swift in Sources */,
+				2D004ADB1F3B353A00D52A4D /* AddAddressView.swift in Sources */,
 				2D8574721EC47D9600E2BF88 /* InfoAPI.swift in Sources */,
 				2D8574441EC47D9600E2BF88 /* LoginViewController.swift in Sources */,
+				2D004AC61F3B353A00D52A4D /* BaseTextView.swift in Sources */,
 				2D85748F1EC47D9700E2BF88 /* DropDown.swift in Sources */,
-				2D075FE91ED840A400A5A741 /* HistoryTransactionDetailView.swift in Sources */,
 				2D8574301EC47D9600E2BF88 /* BlockchainLoadingViewController.swift in Sources */,
 				2D8574A91EC47D9700E2BF88 /* Coin.swift in Sources */,
 			);

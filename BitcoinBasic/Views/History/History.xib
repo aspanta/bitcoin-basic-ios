@@ -23,14 +23,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLM-lt-ETi">
-                    <rect key="frame" x="15" y="168" width="389" height="400"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLM-lt-ETi" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
+                    <rect key="frame" x="15" y="168" width="384" height="400"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name_info_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZEZ-YP-Cge">
-                            <rect key="frame" x="0.0" y="0.0" width="388" height="400"/>
-                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHx-9h-Ah0">
-                            <rect key="frame" x="90" y="344" width="209" height="31"/>
+                            <rect key="frame" x="87.5" y="344" width="209" height="31"/>
                             <subviews>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdG-hN-gK6" customClass="YesButton" customModule="BitcoinBasic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="104" height="31"/>
@@ -63,13 +60,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YX-Ws-paO">
-                            <rect key="frame" x="11" y="18" width="354" height="30"/>
+                            <rect key="frame" x="11" y="18" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-BL-Q0t" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="50" y="0.0" width="304" height="30"/>
+                                    <rect key="frame" x="50" y="0.0" width="312" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-dd-2oA">
-                                            <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8a-IK-AIP">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -130,13 +127,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGj-1N-eg7">
-                            <rect key="frame" x="11" y="56" width="354" height="30"/>
+                            <rect key="frame" x="11" y="56" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxX-05-rgu" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="79.5" y="0.0" width="274.5" height="30"/>
+                                    <rect key="frame" x="79.5" y="0.0" width="282.5" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-zJ-WYJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="274.5" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="282.5" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCH-S6-Pzb">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -200,13 +197,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-OL-fT8">
-                            <rect key="frame" x="11" y="94" width="354" height="30"/>
+                            <rect key="frame" x="11" y="94" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-LC-eRl" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="86" y="0.0" width="268" height="30"/>
+                                    <rect key="frame" x="86" y="0.0" width="276" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L06-on-tqU">
-                                            <rect key="frame" x="0.0" y="0.0" width="268" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="276" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-Z0-pA0">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -267,13 +264,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paB-4p-JR7">
-                            <rect key="frame" x="11" y="132" width="354" height="30"/>
+                            <rect key="frame" x="11" y="132" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnU-e0-Q5z" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="76.5" y="0.0" width="277.5" height="30"/>
+                                    <rect key="frame" x="76.5" y="0.0" width="285.5" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qL-2b-kXU">
-                                            <rect key="frame" x="0.0" y="0.0" width="277.5" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="285.5" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m72-Cp-1Jg">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -334,13 +331,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miP-Ge-d3T">
-                            <rect key="frame" x="11" y="170" width="354" height="30"/>
+                            <rect key="frame" x="11" y="170" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-E5-KSn" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="42" y="0.0" width="312" height="30"/>
+                                    <rect key="frame" x="42" y="0.0" width="320" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftN-mH-fy3">
-                                            <rect key="frame" x="0.0" y="0.0" width="312" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iII-UP-BS5">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -401,13 +398,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgl-pJ-qMA">
-                            <rect key="frame" x="11" y="208" width="354" height="30"/>
+                            <rect key="frame" x="11" y="208" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoX-fe-mgY" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="130" y="0.0" width="224" height="30"/>
+                                    <rect key="frame" x="130" y="0.0" width="232" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS5-MA-zGw">
-                                            <rect key="frame" x="0.0" y="0.0" width="224" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="232" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bab-gV-C9n">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -471,13 +468,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tl-gD-dZj">
-                            <rect key="frame" x="11" y="246" width="354" height="30"/>
+                            <rect key="frame" x="11" y="246" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpq-Ov-N9v" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="50.5" y="0.0" width="303.5" height="30"/>
+                                    <rect key="frame" x="50.5" y="0.0" width="311.5" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7Y-4f-jRN">
-                                            <rect key="frame" x="0.0" y="0.0" width="303.5" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="311.5" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EST-tk-b8X">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -538,13 +535,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kb1-HN-kkF">
-                            <rect key="frame" x="11" y="284" width="354" height="30"/>
+                            <rect key="frame" x="11" y="284" width="362" height="30"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCO-TT-Xvr" customClass="DetailValueView" customModule="BitcoinBasic" customModuleProvider="target">
-                                    <rect key="frame" x="97" y="0.0" width="257" height="30"/>
+                                    <rect key="frame" x="97" y="0.0" width="265" height="30"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RW-eY-JQW">
-                                            <rect key="frame" x="0.0" y="0.0" width="257" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-gq-4DP">
                                                     <rect key="frame" x="5" y="5" width="42" height="25"/>
@@ -605,34 +602,31 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="paB-4p-JR7" firstAttribute="top" secondItem="JZ4-OL-fT8" secondAttribute="bottom" constant="8" id="1rE-RY-Hj3"/>
-                        <constraint firstAttribute="trailing" secondItem="0YX-Ws-paO" secondAttribute="trailing" constant="24" id="2Mz-TW-hf6"/>
-                        <constraint firstAttribute="trailing" secondItem="ZEZ-YP-Cge" secondAttribute="trailing" constant="1" id="3zH-FK-ciV"/>
+                        <constraint firstAttribute="trailing" secondItem="0YX-Ws-paO" secondAttribute="trailing" constant="11" id="2Mz-TW-hf6"/>
                         <constraint firstItem="miP-Ge-d3T" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="6ZK-DQ-36x"/>
-                        <constraint firstAttribute="bottom" secondItem="ZEZ-YP-Cge" secondAttribute="bottom" id="9RP-Js-iJe"/>
-                        <constraint firstAttribute="trailing" secondItem="Wgl-pJ-qMA" secondAttribute="trailing" constant="24" id="9Uv-PV-GYg"/>
-                        <constraint firstItem="ZEZ-YP-Cge" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" id="CxZ-VF-ycA"/>
+                        <constraint firstAttribute="trailing" secondItem="Wgl-pJ-qMA" secondAttribute="trailing" constant="11" id="9Uv-PV-GYg"/>
                         <constraint firstItem="JZ4-OL-fT8" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="EVx-Zz-T3m"/>
                         <constraint firstItem="paB-4p-JR7" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="Fmd-iT-gD4"/>
-                        <constraint firstAttribute="trailing" secondItem="kb1-HN-kkF" secondAttribute="trailing" constant="24" id="Gkh-Jf-uof"/>
+                        <constraint firstAttribute="trailing" secondItem="kb1-HN-kkF" secondAttribute="trailing" constant="11" id="Gkh-Jf-uof"/>
                         <constraint firstItem="Wgl-pJ-qMA" firstAttribute="top" secondItem="miP-Ge-d3T" secondAttribute="bottom" constant="8" id="IZk-vh-cj0"/>
                         <constraint firstItem="kb1-HN-kkF" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="Iok-IH-3Vz"/>
                         <constraint firstItem="kb1-HN-kkF" firstAttribute="top" secondItem="3tl-gD-dZj" secondAttribute="bottom" constant="8" id="M94-Xg-L1P"/>
-                        <constraint firstAttribute="trailing" secondItem="3tl-gD-dZj" secondAttribute="trailing" constant="24" id="QYK-kb-ecu"/>
+                        <constraint firstAttribute="trailing" secondItem="3tl-gD-dZj" secondAttribute="trailing" constant="11" id="QYK-kb-ecu"/>
                         <constraint firstItem="pHx-9h-Ah0" firstAttribute="centerX" secondItem="PLM-lt-ETi" secondAttribute="centerX" id="QkB-ah-aeW"/>
-                        <constraint firstAttribute="trailing" secondItem="dGj-1N-eg7" secondAttribute="trailing" constant="24" id="T4x-ym-QdR"/>
-                        <constraint firstAttribute="trailing" secondItem="paB-4p-JR7" secondAttribute="trailing" constant="24" id="WV4-0x-P4o"/>
-                        <constraint firstAttribute="trailing" secondItem="JZ4-OL-fT8" secondAttribute="trailing" constant="24" id="Zja-Fq-xBQ"/>
+                        <constraint firstAttribute="trailing" secondItem="dGj-1N-eg7" secondAttribute="trailing" constant="11" id="T4x-ym-QdR"/>
+                        <constraint firstAttribute="trailing" secondItem="paB-4p-JR7" secondAttribute="trailing" constant="11" id="WV4-0x-P4o"/>
+                        <constraint firstAttribute="trailing" secondItem="JZ4-OL-fT8" secondAttribute="trailing" constant="11" id="Zja-Fq-xBQ"/>
                         <constraint firstItem="pHx-9h-Ah0" firstAttribute="top" secondItem="kb1-HN-kkF" secondAttribute="bottom" constant="30" id="eQF-w7-hJV"/>
-                        <constraint firstAttribute="trailing" secondItem="miP-Ge-d3T" secondAttribute="trailing" constant="24" id="fO3-kS-YuE"/>
+                        <constraint firstAttribute="trailing" secondItem="miP-Ge-d3T" secondAttribute="trailing" constant="11" id="fO3-kS-YuE"/>
                         <constraint firstItem="Wgl-pJ-qMA" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="hw9-Pe-xUV"/>
                         <constraint firstItem="0YX-Ws-paO" firstAttribute="top" secondItem="PLM-lt-ETi" secondAttribute="top" constant="18" id="i2t-gw-vAM"/>
                         <constraint firstItem="miP-Ge-d3T" firstAttribute="top" secondItem="paB-4p-JR7" secondAttribute="bottom" constant="8" id="mSY-kZ-FPA"/>
                         <constraint firstAttribute="bottom" secondItem="pHx-9h-Ah0" secondAttribute="bottom" constant="25" id="my4-RF-ewo"/>
                         <constraint firstAttribute="height" constant="400" id="ozE-ht-pQp"/>
                         <constraint firstItem="JZ4-OL-fT8" firstAttribute="top" secondItem="dGj-1N-eg7" secondAttribute="bottom" constant="8" id="q5S-t0-kg2"/>
-                        <constraint firstItem="ZEZ-YP-Cge" firstAttribute="top" secondItem="PLM-lt-ETi" secondAttribute="top" id="quB-WU-OaO"/>
                         <constraint firstItem="3tl-gD-dZj" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="ra9-Wg-A0e"/>
                         <constraint firstItem="0YX-Ws-paO" firstAttribute="leading" secondItem="PLM-lt-ETi" secondAttribute="leading" constant="11" id="t3O-OT-on7"/>
                         <constraint firstItem="3tl-gD-dZj" firstAttribute="top" secondItem="Wgl-pJ-qMA" secondAttribute="bottom" constant="8" id="tFG-tA-6MH"/>
@@ -644,7 +638,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="PLM-lt-ETi" firstAttribute="centerY" secondItem="SDg-GF-2yJ" secondAttribute="centerY" id="2QR-Qt-tKN"/>
-                <constraint firstAttribute="trailing" secondItem="PLM-lt-ETi" secondAttribute="trailing" constant="10" id="4yb-kz-vQr"/>
+                <constraint firstAttribute="trailing" secondItem="PLM-lt-ETi" secondAttribute="trailing" constant="15" id="4yb-kz-vQr"/>
                 <constraint firstItem="PLM-lt-ETi" firstAttribute="leading" secondItem="SDg-GF-2yJ" secondAttribute="leading" constant="15" id="5Vq-c6-Ten"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -661,7 +655,4 @@
             <point key="canvasLocation" x="1366" y="860"/>
         </view>
     </objects>
-    <resources>
-        <image name="name_info_bg" width="315" height="437"/>
-    </resources>
 </document>

@@ -23,12 +23,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQE-Qq-3wu">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQE-Qq-3wu" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
                     <rect key="frame" x="70" y="278.5" width="274" height="180"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_background" translatesAutoresizingMaskIntoConstraints="NO" id="vhz-A1-QA1">
-                            <rect key="frame" x="0.0" y="0.0" width="273" height="180"/>
-                        </imageView>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0V-I1-59T">
                             <rect key="frame" x="103" y="135" width="67" height="30"/>
                             <color key="backgroundColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +73,7 @@
                             <color key="color" red="0.98431372549999996" green="0.51372549020000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         </activityIndicatorView>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="t8i-1k-dw4" firstAttribute="top" secondItem="kQO-i4-Yjk" secondAttribute="bottom" constant="8.5" id="0cn-cW-hYR"/>
                         <constraint firstAttribute="trailing" secondItem="X8J-TO-mUM" secondAttribute="trailing" constant="20" id="3pI-o8-M15"/>
@@ -84,13 +82,9 @@
                         <constraint firstAttribute="width" constant="274" id="8OE-DN-mdq"/>
                         <constraint firstItem="X8J-TO-mUM" firstAttribute="top" secondItem="yQE-Qq-3wu" secondAttribute="top" constant="10" id="AuS-C8-Qzi"/>
                         <constraint firstAttribute="trailing" secondItem="JbH-hX-Xrn" secondAttribute="trailing" constant="20" id="ELX-YT-xSI"/>
-                        <constraint firstAttribute="trailing" secondItem="vhz-A1-QA1" secondAttribute="trailing" constant="1" id="NXd-p4-EGE"/>
-                        <constraint firstAttribute="bottom" secondItem="vhz-A1-QA1" secondAttribute="bottom" id="Nz8-Md-osN"/>
                         <constraint firstItem="JbH-hX-Xrn" firstAttribute="top" secondItem="X8J-TO-mUM" secondAttribute="bottom" constant="8" id="SjW-Y3-XFe"/>
                         <constraint firstItem="N0V-I1-59T" firstAttribute="top" secondItem="t8i-1k-dw4" secondAttribute="bottom" constant="14.5" id="Vvj-dd-3fH"/>
                         <constraint firstItem="kQO-i4-Yjk" firstAttribute="leading" secondItem="yQE-Qq-3wu" secondAttribute="leading" constant="20" id="W0a-t8-KaO"/>
-                        <constraint firstItem="vhz-A1-QA1" firstAttribute="top" secondItem="yQE-Qq-3wu" secondAttribute="top" id="Wl2-Lc-ibm"/>
-                        <constraint firstItem="vhz-A1-QA1" firstAttribute="leading" secondItem="yQE-Qq-3wu" secondAttribute="leading" id="aI0-Hr-aYv"/>
                         <constraint firstItem="N0V-I1-59T" firstAttribute="centerX" secondItem="yQE-Qq-3wu" secondAttribute="centerX" id="biP-WS-GiG"/>
                         <constraint firstItem="X8J-TO-mUM" firstAttribute="leading" secondItem="yQE-Qq-3wu" secondAttribute="leading" constant="20" id="eRr-YQ-Vwm"/>
                         <constraint firstItem="kQO-i4-Yjk" firstAttribute="top" secondItem="JbH-hX-Xrn" secondAttribute="bottom" constant="8" id="gPT-lW-pnR"/>
@@ -113,7 +107,4 @@
             <point key="canvasLocation" x="1880" y="143"/>
         </view>
     </objects>
-    <resources>
-        <image name="popup_background" width="312" height="157"/>
-    </resources>
 </document>

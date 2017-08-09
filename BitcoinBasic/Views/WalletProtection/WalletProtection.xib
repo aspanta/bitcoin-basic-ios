@@ -22,12 +22,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ7-if-Nq9" userLabel="main view">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ7-if-Nq9" userLabel="main view" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
                     <rect key="frame" x="33" y="278.5" width="348" height="180"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_background" translatesAutoresizingMaskIntoConstraints="NO" id="8Pq-VE-CN5">
-                            <rect key="frame" x="0.0" y="0.0" width="347" height="180"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Protection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBa-Fd-tP3">
                             <rect key="frame" x="61" y="30" width="225" height="19"/>
                             <constraints>
@@ -106,19 +103,16 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="CWL-Vx-zx3" firstAttribute="top" secondItem="ZBa-Fd-tP3" secondAttribute="bottom" constant="8" id="0HA-CU-GL5"/>
                         <constraint firstItem="ZBa-Fd-tP3" firstAttribute="centerX" secondItem="IZ7-if-Nq9" secondAttribute="centerX" id="E27-bk-7tw"/>
                         <constraint firstItem="CWL-Vx-zx3" firstAttribute="leading" secondItem="IZ7-if-Nq9" secondAttribute="leading" constant="7" id="Jvo-G4-thO"/>
                         <constraint firstAttribute="trailing" secondItem="CWL-Vx-zx3" secondAttribute="trailing" constant="9" id="KhX-Y9-GYt"/>
                         <constraint firstItem="ZBa-Fd-tP3" firstAttribute="top" secondItem="IZ7-if-Nq9" secondAttribute="top" constant="30" id="NWS-IA-oFd"/>
-                        <constraint firstAttribute="bottom" secondItem="8Pq-VE-CN5" secondAttribute="bottom" id="UiD-8v-fUv"/>
-                        <constraint firstItem="8Pq-VE-CN5" firstAttribute="leading" secondItem="IZ7-if-Nq9" secondAttribute="leading" id="b10-tH-bmd"/>
                         <constraint firstAttribute="height" constant="180" id="jYY-uV-BWy"/>
                         <constraint firstAttribute="bottom" secondItem="hfu-64-LQe" secondAttribute="bottom" constant="24" id="maJ-3o-gDp"/>
                         <constraint firstItem="hfu-64-LQe" firstAttribute="centerX" secondItem="IZ7-if-Nq9" secondAttribute="centerX" id="orm-fE-AHz"/>
-                        <constraint firstAttribute="trailing" secondItem="8Pq-VE-CN5" secondAttribute="trailing" constant="1" id="usn-kW-SE0"/>
-                        <constraint firstItem="8Pq-VE-CN5" firstAttribute="top" secondItem="IZ7-if-Nq9" secondAttribute="top" id="yF7-ce-HPN"/>
                     </constraints>
                 </view>
             </subviews>
@@ -141,12 +135,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-Qj-df8" userLabel="main view">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-Qj-df8" userLabel="main view" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
                     <rect key="frame" x="33" y="293.5" width="348" height="150"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_background" translatesAutoresizingMaskIntoConstraints="NO" id="cqE-eq-Ohi">
-                            <rect key="frame" x="0.0" y="0.0" width="347" height="150"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Protection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJw-yT-knt">
                             <rect key="frame" x="61" y="30" width="225" height="19"/>
                             <constraints>
@@ -190,15 +181,12 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="7hy-sd-Xw3"/>
-                        <constraint firstItem="cqE-eq-Ohi" firstAttribute="top" secondItem="UpJ-Qj-df8" secondAttribute="top" id="Plk-ce-dQN"/>
                         <constraint firstItem="yZk-n2-ryV" firstAttribute="centerX" secondItem="UpJ-Qj-df8" secondAttribute="centerX" id="XIe-2N-lle"/>
-                        <constraint firstItem="cqE-eq-Ohi" firstAttribute="leading" secondItem="UpJ-Qj-df8" secondAttribute="leading" id="Ydd-xR-ycf"/>
                         <constraint firstItem="PJw-yT-knt" firstAttribute="centerX" secondItem="UpJ-Qj-df8" secondAttribute="centerX" id="cqf-R8-YiH"/>
                         <constraint firstAttribute="bottom" secondItem="yZk-n2-ryV" secondAttribute="bottom" constant="24" id="flA-fd-UX2"/>
-                        <constraint firstAttribute="trailing" secondItem="cqE-eq-Ohi" secondAttribute="trailing" constant="1" id="gU3-m8-8T5"/>
-                        <constraint firstAttribute="bottom" secondItem="cqE-eq-Ohi" secondAttribute="bottom" id="hNW-yq-9Rm"/>
                         <constraint firstItem="PJw-yT-knt" firstAttribute="top" secondItem="UpJ-Qj-df8" secondAttribute="top" constant="30" id="juX-uI-czQ"/>
                     </constraints>
                 </view>
@@ -217,12 +205,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02w-XG-JXN" userLabel="main view">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02w-XG-JXN" userLabel="main view" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
                     <rect key="frame" x="33" y="248.5" width="348" height="240"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_background" translatesAutoresizingMaskIntoConstraints="NO" id="2k5-rI-r4t">
-                            <rect key="frame" x="0.0" y="0.0" width="347" height="240"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Protection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-4c-BeJ">
                             <rect key="frame" x="61" y="30" width="225" height="19"/>
                             <constraints>
@@ -331,20 +316,17 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="BwM-4c-BeJ" firstAttribute="top" secondItem="02w-XG-JXN" secondAttribute="top" constant="30" id="0Gm-U7-MHl"/>
                         <constraint firstItem="lXg-89-WgM" firstAttribute="leading" secondItem="02w-XG-JXN" secondAttribute="leading" constant="7" id="2dh-JB-agg"/>
                         <constraint firstAttribute="trailing" secondItem="lXg-89-WgM" secondAttribute="trailing" constant="9" id="F6H-tu-Euj"/>
-                        <constraint firstAttribute="bottom" secondItem="2k5-rI-r4t" secondAttribute="bottom" id="GrW-qo-kwr"/>
                         <constraint firstItem="N8g-NX-FNR" firstAttribute="top" secondItem="lXg-89-WgM" secondAttribute="bottom" constant="23" id="Hx3-EX-AaB"/>
                         <constraint firstItem="vtc-k2-cGS" firstAttribute="centerX" secondItem="02w-XG-JXN" secondAttribute="centerX" id="O5G-tP-h58"/>
                         <constraint firstItem="BwM-4c-BeJ" firstAttribute="centerX" secondItem="02w-XG-JXN" secondAttribute="centerX" id="Txe-HM-Hiv"/>
                         <constraint firstItem="lXg-89-WgM" firstAttribute="top" secondItem="BwM-4c-BeJ" secondAttribute="bottom" constant="8" id="fXd-3g-UOh"/>
-                        <constraint firstAttribute="trailing" secondItem="2k5-rI-r4t" secondAttribute="trailing" constant="1" id="gX7-OU-AjX"/>
-                        <constraint firstItem="2k5-rI-r4t" firstAttribute="top" secondItem="02w-XG-JXN" secondAttribute="top" id="l5Q-eL-MMd"/>
                         <constraint firstItem="vtc-k2-cGS" firstAttribute="top" secondItem="N8g-NX-FNR" secondAttribute="bottom" constant="31" id="lXO-8P-ws1"/>
                         <constraint firstAttribute="trailing" secondItem="N8g-NX-FNR" secondAttribute="trailing" constant="9" id="mgu-zL-GxT"/>
-                        <constraint firstItem="2k5-rI-r4t" firstAttribute="leading" secondItem="02w-XG-JXN" secondAttribute="leading" id="sKo-IO-FTz"/>
                         <constraint firstAttribute="bottom" secondItem="vtc-k2-cGS" secondAttribute="bottom" constant="24" id="vP1-9e-QNL"/>
                         <constraint firstItem="N8g-NX-FNR" firstAttribute="leading" secondItem="02w-XG-JXN" secondAttribute="leading" constant="7" id="wOi-Vr-mSN"/>
                         <constraint firstAttribute="height" constant="240" id="yqw-7q-7Z3"/>
@@ -370,12 +352,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-lI-DGc" userLabel="main view">
-                    <rect key="frame" x="33" y="246" width="348" height="244.5"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-lI-DGc" userLabel="main view" customClass="PopupBackgroundView" customModule="BitcoinBasic" customModuleProvider="target">
+                    <rect key="frame" x="33" y="246.5" width="348" height="244.5"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_background" translatesAutoresizingMaskIntoConstraints="NO" id="yAh-QA-EKw">
-                            <rect key="frame" x="0.0" y="0.0" width="347" height="244.5"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Protection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTI-gU-Zr0">
                             <rect key="frame" x="61" y="30" width="225" height="19"/>
                             <constraints>
@@ -432,19 +411,16 @@ Would you like to continue anyway?</string>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="0bf-eQ-wo5" firstAttribute="leading" secondItem="XDc-lI-DGc" secondAttribute="leading" constant="35" id="0Yk-dt-HpY"/>
                         <constraint firstAttribute="trailing" secondItem="0bf-eQ-wo5" secondAttribute="trailing" constant="36" id="2AM-Aj-eMa"/>
-                        <constraint firstItem="yAh-QA-EKw" firstAttribute="top" secondItem="XDc-lI-DGc" secondAttribute="top" id="8ZK-tw-9wa"/>
                         <constraint firstItem="XTI-gU-Zr0" firstAttribute="top" secondItem="XDc-lI-DGc" secondAttribute="top" constant="30" id="QTe-SO-Z8b"/>
-                        <constraint firstItem="yAh-QA-EKw" firstAttribute="leading" secondItem="XDc-lI-DGc" secondAttribute="leading" id="RZf-le-ukq"/>
                         <constraint firstItem="l4n-iA-u93" firstAttribute="centerX" secondItem="XDc-lI-DGc" secondAttribute="centerX" id="SJd-2T-URN"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="bYA-am-ehx"/>
                         <constraint firstItem="0bf-eQ-wo5" firstAttribute="top" secondItem="XTI-gU-Zr0" secondAttribute="bottom" constant="20" id="kej-ut-KZB"/>
                         <constraint firstItem="l4n-iA-u93" firstAttribute="top" secondItem="0bf-eQ-wo5" secondAttribute="bottom" constant="15" id="o1B-UM-9Fa"/>
-                        <constraint firstAttribute="bottom" secondItem="yAh-QA-EKw" secondAttribute="bottom" id="pxW-wc-fz8"/>
                         <constraint firstAttribute="bottom" secondItem="l4n-iA-u93" secondAttribute="bottom" constant="24" id="qUd-0r-pe3"/>
-                        <constraint firstAttribute="trailing" secondItem="yAh-QA-EKw" secondAttribute="trailing" constant="1" id="wDp-xZ-Wg4"/>
                         <constraint firstItem="XTI-gU-Zr0" firstAttribute="centerX" secondItem="XDc-lI-DGc" secondAttribute="centerX" id="ytY-bT-DP9"/>
                     </constraints>
                 </view>
