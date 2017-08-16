@@ -2117,7 +2117,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspanta.bitcoinbasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "17ed5a58-3045-4923-8734-484024a0a34a";
+				PROVISIONING_PROFILE = "bcd8ba13-7ae9-44b7-87ce-862a63fc746f";
 				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
