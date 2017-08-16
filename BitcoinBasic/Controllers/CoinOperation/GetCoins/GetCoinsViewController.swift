@@ -82,13 +82,13 @@ class GetCoinsViewController: BaseViewController {
     
     @IBAction func copyButtonPressed(sender:UIButton) {
         
-        UIPasteboard.general.string = addressLabel.text
+        UIPasteboard.general.string = address
         showCopyView()
     }
     
     private func showShareController() {
         
-        let text = addressLabel.text as Any
+        let text = address as Any
         let image = qrCodeImageView.image as Any
         
         let activityViewController = UIActivityViewController(activityItems: [text, image], applicationActivities: nil)
