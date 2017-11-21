@@ -90,13 +90,13 @@ class CoinOperationsViewController: BaseViewController {
         operationLabel.text = text
         
         viewModel.coinCourseTitle.bind(to: headerView.coinCourseLabel.rx.attributedText)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel.coinAmount.bind(to: headerView.coinAmountLabel.rx.text)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel.locked.subscribe(onNext: {[weak self] (locked) in
             self?.lockButton.isLocked = locked
         })
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
         
         viewModel.updateUI()
         

@@ -10,11 +10,16 @@ import QRCodeReader
 class ScanQRCodeController: BaseViewController {
     
     var scanned:((_ data:AnyObject) -> (Void))?
-
-    lazy var reader = QRCodeReaderViewController(builder: QRCodeReaderViewControllerBuilder {
-        $0.reader          = QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
-        $0.showTorchButton = true
-    })
+    
+    lazy var reader: QRCodeReader = QRCodeReader()
+    lazy var readerVC: QRCodeReaderViewController = {
+        let builder = QRCodeReaderViewControllerBuilder {
+            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
+            $0.showTorchButton = true
+        }
+        
+        return QRCodeReaderViewController(builder: builder)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +33,17 @@ class ScanQRCodeController: BaseViewController {
         
         do {
             if try QRCodeReader.supportsMetadataObjectTypes() {
-                reader.modalPresentationStyle = .formSheet
-                reader.modalTransitionStyle = .crossDissolve
-                reader.delegate               = self
+                readerVC.modalPresentationStyle = .formSheet
+                readerVC.modalTransitionStyle = .crossDissolve
+                readerVC.delegate               = self
                 
-                reader.completionBlock = { (result: QRCodeReaderResult?) in
+                readerVC.completionBlock = { (result: QRCodeReaderResult?) in
                     if let result = result {
                         print("Completion with result: \(result.value) of type \(result.metadataType)")
                     }
                 }
                 
-                present(reader, animated: true, completion: nil)
+                present(readerVC, animated: true, completion: nil)
             }
         } catch let error as NSError {
             switch error.code {
@@ -75,7 +80,7 @@ extension ScanQRCodeController : QRCodeReaderViewControllerDelegate {
         reader.stopScanning()
         
         dismiss(animated: true) { [weak self] in
-    
+            
             QRCodeHelper.parseScanedText(result: result.value, completion: { data, success in
                 let alert = UIAlertController(
                     title: "",
@@ -97,17 +102,16 @@ extension ScanQRCodeController : QRCodeReaderViewControllerDelegate {
     }
     
     func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput) {
-        if let cameraName = newCaptureDevice.device.localizedName {
-            print("Switching capturing to: \(cameraName)")
-        }
+        print("Switching capturing to: \(newCaptureDevice.device.localizedName)")
     }
     
     func readerDidCancel(_ reader: QRCodeReaderViewController) {
         reader.stopScanning()
         
         dismiss(animated: true, completion: nil)
-        dismiss(animated: true) { 
+        dismiss(animated: true) {
             self.parent?.dismiss(animated: true, completion: nil)
         }
     }
 }
+

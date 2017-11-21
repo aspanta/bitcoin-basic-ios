@@ -7,7 +7,7 @@ import UIKit
 
 class WalletProtectionLockView: PopupView {
 
-    var lock:((Void) -> (Void))?
+    var lock:(() -> (Void))?
     
     override func doneButtonPressed(sender: UIButton?) {
         if lock != nil {

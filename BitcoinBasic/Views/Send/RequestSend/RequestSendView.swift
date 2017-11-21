@@ -9,7 +9,7 @@ class RequestSendView: PopupView {
     
     @IBOutlet private weak var amountLabel:UILabel?
     
-    var sendCoins:((Void) -> (Void))?
+    var sendCoins:(() -> (Void))?
     
     var amount:String = "" {
         didSet {

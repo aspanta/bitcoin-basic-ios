@@ -53,17 +53,17 @@ class CoinOperationsViewModel {
                 self?.updateUI()
                 self?.walletSuccess.onNext(state)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
             
             wallet?.error.subscribe(onNext: {[weak self] (error) in
                 self?.error.onNext(error)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
             
             wallet?.activityIndicator.subscribe(onNext: {[weak self] (state) in
                 self?.activityIndicator.onNext(state)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         }
     }
     

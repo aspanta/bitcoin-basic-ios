@@ -14,23 +14,23 @@ enum TransactionDirection:String {
 
 class HistoryTransaction:Object, Mappable {
     
-    dynamic var amount:Double = 0
-    dynamic var fee:Double = 0
-    dynamic var vout:Int = 0
-    dynamic var confirmations:Int = 0
-    dynamic var date = ""
-    dynamic var dateFull = ""
-    dynamic var blockhash = ""
-    dynamic var transactionId = ""
-    dynamic var timereceived:TimeInterval = 0 {
+    @objc dynamic var amount:Double = 0
+    @objc dynamic var fee:Double = 0
+    @objc dynamic var vout:Int = 0
+    @objc dynamic var confirmations:Int = 0
+    @objc dynamic var date = ""
+    @objc dynamic var dateFull = ""
+    @objc dynamic var blockhash = ""
+    @objc dynamic var transactionId = ""
+    @objc dynamic var timereceived:TimeInterval = 0 {
         didSet {
             date = Date(timeIntervalSince1970: timereceived).transactionStringDate()
             dateFull = Date(timeIntervalSince1970: timereceived).transactionStringDateFull()
         }
     }
     
-    dynamic var address = ""
-    dynamic var category = ""
+    @objc dynamic var address = ""
+    @objc dynamic var category = ""
     
     func direction() -> TransactionDirection {
         return TransactionDirection(rawValue: category)!

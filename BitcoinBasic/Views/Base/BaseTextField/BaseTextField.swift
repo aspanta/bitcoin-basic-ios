@@ -33,7 +33,7 @@ class BaseTextField: UITextField, UITextFieldDelegate {
                     self.textChanged!((self.text)!)
                 }
             }, onError: nil, onCompleted: nil, onDisposed: nil)
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
     }
     
     override func becomeFirstResponder() -> Bool {

@@ -16,10 +16,10 @@ class HyperlinkLabel: UILabel {
             let textRange = NSMakeRange(0, text.characters.count)
             self.textRange = textRange
             let attributedText = NSMutableAttributedString(string: text)
-            attributedText.addAttribute(NSUnderlineStyleAttributeName , value: NSUnderlineStyle.styleSingle.rawValue, range: textRange)
+            attributedText.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleSingle.rawValue, range: textRange)
             // Add other attributes if needed
-            attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: textRange)
-            attributedText.addAttribute(NSLinkAttributeName, value: text, range: textRange)
+            attributedText.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.blue, range: textRange)
+            attributedText.addAttribute(NSAttributedStringKey.link, value: text, range: textRange)
             
             self.attributedText = attributedText
         }

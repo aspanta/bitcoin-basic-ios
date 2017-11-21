@@ -7,7 +7,7 @@ import UIKit
 
 class BaseAlertController: UIAlertController {
 
-    var done:((Void) -> Void)?
+    var done:(() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -191,7 +191,7 @@ class APIManager: NSObject {
         addApi(at: api)
         api.done = {
             self.removeApi(at: api)
-        }
+        } as (() -> Void)
 
         return api
     }

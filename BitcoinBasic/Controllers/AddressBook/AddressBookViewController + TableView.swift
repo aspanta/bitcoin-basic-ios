@@ -74,11 +74,11 @@ extension AddressBookViewController {
                                                                frame: self.parent!.view.frame) as! DeleteContactView
         deleteContactView.delete = ({
             self.removeCellAt(indexPath: indexPath)
-        })
+        } as (() -> (Void)))
         
         deleteContactView.cancel = ({
             self.reloadRows(at: [indexPath])
-        })
+        } as (() -> (Void)))
         
         self.parent?.view.addSubview(deleteContactView)
     }

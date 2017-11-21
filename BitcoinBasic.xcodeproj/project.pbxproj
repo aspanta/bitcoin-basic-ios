@@ -53,6 +53,7 @@
 		2D004AEB1F3B353B00D52A4D /* WalletProtectionUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */; };
 		2D004AEC1F3B353B00D52A4D /* WalletProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */; };
 		2D004AED1F3B353B00D52A4D /* WalletProtectionWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */; };
+		2D0A6BC41FC42DD10041F49F /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A6BC31FC42DD10041F49F /* SwipeCellKit.framework */; };
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
 		2D85741E1EC47D9600E2BF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8572831EC47D9600E2BF88 /* AppDelegate.swift */; };
@@ -256,6 +257,8 @@
 		2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionUnlockView.swift; sourceTree = "<group>"; };
 		2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionView.swift; sourceTree = "<group>"; };
 		2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtectionWarningView.swift; sourceTree = "<group>"; };
+		2D0A6BC11FC42DCA0041F49F /* SwipeCellKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwipeCellKit.framework.dSYM; path = Carthage/Build/iOS/SwipeCellKit.framework.dSYM; sourceTree = "<group>"; };
+		2D0A6BC31FC42DD10041F49F /* SwipeCellKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeCellKit.framework; path = Carthage/Build/iOS/SwipeCellKit.framework; sourceTree = "<group>"; };
 		2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmercoinCourseAPI.swift; sourceTree = "<group>"; };
 		2D37F7291EC96E2400603FFB /* FeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeeAPI.swift; sourceTree = "<group>"; };
 		2D85725D1EC47CD400E2BF88 /* BitcoinBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -434,6 +437,7 @@
 				2D8575101EC47F4700E2BF88 /* QRCodeReader.framework in Frameworks */,
 				2D8575111EC47F4700E2BF88 /* Realm.framework in Frameworks */,
 				2D8575121EC47F4700E2BF88 /* RealmSwift.framework in Frameworks */,
+				2D0A6BC41FC42DD10041F49F /* SwipeCellKit.framework in Frameworks */,
 				2D8575141EC47F4700E2BF88 /* RxCocoa.framework in Frameworks */,
 				2D8575151EC47F4700E2BF88 /* RxRealm.framework in Frameworks */,
 				2D8575161EC47F4700E2BF88 /* RxSwift.framework in Frameworks */,
@@ -1658,6 +1662,8 @@
 		2D8574FB1EC47F4600E2BF88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D0A6BC31FC42DD10041F49F /* SwipeCellKit.framework */,
+				2D0A6BC11FC42DCA0041F49F /* SwipeCellKit.framework.dSYM */,
 				2D8574FC1EC47F4700E2BF88 /* IQKeyboardManager.framework */,
 				2D8574FD1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework */,
 				2D8574FE1EC47F4700E2BF88 /* LGSideMenuController.framework */,
@@ -1711,6 +1717,7 @@
 					2D85725C1EC47CD400E2BF88 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5AJAAW94U5;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1790,6 +1797,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRealm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
 			);
 			outputPaths = (
 			);
@@ -2099,7 +2107,8 @@
 				PROVISIONING_PROFILE = "a20f10f1-5fa0-4053-bbeb-c6b9809246cd";
 				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -2120,7 +2129,8 @@
 				PROVISIONING_PROFILE = "bcd8ba13-7ae9-44b7-87ce-862a63fc746f";
 				PROVISIONING_PROFILE_SPECIFIER = BitcoinBasicDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "BitcoinBasic/Application/FRHyperLabelDemoSwift-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

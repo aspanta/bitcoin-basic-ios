@@ -34,7 +34,7 @@ class AddressBook {
                     self.success.onNext(true)
                 }
             })
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
     }
     
     func add(contact:Contact) {

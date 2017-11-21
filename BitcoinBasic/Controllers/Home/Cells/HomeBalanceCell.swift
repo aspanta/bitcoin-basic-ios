@@ -14,13 +14,13 @@ class HomeBalanceCell: BaseTableViewCell {
     
     var views:[MyMoneyView] = []
     
-    var pressed: ((Void) -> (Void))?
+    var pressed: (() -> (Void))?
     
     
     private func addClosureAt(moneyView:MyMoneyView) {
-        moneyView.pressed = {(type) in
+        moneyView.pressed = {
             if self.pressed != nil {
-                self.pressed!(type)
+                self.pressed!()
             }
         }
     }

@@ -11,7 +11,7 @@ class WalletProtectionEncryptActivityView: PopupView {
     @IBOutlet weak var progressBarView:UIProgressView!
     @IBOutlet weak var activityIndicator:UIActivityIndicatorView!
     
-    var checkEncrypt:((Void) -> (Void))?
+    var checkEncrypt:(() -> (Void))?
     
     private var seconds = 0
     private var interval = 120
@@ -44,7 +44,7 @@ class WalletProtectionEncryptActivityView: PopupView {
         timer.fire()
     }
 
-    func updateUI() {
+    @objc func updateUI() {
         
         current += 1
         seconds -= 1

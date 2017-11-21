@@ -23,9 +23,15 @@ class Coin {
     
     func exchangeAttributedString(color:UIColor? = nil) -> NSAttributedString {
         
-        let amountAttributes = [NSForegroundColorAttributeName: color ?? .gray, NSFontAttributeName:UIFont(name: "Roboto-Medium", size: 15)]
+        var fontSize:CGFloat = 15.0
         
-        let otherAttributes = [NSForegroundColorAttributeName: color ?? .lightGray, NSFontAttributeName:UIFont(name: "Roboto-Light", size: 15)]
+        if isIphone5() {
+            fontSize = priceUSD > 99 ? 12.0 : 15.0
+        }
+        
+        let amountAttributes = [NSAttributedStringKey.foregroundColor: color ?? .gray, NSAttributedStringKey.font:UIFont(name: "Roboto-Medium", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)]
+        
+        let otherAttributes = [NSAttributedStringKey.foregroundColor: color ?? .lightGray, NSAttributedStringKey.font:UIFont(name: "Roboto-Light", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)]
         
         let countInUsd = String(format:"%0.2f",coinInUSD())
         
@@ -34,7 +40,7 @@ class Coin {
         let part3 = NSMutableAttributedString(string: "      ", attributes: otherAttributes)
         let part4 = NSMutableAttributedString(string: "(", attributes: otherAttributes)
         let part5 = NSMutableAttributedString(string: "1 ", attributes: amountAttributes)
-        let part6 = NSMutableAttributedString(string: sign ?? "", attributes: otherAttributes)
+        let part6 = NSMutableAttributedString(string: sign, attributes: otherAttributes)
         let part7 = NSMutableAttributedString(string: String(format:"%0.2f",priceUSD), attributes: amountAttributes)
         let part8 = NSMutableAttributedString(string: ")", attributes: otherAttributes)
         let part9 = NSMutableAttributedString(string: " = ", attributes: otherAttributes)

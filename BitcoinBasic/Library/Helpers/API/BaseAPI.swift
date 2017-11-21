@@ -31,7 +31,7 @@ enum StatusCode:Int {
 class BaseAPI: NSObject {
     
     var completion:((_ data:AnyObject?, _ erorr:NSError?) -> Void)?
-    var done:((Void) -> Void)?
+    var done:(() -> Void)?
     
     var object:AnyObject?
     

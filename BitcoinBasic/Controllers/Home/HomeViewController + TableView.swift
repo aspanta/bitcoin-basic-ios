@@ -43,9 +43,9 @@ extension HomeViewController {
         
         if indexPath.row == 0 {
             
-             let moneyCell = cell as! HomeBalanceCell
-            moneyCell.pressed = {[weak self] (type) in
-                self?.showOperationController()
+            let moneyCell = cell as! HomeBalanceCell
+            moneyCell.pressed = {
+                self.showOperationController()
             }
             cell.isExpanded = selectedRows.contains(indexPath)
             cell.object = coins

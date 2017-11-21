@@ -21,7 +21,7 @@ extension UIViewController {
         return controller
     }
     
-    class func storyboardName() -> String {
+    @objc class func storyboardName() -> String {
         // override method for other storyboard names
         return "Main"
     }

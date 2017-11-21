@@ -7,7 +7,7 @@ import UIKit
 
 class PopupView: UIView {
 
-    var cancel:((Void) -> (Void))?
+    var cancel:(() -> (Void))?
     
     override func awakeFromNib() {
         super.awakeFromNib()

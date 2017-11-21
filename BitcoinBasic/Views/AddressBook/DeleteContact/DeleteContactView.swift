@@ -7,7 +7,7 @@ import UIKit
 
 class DeleteContactView: PopupView {
 
-    var delete:((Void) -> (Void))?
+    var delete:(() -> (Void))?
     
     @IBAction override func doneButtonPressed(sender:UIButton?) {
         if delete != nil {

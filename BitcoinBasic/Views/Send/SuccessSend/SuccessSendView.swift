@@ -7,7 +7,7 @@ import UIKit
 
 class SuccessSendView: PopupView {
     
-    var success:((Void) -> (Void))?
+    var success:(() -> (Void))?
     
     @IBAction override func doneButtonPressed(sender:UIButton?) {
         

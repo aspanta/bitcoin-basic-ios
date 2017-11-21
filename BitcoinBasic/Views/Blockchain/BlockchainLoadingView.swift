@@ -10,7 +10,7 @@ class BlockchainLoadingView: PopupView {
     @IBOutlet internal weak var textLabel:UILabel!
     @IBOutlet weak var activityIndicator:UIActivityIndicatorView!
     
-    var checkBlockchain:((Void) -> (Void))?
+    var checkBlockchain:(() -> (Void))?
     
     private var seconds = 0
     private var interval = 30
@@ -46,7 +46,7 @@ class BlockchainLoadingView: PopupView {
         timer.fire()
     }
     
-    internal func handleTimer() {
+    @objc internal func handleTimer() {
         
         seconds -= 1
         

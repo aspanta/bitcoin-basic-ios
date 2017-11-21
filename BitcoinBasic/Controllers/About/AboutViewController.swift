@@ -27,8 +27,8 @@ class AboutViewController: BaseTextViewController {
         
         let font = UIFont.systemFont(ofSize: 15.0)
         
-        let attributes = [NSForegroundColorAttributeName: UIColor.black,
-                          NSFontAttributeName: font]
+        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.black,
+                          NSAttributedStringKey.font: font]
         
         textLabel.attributedText = NSAttributedString(string: aboutText, attributes: attributes)
         

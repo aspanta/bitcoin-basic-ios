@@ -21,7 +21,7 @@ class TransactionsAPI: BaseAPI {
     
     override func apiDidReturnData(data: AnyObject) {
         
-        if let transactions = Mapper<HistoryTransaction>().mapArray(JSONArray: data["result"] as! [[String:AnyObject]]) {
+        if let transactions = Mapper<HistoryTransaction>().mapArray(JSONObject: data["result"] as! [[String:AnyObject]]) {
             
             let history = History()
             history.removeAll()

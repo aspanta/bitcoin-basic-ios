@@ -22,7 +22,7 @@ class TabBarController: UITabBarController {
         tabBar.tintColor = UIColor(hexString: Constants.Colors.TabBar.Tint)
         
         let appearance = UITabBarItem.appearance()
-        let attributes = [NSFontAttributeName:UIFont(name: "RobotoCondensed-Bold", size: 10)]
+        let attributes = [NSAttributedStringKey.font:UIFont(name: "RobotoCondensed-Bold", size: 10)]
         appearance.setTitleTextAttributes(attributes, for: .normal)
         
         appearance.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)

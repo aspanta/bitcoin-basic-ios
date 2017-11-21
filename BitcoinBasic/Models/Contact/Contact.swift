@@ -8,8 +8,8 @@ import RealmSwift
 
 class Contact: Object {
     
-    dynamic var name = ""
-    dynamic var address = ""
-    dynamic var isMyContact = false
+    @objc dynamic var name = ""
+    @objc dynamic var address = ""
+    @objc dynamic var isMyContact = false
     
 }

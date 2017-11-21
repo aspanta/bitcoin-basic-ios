@@ -13,7 +13,7 @@ class DetailValueView: NVSValueView {
     
     @IBInspectable var enableCopy:Bool = false
     
-    var copyPressed:((Void) -> (Void))?
+    var copyPressed:(() -> (Void))?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +37,7 @@ class DetailValueView: NVSValueView {
         }
     }
     
-    func copyHandler() {
+    @objc func copyHandler() {
         if enableCopy && copyPressed != nil {
             copyPressed!()
         }

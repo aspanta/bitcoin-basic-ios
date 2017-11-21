@@ -35,18 +35,16 @@ class BlockchainLoadingViewController: BaseViewController {
                 self?.hideBlockchainLoadingView()
                 self?.showMainController()
             }
-        })
-            .addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
         
         viewModel.blocks.subscribe(onNext: {[weak self] (blocks) in
             self?.showBlockchainLoadingView(at: blocks)
-        })
-            .addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
         
         viewModel.error.subscribe(onNext:{ [weak self] error in
             if self?.isErrorShowing == false {self?.showErrorAlert(at: error)}
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     
     private func showMainController() {
@@ -79,7 +77,7 @@ class BlockchainLoadingViewController: BaseViewController {
                 self?.blockchainLoadingView?.removeFromSuperview()
                 self?.blockchainLoadingView = nil
                 AppManager.sharedInstance.logOut()
-            }
+            } as (() -> (Void))
             self.blockchainLoadingView = view
             self.view.addSubview(view)
         }

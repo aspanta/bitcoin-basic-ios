@@ -9,14 +9,14 @@ import RealmSwift
 
 class Blockchain: Object, Mappable {
 
-    dynamic var blocks = 0
-    dynamic var headers = 0
-    dynamic var verificationprogress = 0.0 {
+    @objc dynamic var blocks = 0
+    @objc dynamic var headers = 0
+    @objc dynamic var verificationprogress = 0.0 {
         didSet {
             isLoaded = !((verificationprogress < 0.99) || (blocks + 1 < headers))
         }
     }
-    dynamic var isLoaded = false
+    @objc dynamic var isLoaded = false
     
     required convenience init?(map: Map) {
         self.init()

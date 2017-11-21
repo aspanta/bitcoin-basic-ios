@@ -59,13 +59,13 @@ class LoginViewController: BaseViewController {
         }
         
         viewModel.isValidCredentials.bind(to: enterButton.rx.isEnabled)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel.topConstraint.bind(to: topConstraint.rx.constant)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel.topButtonConstraint.bind(to: topLoginConstraint.rx.constant)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel.topButtonConstraint.bind(to: topAboutConstraint.rx.constant)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
         setupLogin()
         
@@ -80,15 +80,15 @@ class LoginViewController: BaseViewController {
             if success {
                 self?.showMainController()
             }
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
         
         viewModel.blocks.subscribe(onNext:{ [weak self] blocks in
             self?.showBlockchainController(at:blocks)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
         
         viewModel.error.subscribe(onNext:{ [weak self] error in
             self?.showErrorAlert(at: error)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     
     private func setupActivityIndicator() {
@@ -101,7 +101,7 @@ class LoginViewController: BaseViewController {
             }
             
         })
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
     }
     
     private func showMainController() {

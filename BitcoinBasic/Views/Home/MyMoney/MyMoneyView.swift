@@ -12,7 +12,7 @@ class MyMoneyView: UIView {
     @IBOutlet weak var countLabel:UILabel!
     @IBOutlet weak var exchangeLabel:UILabel!
     
-    var pressed:((Void) -> (Void))?
+    var pressed:(() -> (Void))?
     
     var coin:Coin? {
         didSet{
@@ -57,7 +57,7 @@ class MyMoneyView: UIView {
         exchangeLabel.attributedText = coin.exchangeAttributedString()
     }
     
-    func buttonPressed() {
+    @objc func buttonPressed() {
         if pressed != nil {
             pressed!()
         }

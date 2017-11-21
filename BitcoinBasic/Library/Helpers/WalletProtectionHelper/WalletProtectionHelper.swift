@@ -17,8 +17,8 @@ enum ProtectionViewType:Int {
 
 class WalletProtectionHelper {
 
-    var cancel:((Void) -> (Void))?
-    var unlock:((Void) -> (Void))?
+    var cancel:(() -> (Void))?
+    var unlock:(() -> (Void))?
     var fromController:UIViewController?
     var wallet = AppManager.sharedInstance.wallet
     
@@ -54,7 +54,7 @@ class WalletProtectionHelper {
             if self.cancel != nil {
                 self.cancel!()
             }
-        }
+        } as (() -> (Void))
         showView(at: view)
     }
     
@@ -67,7 +67,7 @@ class WalletProtectionHelper {
                 userInteraction(at: true)
                 activity.removeFromSuperview()
             })
-        }
+        } as (() -> (Void))
         showView(at: view)
     }
     
@@ -108,7 +108,7 @@ class WalletProtectionHelper {
                     view.startTimer(at:30)
                 }
             }
-        }
+        } as (() -> (Void))
         showView(at: view)
     }
     
@@ -124,7 +124,7 @@ class WalletProtectionHelper {
         view.encrypt = {
             self.wallet.protect(at: text)
             self.showEncryptActivityView()
-        }
+        } as (() -> (Void))
         showView(at: view)
     }
     

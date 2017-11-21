@@ -17,7 +17,7 @@ class Licensies: NSObject {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 if let object = json as? [String: Any] {
                     
-                    if let licensies = Mapper<License>().mapArray(JSONArray:object["items"] as! [[String:AnyObject]])
+                    if let licensies = Mapper<License>().mapArray(JSONObject:object["items"] as! [[String:AnyObject]])
                     {
                         self.licensies = licensies
                     }

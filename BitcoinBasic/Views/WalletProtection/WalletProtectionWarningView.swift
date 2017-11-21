@@ -7,7 +7,7 @@ import UIKit
 
 class WalletProtectionWarningView: PopupView {
     
-    var encrypt:((Void) -> (Void))?
+    var encrypt:(() -> (Void))?
     
     override func doneButtonPressed(sender: UIButton?) {
         if encrypt != nil {

@@ -16,7 +16,7 @@ class HistoryTransactionDetailView: PopupView {
     @IBOutlet internal weak var voutValueView:DetailValueView!
     @IBOutlet internal weak var blockheightValueView:DetailValueView!
     
-    var repeatTransaction:((Void) -> (Void))?
+    var repeatTransaction:(() -> (Void))?
     
     var viewModel:HistoryTransactionViewModel? {
         didSet {

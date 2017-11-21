@@ -97,8 +97,8 @@ extension UIImage {
         
         // Setup the font attributes that will be later used to dictate how the text should be drawn
         let textFontAttributes = [
-            NSFontAttributeName: textFont,
-            NSForegroundColorAttributeName: textColor,
+            NSAttributedStringKey.font: textFont,
+            NSAttributedStringKey.foregroundColor: textColor,
             ]
         
         // Put the image into a rectangle as large as the original image
