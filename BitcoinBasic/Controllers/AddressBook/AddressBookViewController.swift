@@ -6,8 +6,9 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import SwipeCellKit
 
-class AddressBookViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class AddressBookViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, SwipeTableViewCellDelegate {
     
     @IBOutlet internal weak var menuButton:UIButton!
     @IBOutlet internal weak var backButton:UIButton!

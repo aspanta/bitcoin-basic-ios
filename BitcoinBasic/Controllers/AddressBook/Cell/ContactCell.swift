@@ -5,7 +5,7 @@
 
 import UIKit
 
-class ContactCell: BaseTableViewCell {
+class ContactCell: BaseSwipeTableViewCell {
     
     @IBOutlet weak var nameLabeL:UILabel!
     @IBOutlet weak var addressLabeL:UILabel!

@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 extension AddressBookViewController {
     
@@ -16,10 +17,11 @@ extension AddressBookViewController {
         
         let cellIdentifier = "ContactCell"
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BaseTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BaseSwipeTableViewCell
         
         let viewModel = ContactViewModel(contact: itemAt(indexPath: indexPath))
         cell.object = viewModel
+        cell.delegate = self
         return cell
     }
     
@@ -38,23 +40,31 @@ extension AddressBookViewController {
         return true
     }
     
-    internal func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-
-        let deleteImage = UIImageView(image: UIImage(named: "delete_icon"))
-        let editImage = UIImageView(image: UIImage(named: "edit_icon"))
-        deleteImage.contentMode = .scaleAspectFit
-        editImage.contentMode = .scaleAspectFit
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
         
-        let editAction = UITableViewRowAction(style: .normal, title: "     ") { (action, indexPath) in
+        let deleteAction = SwipeAction(style: .default, title: " ") { action, indexPath in
+            self.addDeleteContactViewWith(indexPath: indexPath)
+        }
+        
+        let editAction = SwipeAction(style: .default, title: " ") { action, indexPath in
             self.addEditContactViewWith(indexPath: indexPath)
         }
         
-        let deleteAction = UITableViewRowAction(style: .normal, title: "     ") { (action, indexPath) in
-            self.addDeleteContactViewWith(indexPath: indexPath)
-        }
-        deleteAction.backgroundColor = UIColor(patternImage:deleteImage.image!)
-        editAction.backgroundColor = UIColor(patternImage:editImage.image!)
-        return [deleteAction, editAction]
+        deleteAction.image = UIImage(named: "delete_icon")
+        deleteAction.backgroundColor = UIColor(hexString: "DA3975")
+        editAction.image = UIImage(named: "edit_icon")
+        editAction.backgroundColor = UIColor(hexString: "D9743C")
+        
+        return [deleteAction,editAction]
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
+        var options = SwipeTableOptions()
+        options.expansionStyle = .none
+        options.transitionStyle = .border
+        options.buttonSpacing = -20
+        return options
     }
     
     private func removeCellAt(indexPath:IndexPath) {

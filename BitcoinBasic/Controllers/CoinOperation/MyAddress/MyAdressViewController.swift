@@ -6,8 +6,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SwipeCellKit
 
-class MyAdressViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class MyAdressViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, SwipeTableViewCellDelegate {
 
     @IBOutlet internal weak var tableView:UITableView!
     
