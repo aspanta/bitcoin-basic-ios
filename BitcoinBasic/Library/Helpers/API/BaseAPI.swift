@@ -59,6 +59,7 @@ class BaseAPI: NSObject {
         if baseUrl.length > 0 {
             baseUrl = baseUrl + self.path()
         } else {
+            returnUrlError()
             return
         }
         
@@ -72,7 +73,10 @@ class BaseAPI: NSObject {
             }
         }
         
-        guard let url = URL(string:baseUrl) else {return}
+        guard let url = URL(string:baseUrl) else {
+            returnUrlError()
+            return
+        }
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -130,6 +134,11 @@ class BaseAPI: NSObject {
         self.dataTask = dataTask
         dataTask.resume()
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    private func returnUrlError() {
+        let error = NSError(domain: "Host is incorrect", code: -1, userInfo: nil)
+        apiDidReturnError(error: error)
     }
     
     private func jsonDataBody(param:[String:Any]) -> Data? {
