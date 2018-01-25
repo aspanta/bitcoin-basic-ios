@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219EDC08425CCE86CAFA3158 /* Pods_BitcoinBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3724C529B05BC2653404D051 /* Pods_BitcoinBasic.framework */; };
 		2D004AC01F3B353A00D52A4D /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A6B1F3B353A00D52A4D /* AddContactView.swift */; };
 		2D004AC11F3B353A00D52A4D /* AddressBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D004A6C1F3B353A00D52A4D /* AddressBook.xib */; };
 		2D004AC21F3B353A00D52A4D /* DeleteContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004A6E1F3B353A00D52A4D /* DeleteContactView.swift */; };
@@ -53,7 +54,6 @@
 		2D004AEB1F3B353B00D52A4D /* WalletProtectionUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABD1F3B353A00D52A4D /* WalletProtectionUnlockView.swift */; };
 		2D004AEC1F3B353B00D52A4D /* WalletProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABE1F3B353A00D52A4D /* WalletProtectionView.swift */; };
 		2D004AED1F3B353B00D52A4D /* WalletProtectionWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D004ABF1F3B353A00D52A4D /* WalletProtectionWarningView.swift */; };
-		2D0A6BC41FC42DD10041F49F /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A6BC31FC42DD10041F49F /* SwipeCellKit.framework */; };
 		2D0A6BC61FC43F9D0041F49F /* BaseSwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A6BC51FC43F9D0041F49F /* BaseSwipeTableViewCell.swift */; };
 		2D37F7271EC9576F00603FFB /* EmercoinCourseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7261EC9576F00603FFB /* EmercoinCourseAPI.swift */; };
 		2D37F72A1EC96E2400603FFB /* FeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37F7291EC96E2400603FFB /* FeeAPI.swift */; };
@@ -198,20 +198,10 @@
 		2D8574C81EC47D9700E2BF88 /* LicenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573B71EC47D9600E2BF88 /* LicenseViewModel.swift */; };
 		2D8574C91EC47D9700E2BF88 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573BA1EC47D9600E2BF88 /* LoginViewModel.swift */; };
 		2D8574CB1EC47D9700E2BF88 /* SendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8573BF1EC47D9600E2BF88 /* SendViewModel.swift */; };
-		2D85750C1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FD1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework */; };
-		2D85750D1EC47F4700E2BF88 /* LGSideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FE1EC47F4700E2BF88 /* LGSideMenuController.framework */; };
-		2D85750E1EC47F4700E2BF88 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8574FF1EC47F4700E2BF88 /* ObjectMapper.framework */; };
-		2D85750F1EC47F4700E2BF88 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575001EC47F4700E2BF88 /* QRCode.framework */; };
-		2D8575101EC47F4700E2BF88 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575011EC47F4700E2BF88 /* QRCodeReader.framework */; };
-		2D8575111EC47F4700E2BF88 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575021EC47F4700E2BF88 /* Realm.framework */; };
-		2D8575121EC47F4700E2BF88 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575031EC47F4700E2BF88 /* RealmSwift.framework */; };
-		2D8575141EC47F4700E2BF88 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575051EC47F4700E2BF88 /* RxCocoa.framework */; };
-		2D8575151EC47F4700E2BF88 /* RxRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575061EC47F4700E2BF88 /* RxRealm.framework */; };
-		2D8575161EC47F4700E2BF88 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8575071EC47F4700E2BF88 /* RxSwift.framework */; };
-		2D8575191EC47F4700E2BF88 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D85750A1EC47F4700E2BF88 /* SwiftyUserDefaults.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129BF9506FE90DDD10DEC3A7 /* Pods-BitcoinBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBasic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinBasic/Pods-BitcoinBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		2D004A6B1F3B353A00D52A4D /* AddContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		2D004A6C1F3B353A00D52A4D /* AddressBook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBook.xib; sourceTree = "<group>"; };
 		2D004A6E1F3B353A00D52A4D /* DeleteContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactView.swift; sourceTree = "<group>"; };
@@ -425,6 +415,8 @@
 		2D8575081EC47F4700E2BF88 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		2D8575091EC47F4700E2BF88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		2D85750A1EC47F4700E2BF88 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		3724C529B05BC2653404D051 /* Pods_BitcoinBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9696D8120F784D9381394BD8 /* Pods-BitcoinBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBasic.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinBasic/Pods-BitcoinBasic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,18 +424,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D85750C1EC47F4700E2BF88 /* IQKeyboardManagerSwift.framework in Frameworks */,
-				2D85750D1EC47F4700E2BF88 /* LGSideMenuController.framework in Frameworks */,
-				2D85750E1EC47F4700E2BF88 /* ObjectMapper.framework in Frameworks */,
-				2D85750F1EC47F4700E2BF88 /* QRCode.framework in Frameworks */,
-				2D8575101EC47F4700E2BF88 /* QRCodeReader.framework in Frameworks */,
-				2D8575111EC47F4700E2BF88 /* Realm.framework in Frameworks */,
-				2D8575121EC47F4700E2BF88 /* RealmSwift.framework in Frameworks */,
-				2D0A6BC41FC42DD10041F49F /* SwipeCellKit.framework in Frameworks */,
-				2D8575141EC47F4700E2BF88 /* RxCocoa.framework in Frameworks */,
-				2D8575151EC47F4700E2BF88 /* RxRealm.framework in Frameworks */,
-				2D8575161EC47F4700E2BF88 /* RxSwift.framework in Frameworks */,
-				2D8575191EC47F4700E2BF88 /* SwiftyUserDefaults.framework in Frameworks */,
+				219EDC08425CCE86CAFA3158 /* Pods_BitcoinBasic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +758,7 @@
 				2D8572811EC47D9600E2BF88 /* BitcoinBasic */,
 				2D85725E1EC47CD400E2BF88 /* Products */,
 				2D8574FB1EC47F4600E2BF88 /* Frameworks */,
+				DE10255E353465B539AEC530 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1682,8 +1664,18 @@
 				2D8575081EC47F4700E2BF88 /* RxTest.framework */,
 				2D8575091EC47F4700E2BF88 /* SwiftyJSON.framework */,
 				2D85750A1EC47F4700E2BF88 /* SwiftyUserDefaults.framework */,
+				3724C529B05BC2653404D051 /* Pods_BitcoinBasic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE10255E353465B539AEC530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				129BF9506FE90DDD10DEC3A7 /* Pods-BitcoinBasic.debug.xcconfig */,
+				9696D8120F784D9381394BD8 /* Pods-BitcoinBasic.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1693,10 +1685,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D85726F1EC47CD400E2BF88 /* Build configuration list for PBXNativeTarget "BitcoinBasic" */;
 			buildPhases = (
+				5132FD64CCB2F81722D934FB /* [CP] Check Pods Manifest.lock */,
 				2D8572591EC47CD400E2BF88 /* Sources */,
 				2D85725A1EC47CD400E2BF88 /* Frameworks */,
 				2D85725B1EC47CD400E2BF88 /* Resources */,
-				2D85751A1EC4846A00E2BF88 /* ShellScript */,
+				6629DEC098D784901C608B8E /* [CP] Embed Pods Frameworks */,
+				EE641EA3115869BDE52F5F4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1783,30 +1777,78 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D85751A1EC4846A00E2BF88 /* ShellScript */ = {
+		5132FD64CCB2F81722D934FB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/LGSideMenuController.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/QRCode.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxRealm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinBasic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6629DEC098D784901C608B8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinBasic/Pods-BitcoinBasic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinBasic/Pods-BitcoinBasic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE641EA3115869BDE52F5F4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinBasic/Pods-BitcoinBasic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2096,6 +2138,7 @@
 		};
 		2D8572701EC47CD400E2BF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 129BF9506FE90DDD10DEC3A7 /* Pods-BitcoinBasic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2118,6 +2161,7 @@
 		};
 		2D8572711EC47CD400E2BF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9696D8120F784D9381394BD8 /* Pods-BitcoinBasic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
